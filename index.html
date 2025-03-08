@@ -419,7 +419,11 @@
             }
 
                         // Функция для получения случайного элемента
-            function getRandomItems(killers) {
+            function getRandomItems(killers,emptyChecked) {
+                if (!emptyChecked) {
+                    // Удаляем последние 4 перка
+                    killers.splice(-1);
+                }
                 const randomIndex = Math.floor(Math.random() * killers.length);
                 killerText += killers[randomIndex].name_ru +" / ";
                 return killers[randomIndex];
@@ -586,11 +590,11 @@
                         if (ItemAddonsList.length > 0) {
                             if (ItemAddonsCheck){
                             
-                                const randomItems2 = getItemsAddonsTipe(ItemAddonsList,tipeItem);
-                                console.log("randomItems2 = - " + randomItems2[randomItems2.length-1].name_ru);
-                                const randomItemsAddon = getRandomItemsAddons(randomItems2, document.getElementById('empty-addons').checked);
+                                //const randomItems2 = getItemsAddonsTipe(ItemAddonsList,tipeItem);
+                                //console.log("randomItems2 = - " + randomItems2[randomItems2.length-1].name_ru);
+                                //const randomItemsAddon = getRandomItemsAddons(randomItems2, document.getElementById('empty-addons').checked);
                                 // Обновляем текстовое описание
-                                console.log("randomItemsAddon = - " + randomItemsAddon[randomItemsAddon.length-1].name_ru);
+                                //console.log("randomItemsAddon = - " + randomItemsAddon[randomItemsAddon.length-1].name_ru);
 
 
                                 // Обновляем изображение в photo-placeholder
