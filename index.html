@@ -528,8 +528,8 @@
                             //textDown.textContent += "Киллер:" + randomKiller.name_ru;
 
                             // Обновляем изображение в photo-placeholder
-                            if (randomKiller.photo_main) {
-                                const skillsImagePath = `Items/${randomKiller.photo_main}`;
+                            if (itensList.photo_main) {
+                                const skillsImagePath = `Items/${itensList.photo_main}`;
                                 photoPlaceholderImg.src = skillsImagePath;
                             } else {
                                 photoPlaceholderImg.src = 'default/image/path.png';
