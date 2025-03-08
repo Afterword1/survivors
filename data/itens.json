@@ -1,0 +1,47 @@
+{
+  "items": [
+      {
+        "number": 0,
+        "name_ru": "Тяжелый фонарь",
+        "name_en": "Utility Flashlight",
+        "photo_main":"iconItems_flashlightUtility.png",
+        "rang":0,
+        "tipe":0
+      },{
+        "number": 1,
+        "name_ru": "Спортивный фонарик",
+        "name_en": "Sport Flashlight",
+        "photo_main":"iconItems_flashlightSport.png",
+        "rang":1,
+        "tipe":0
+      },{
+        "number": 2,
+        "name_ru": "Фонарик",
+        "name_en": "Flashlight",
+        "photo_main":"iconItems_flashlight.png",
+        "rang":2,
+        "tipe":0
+      },{
+        "number": 3,
+        "name_ru": "Аптечка лесничего",
+        "name_en": "Ranger Med-Kit",
+        "photo_main":"iconItems_rangersAidKit.png",
+        "rang":0,
+        "tipe":1
+      },{
+        "number": 4,
+        "name_ru": "Аптечка первой помощи",
+        "name_en": "Emergency Med-Kit",
+        "photo_main":"iconItems_firstAidKit.png",
+        "rang":1,
+        "tipe":1
+      },{
+        "number": 100000,
+        "name_ru": "Пусто",
+        "name_en": "Empty",
+        "photo_main":"empty.png",
+        "rang":1,
+        "tipe":1
+      }
+    ]
+  }
