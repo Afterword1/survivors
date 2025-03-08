@@ -586,10 +586,10 @@
                             if (ItemAddonsCheck){
                             
                                 const randomItems2 = getItemsAddonsTipe(ItemAddonsList,tipeItem);
-                                console.log("randomItems2 - " + randomItems2.name_ru);
+                                console.log("randomItems2 = - " + randomItems2[randomItems2.length-1].name_ru);
                                 const randomItemsAddon = getRandomItemsAddons(randomItems2);
                                 // Обновляем текстовое описание
-                                console.log("randomItemsAddon - " + randomItemsAddon.name_ru);
+                                console.log("randomItemsAddon = - " + randomItemsAddon[randomItemsAddon.length-1].name_ru);
 
 
                                 // Обновляем изображение в photo-placeholder
