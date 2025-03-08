@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рандомазер DBD</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 100vw;
+            height: auto;
+            position: relative;
+            visibility: hidden; /* Прячем контейнер до загрузки всех изображений */
+        }
+
+        .background-image {
+            width: 100%;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+
+        .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: auto;
+        }
+
+        .photo-placeholder,
+        .addon00-placeholder,
+        .addon11-placeholder,
+        .addon1-placeholder,
+        .addon22-placeholder,
+        .addon2-placeholder,
+        .photo-podnoshenie-placeholder,
+        .photo-podnoshenie-placeholder22,
+        .new-photo11,
+        .new-photo1,
+        .new-photo22,
+        .new-photo2,
+        .new-photo33,
+        .new-photo3,
+        .new-photo44,
+        .new-photo4,
+        .non-square-photo,
+        .centered-photo {
+            position: absolute;
+        }
+
+        .addon00-placeholder {
+            top: 3%;
+            left: 71%;
+            width: 24%;
+            height: auto;
+            background-size: contain;
+        }
+
+        .photo-placeholder {
+            top: 6%;
+            left: 74%;
+            width: 18%;
+            height: auto;
+            background-size: contain;
+        }
+
+        .addon11-placeholder {
+            top: 26.7%;
+            left: 70.8%;
+            width: 11.5%;
+            height: auto;
+            background-size: contain;
+        }
+        .addon1-placeholder {
+            top: 28.2%;
+            left: 72.3%;
+            width: 8.5%;
+            height: auto;
+            background-size: contain;
+        }
+
+        .addon22-placeholder {
+            top: 26.7%;
+            left: 82.8%;
+            width: 11.5%;
+            height: auto;
+            background-size: contain;
+        }
+        .addon2-placeholder {
+            top: 28.2%;
+            left: 84.3%;
+            width: 8.5%;
+            height: auto;
+            background-size: contain;
+        }
+
+        .photo-podnoshenie-placeholder {
+            top: 49%;
+            left: 74%;
+            width: 17%;
+            height: auto;
+            background-size: contain;
+        }
+        .photo-podnoshenie-placeholder22 {
+            top: 46%;
+            left: 71%;
+            width: 23%;
+            height: auto;
+            background-size: contain;
+        }
+
+        .new-photo1 {
+            top: 53%;
+            left: 25.5%;
+            width: 19%;
+            height: auto;
+        }
+        .new-photo11 {
+            top: 50%;
+            left: 22.5%;
+            width: 25%;
+            height: auto;
+        }
+        .new-photo2 {
+            top: 65.5%;
+            left: 12%;
+            width: 19%;
+            height: auto;
+        }
+        .new-photo22 {
+            top: 62.5%;
+            left: 9%;
+            width: 25%;
+            height: auto;
+        }
+
+
+        .new-photo3 {
+            top: 65.5%;
+            left: 39%;
+            width: 19%;
+            height: auto;
+        }
+        .new-photo33 {
+            top: 62.5%;
+            left: 36%;
+            width: 25%;
+            height: auto;
+        }
+
+        .new-photo4 {
+            top: 78%;
+            left: 25.5%;
+            width: 19%;
+            height: auto;
+        }
+        .new-photo44 {
+            top: 75%;
+            left: 22.5%;
+            width: 25%;
+            height: auto;
+        }
+
+        .non-square-photo {
+            position: relative;
+            top: 5%;
+            left: 13%;
+            width: 50%;
+            height: auto;
+            max-height: 80%;
+        }
+
+        .text-overlay {
+            position: absolute;
+            bottom: -20px;
+            left: 40%;
+            transform: translateX(-50%);
+            font-size: 50px;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .centered-photo {
+            bottom: 5%;
+            left: 72%;
+            width: 20%;
+            height: auto;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .centered-photo img {
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .checkbox-container {
+            position: relative;
+            width: 100%;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            box-sizing: border-box;
+            color: white;
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .killer-dropdown {
+            margin-left: 10px;
+            padding: 5px;
+            font-size: 16px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .checkbox-container label {
+            color: white;
+        }   
+        
+        .text-down {
+            width: 100%; /* Для выравнивания по ширине */
+            text-align: center; /* Выравнивание текста по центру */
+            padding: 10px;
+            color: #ffffff;
+            font-size: 16px;
+            background-color: #000000; /* Цвет фона для текста */
+        }
+
+        .text-down-perks {
+            width: 100%; /* Для выравнивания по ширине */
+            text-align: center; /* Выравнивание текста по центру */
+            padding: 10px;
+            color: #ffffff;
+            font-size: 16px;
+            background-color: #000000; /* Цвет фона для текста */
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container" id="main-container">
+        <div class="background-image">
+            <img src="main/fon.png" alt="Background Image" id="bg-image">
+            <div class="content">
+                
+                <div class="addon00-placeholder">
+                    <img src="ItemAddons/addon4.png" alt="Addon 00" id="photo-addonplaceholder00-img">
+                </div>                
+                
+                <div class="photo-placeholder">
+                    <img src="ItemAddons/empty2.png" alt="Icon Perks Bond" id="photo-placeholder-img">
+                </div>
+                
+                <div class="addon11-placeholder">
+                    <img src="ItemAddons/addon5.png" alt="Addon 11" id="photo-addonplaceholder11-img">
+                </div>
+
+                <div class="addon1-placeholder">
+                    <img src="ItemAddons/empty2.png" alt="Addon 1" id="photo-addonplaceholder1-img">
+                </div>
+
+                <div class="addon22-placeholder">
+                    <img src="ItemAddons/addon5.png" alt="Addon 22" id="photo-addonplaceholder22-img">
+                </div>
+
+                <div class="addon2-placeholder">
+                    <img src="ItemAddons/empty2.png" alt="Addon 2" id="photo-addonplaceholder2-img">
+                </div>
+
+                <div class="photo-podnoshenie-placeholder22">
+                    <img src="main/photo-podnoshenie-placeholder.png" alt="Photo Podnoshenie22" id="photo-podnoshenie-placeholder22">
+                </div>
+                <div class="photo-podnoshenie-placeholder">
+                    <img src="ItemAddons/empty2.png" alt="Photo Podnoshenie" id="photo-podnoshenie-placeholder">
+                </div>
+
+                <div class="non-square-photo">
+                    <img src="ItemAddons/empty2.png" alt="Non-Square Photo" id="non-square-photo-img">
+                    <div class="text-overlay"> </div>
+                </div>
+                
+                <div class="new-photo11">
+                    <img src="main/1.png" alt="New Photo 11" id="perks-photo-img00">
+                </div>
+                <div class="new-photo1">
+                    <img src="ItemAddons/empty2.png" alt="New Photo 1" id="perks-photo-img0">
+                </div>
+
+                <div class="new-photo22">
+                    <img src="main/2.png" alt="New Photo 22" id="perks-photo-img11">
+                </div>
+                <div class="new-photo2">
+                    <img src="ItemAddons/empty2.png" alt="New Photo 2" id="perks-photo-img1">
+                </div>
+
+                <div class="new-photo33">
+                    <img src="main/3.png" alt="New Photo 33" id="perks-photo-img22">
+                </div>
+                <div class="new-photo3">
+                    <img src="ItemAddons/empty2.png" alt="New Photo 3" id="perks-photo-img2">
+                </div>
+
+                <div class="new-photo44">
+                    <img src="main/4.png" alt="New Photo 44" id="perks-photo-img33">
+                </div>
+                <div class="new-photo4">
+                    <img src="ItemAddons/empty2.png" alt="New Photo 4" id="perks-photo-img3">
+                </div>
+
+                <div class="centered-photo">
+                    <img src="main/regen.png" alt="Centered Photo">
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="checkbox-container">
+            <label><input type="checkbox" id="empty-addons"> Включить пустые аддоны</label>
+            <label><input type="checkbox" id="empty-perks"> Включить пустые перки</label>
+            <label><input type="checkbox" id="empty-offerings"> Включить пустые подношения</label>
+
+                <!-- Выпадающий список с киллерами -->
+            <select id="killer-select" class="killer-dropdown">
+                <option value="all">Все убийцы</option>
+            </select>
+        </div>
+        <div class="text-container">
+            <div class="text-down"> </div>
+        </div>
+        <div class="text-container">
+            <div class="text-down-perks"> </div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            const container = document.getElementById('main-container');
+            const images = document.querySelectorAll('img');
+            const content = document.querySelector('.content');
+            const bgImage = document.getElementById('bg-image');
+    
+            // Ждём загрузки всех изображений
+            const imagePromises = Array.from(images).map(img => {
+                return new Promise((resolve, reject) => {
+                    if (img.complete) {
+                        resolve();
+                    } else {
+                        img.onload = resolve;
+                        img.onerror = reject;
+                    }
+                });
+            });
+
+            Promise.all(imagePromises)
+                .then(() => {
+                    // Все изображения загружены
+                    console.log("Все изображения успешно загружены");
+                    content.style.height = `${bgImage.clientHeight}px`;
+                    container.style.visibility = 'visible'; // Показываем контейнер
+                })
+                .catch((error) => {
+                    console.error("Ошибка загрузки изображения:", error);
+                });
+            
+            const centeredPhoto = document.querySelector('.centered-photo');
+            const textOverlay = document.querySelector('.text-overlay');
+            const nonSquarePhotoImg = document.getElementById('non-square-photo-img');
+            const photoPlaceholderImg = document.getElementById('photo-placeholder-img');
+            const photoAddonPlaceholderImg1 = document.getElementById('photo-addonplaceholder1-img');
+            const photoAddonPlaceholderImg2 = document.getElementById('photo-addonplaceholder2-img');
+            const photoAddonPlaceholderImg11 = document.getElementById('photo-addonplaceholder11-img');
+            const photoAddonPlaceholderImg22 = document.getElementById('photo-addonplaceholder22-img');
+            const photoPerks0 = document.getElementById('perks-photo-img0');
+            const photoPerks1 = document.getElementById('perks-photo-img1');
+            const photoPerks2 = document.getElementById('perks-photo-img2');
+            const photoPerks3 = document.getElementById('perks-photo-img3');
+            const photoPerks00 = document.getElementById('perks-photo-img00');
+            const photoPerks11 = document.getElementById('perks-photo-img11');
+            const photoPerks22 = document.getElementById('perks-photo-img22');
+            const photoPerks33 = document.getElementById('perks-photo-img33');
+            const photoPodnosheniePlaceholder = document.getElementById('photo-podnoshenie-placeholder');
+            const photoPodnosheniePlaceholder22 = document.getElementById('photo-podnoshenie-placeholder22');
+            const textDown = document.querySelector('.text-down');
+            const textDownPerks = document.querySelector('.text-down-perks');
+
+            
+            let killerText = '';
+            let perkText = '';
+            let PodnoshenieText = '';
+
+            // Функция для получения случайного элемента
+            function getRandomSurv(killers) {
+                const randomIndex = Math.floor(Math.random() * killers.length);
+                killerText += killers[randomIndex].name_ru +" / ";
+                return killers[randomIndex];
+            }
+
+            // Функция для получения двух случайных разных аддонов
+            function getTwoRandomAddons(addons, emptyAddonsChecked) {
+                // Если галочка "empty-addons" НЕ установлена
+                if (!emptyAddonsChecked) {
+                    // Удаляем последние два аддона
+                    addons.splice(-2);
+                }
+                const shuffledAddons = [...addons].sort(() => 0.5 - Math.random());
+                killerText += shuffledAddons[0].name_addon_ru +" / " + shuffledAddons[1].name_addon_ru;
+                textDown.textContent += killerText;
+                console.log(killerText);
+                return [shuffledAddons[0], shuffledAddons[1]];
+            }
+
+            
+            // Функция для получения четырех случайных разных перков
+            function getForRandomPerks(perks, emptyChecked) {
+                // Если галочка "empty-addons" НЕ установлена
+                if (!emptyChecked) {
+                    // Удаляем последние 4 перка
+                    perks.splice(-4);
+                }
+                const shuffledAddons = [...perks].sort(() => 0.5 - Math.random());
+                return [shuffledAddons[0], shuffledAddons[1],shuffledAddons[2],shuffledAddons[3]];
+            }
+
+                        // Функция для получения четырех случайных разных перков
+            function getForRandomOfferings(Offerings, emptyChecked) {
+                // Если галочка "empty-addons" НЕ установлена
+                if (!emptyChecked) {
+                    // Удаляем последние 4 перка
+                    Offerings.splice(-1);
+                }
+                const shuffledAddons = [...Offerings].sort(() => 0.5 - Math.random());
+                return [shuffledAddons[0]];
+            }
+
+            fetch('data/killers.json')  // Замените на фактический путь к вашему JSON
+                .then(response => response.json())
+                .then(data => {
+                    if (data.killers && data.killers.length > 0) {
+                        const killerSelect = document.getElementById('killer-select');
+
+                        // Добавляем всех киллеров в выпадающий список
+                        data.killers.forEach(killer => {
+                            const option = document.createElement('option');
+                            option.value = killer.name_en;  // Используйте уникальное значение, например, имя киллера на английском
+                            option.textContent = killer.name_ru;  // Отображаемое имя киллера на русском
+                            killerSelect.appendChild(option);
+                        });
+                    }
+                })
+                .catch(error => {
+                    console.error('Ошибка при загрузке JSON:', error);
+                });
+
+                
+            // Обработчик события для клика по centered-photo
+            centeredPhoto.addEventListener('click', function() {
+                    // Очистка всех изображений перед загрузкой новых
+                const killerSelect = document.getElementById('killer-select');
+                const selectedKiller = killerSelect.value; // Получаем выбранного киллера
+                textDown.textContent = '';
+                killerText = '';
+
+                fetch('data/survs.json')  // Замените на фактический путь к вашему JSON
+                    .then(response => response.json())
+                    .then(data => {
+                        
+                        let survsList = data.survs;
+                        
+                        if (survsList.length > 0) {
+                            const randomSurvs = getRandomSurv(survsList);
+                            // Обновляем текстовое описание
+                            //textDown.textContent += "Киллер:" + randomKiller.name_ru;
+
+                            // Обновляем изображение в non-square-photo
+                            if (randomSurvs.photo_main) {
+                                const imagePath = `StoreBackgrounds/${randomSurvs.photo_main}`;
+                                nonSquarePhotoImg.src = imagePath;
+                            } else {
+                                nonSquarePhotoImg.src = 'default/image/path.png';
+                            }
+                               
+
+                        } else {
+                            textOverlay.textContent = 'Данные не найдены';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Ошибка при загрузке JSON:', error);
+                        textOverlay.textContent = 'Ошибка загрузки';
+                    });
+                    
+                    fetch('data/perks.json')  // Замените на фактический путь к вашему JSON
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.Killers_perks && data.Killers_perks.length > 0) {
+                            const randomPerks = getForRandomPerks(data.Killers_perks, document.getElementById('empty-perks').checked);
+
+                            // Обновляем изображения для перков
+                            if (randomPerks[0].photo_main) {
+                                const perk1ImagePath = `Perks/${randomPerks[0].photo_main}`;
+                                
+                                if(randomPerks[0].number == 100000){
+                                    const perk00ImagePath= `Perks/1.png`;
+                                    photoPerks00.src = perk00ImagePath;
+
+                                }else{
+                                    const perk00ImagePath= `Perks/perk1.png`;
+                                    photoPerks00.src = perk00ImagePath;
+                                    //textDown.textContent += ". Перк:" + randomPerks[0].name_ru;
+                                }
+                                photoPerks0.src = perk1ImagePath;
+
+                            } else {
+                                photoPerks0.src = 'default/image/path.png';
+                            }
+
+                            if (randomPerks[1].photo_main) {
+                                const perk2ImagePath = `Perks/${randomPerks[1].photo_main}`;
+                                photoPerks1.src = perk2ImagePath;
+                                if(randomPerks[1].number == 100000){
+                                    const perk00ImagePath= `Perks/1.png`;
+                                    photoPerks11.src = perk00ImagePath;
+                                    //textDown.textContent += ". Перк:" + randomPerks[1].name_ru;
+                                }else{
+                                    const perk00ImagePath= `Perks/perk1.png`;
+                                    photoPerks11.src = perk00ImagePath;
+                                }
+                            } else {
+                                photoPerks1.src = 'default/image/path.png';
+                            }
+
+                            if (randomPerks[2].photo_main) {
+                                const perk3ImagePath = `Perks/${randomPerks[2].photo_main}`;
+                                photoPerks2.src = perk3ImagePath;
+                                if(randomPerks[2].number == 100000){
+                                    const perk00ImagePath= `Perks/1.png`;
+                                    photoPerks22.src = perk00ImagePath;
+                                }else{
+                                    const perk00ImagePath= `Perks/perk1.png`;
+                                    photoPerks22.src = perk00ImagePath;
+
+                                }
+                            } else {
+                                photoPerks2.src = 'default/image/path.png';
+                            }
+
+                            if (randomPerks[3].photo_main) {
+                                const perk4ImagePath = `Perks/${randomPerks[3].photo_main}`;
+                                photoPerks3.src = perk4ImagePath;
+                                if(randomPerks[3].number == 100000){
+                                    const perk00ImagePath= `Perks/1.png`;
+                                    photoPerks33.src = perk00ImagePath;
+                                }else{
+                                    const perk00ImagePath= `Perks/perk1.png`;
+                                    photoPerks33.src = perk00ImagePath;
+                                }
+                            } else {
+                                photoPerks3.src = 'default/image/path.png';
+                            }
+                        } else {
+                            textOverlay.textContent = 'Данные не найдены';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Ошибка при загрузке JSON:', error);
+                        textOverlay.textContent = 'Ошибка загрузки';
+                    });
+
+                    fetch('data/offerings.json')  // Замените на фактический путь к вашему JSON
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.offerings && data.offerings.length > 0) {
+                            const randomOfferings = getForRandomOfferings(data.offerings, document.getElementById('empty-offerings').checked);
+
+                            // Обновляем изображения для перков
+                            if (randomOfferings[0].photo_main) {
+                                const offerImagePath = `Favors/${randomOfferings[0].photo_main}`;
+                                const perk00ImagePath= `Favors/${randomOfferings[0].rang}.png`;
+   
+                                photoPodnosheniePlaceholder22.src = perk00ImagePath;
+                                photoPodnosheniePlaceholder.src = offerImagePath;
+                            } else {
+                                photoPerks0.src = 'default/image/path.png';
+                            }
+
+                           
+                        } else {
+                            textOverlay.textContent = 'Данные не найдены';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Ошибка при загрузке JSON:', error);
+                        textOverlay.textContent = 'Ошибка загрузки';
+                    });
+                    
+                    
+            });
+
+        });
+
+        
+
+        // Обновление высоты при изменении размера окна
+        window.addEventListener('resize', function() {
+            const bgImage = document.getElementById('bg-image');
+            const content = document.querySelector('.content');
+            content.style.height = `${bgImage.clientHeight}px`;
+        });
+    </script>
+    
+</body>
+</html>
