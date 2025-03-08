@@ -588,8 +588,8 @@
                                 const randomItemsAddon = getRandomItemsAddons(randomItems2);
                                 // Обновляем текстовое описание
                                 //textDown.textContent += "Киллер:" + randomKiller.name_ru;
-                                console.log("5    "+randomItemsAddon[0].photo_main);
-                                console.log("6    "+randomItemsAddon[1].photo_main);
+                                console.log("5    "+randomItemsAddon[randomItemsAddon.length-1].name_ru);
+                                console.log("6    "+randomItemsAddon[randomItemsAddon.length-2].name_ru);
 
                                 // Обновляем изображение в photo-placeholder
                                 if (randomItemsAddon[0].photo_main) {
