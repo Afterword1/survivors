@@ -528,10 +528,12 @@
                                 photoPlaceholderImg.src = 'default/image/path.png';
                             } 
                             console.log(randomItems.number);
-                            if(randomItems.number == 100000){
+                            if(randomItems.number === 100000){
                                 ItemAddonsCheck = false;
+                                console.log("Условие выполнено!");
                             }else{
                                 ItemAddonsCheck = true;
+                                console.log("Условие не выполнено!");
                             }
                                                          
 
