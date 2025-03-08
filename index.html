@@ -548,22 +548,18 @@
                     
                     
                     
-                    if(ItemAddonsCheck){
-                        console.log("+    ");
-                    }else{
-                        console.log("-    ");
-                    }
+                    
                     fetch('data/ItemAddons.json')  // Замените на фактический путь к вашему JSON
                     .then(response => response.json())
                     .then(data => {
                         
                         let ItemAddonsList = data.ItemAddons;
                                 
-                        if (ItemAddonsList.length > 0) {
+                        if (ItemAddonsList.length > 0&ItemAddonsCheck) {
                             const randomItems = getRandomItemsAddons(itensList);
                             // Обновляем текстовое описание
                             //textDown.textContent += "Киллер:" + randomKiller.name_ru;
-                            console.log("4    "+randomItems[0].photo_main);
+                            console.log("5    "+randomItems[0].photo_main);
                             // Обновляем изображение в photo-placeholder
                             if (randomItems[0].photo_main) {
                                 const addon1ImagePath = `ItemAddons/${randomItems[0].photo_main}`;
