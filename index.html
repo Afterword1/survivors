@@ -532,9 +532,9 @@
                             }else{
                                 fetch('data/ItemAddons.json')  // Замените на фактический путь к вашему JSON
                                 .then(response => response.json())
-                                .then(data => {
+                                .then(data2 => {
                                     
-                                    let ItemAddonsList = data.ItemAddons;
+                                    let ItemAddonsList = data2.ItemAddons;
                                             
                                     if (ItemAddonsList.length > 0) {
                                         const randomItems = getRandomItemsAddons(itensList);
