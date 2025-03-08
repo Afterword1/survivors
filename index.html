@@ -415,6 +415,13 @@
                 return killers[randomIndex];
             }
 
+                        // Функция для получения случайного элемента
+            function getRandomItems(killers) {
+                const randomIndex = Math.floor(Math.random() * killers.length);
+                killerText += killers[randomIndex].name_ru +" / ";
+                return killers[randomIndex];
+            }
+
             // Функция для получения двух случайных разных аддонов
             function getTwoRandomAddons(addons, emptyAddonsChecked) {
                 // Если галочка "empty-addons" НЕ установлена
@@ -497,6 +504,35 @@
                                 nonSquarePhotoImg.src = imagePath;
                             } else {
                                 nonSquarePhotoImg.src = 'default/image/path.png';
+                            }
+                               
+
+                        } else {
+                            textOverlay.textContent = 'Данные не найдены';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Ошибка при загрузке JSON:', error);
+                        textOverlay.textContent = 'Ошибка загрузки';
+                    });
+
+                    fetch('data/itens.json')  // Замените на фактический путь к вашему JSON
+                    .then(response => response.json())
+                    .then(data => {
+                        
+                        let itensList = data.items;
+                        
+                        if (itensList.length > 0) {
+                            const randomItems = getRandomItems(itensList);
+                            // Обновляем текстовое описание
+                            //textDown.textContent += "Киллер:" + randomKiller.name_ru;
+
+                            // Обновляем изображение в photo-placeholder
+                            if (randomKiller.photo_main) {
+                                const skillsImagePath = `Items/${randomKiller.photo_main}`;
+                                photoPlaceholderImg.src = skillsImagePath;
+                            } else {
+                                photoPlaceholderImg.src = 'default/image/path.png';
                             }
                                
 
