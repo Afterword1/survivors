@@ -581,42 +581,60 @@
                         
                         let ItemAddonsList = data.ItemAddons;
                                 
-                        if (ItemAddonsList.length > 0&ItemAddonsCheck) {
-                            const randomItems2 = getItemsAddonsTipe(ItemAddonsList,tipeItem);
-                            const randomItems = getRandomItemsAddons(randomItems2);
-                            // Обновляем текстовое описание
-                            //textDown.textContent += "Киллер:" + randomKiller.name_ru;
-                            console.log("5    "+randomItems[0].photo_main);
-                            console.log("6    "+randomItems[1].photo_main);
-
-                            // Обновляем изображение в photo-placeholder
-                            if (randomItems[0].photo_main) {
-                                const addon1ImagePath = `ItemAddons/${randomItems[0].photo_main}`;
-                                photoAddonPlaceholderImg1.src = addon1ImagePath;
-
-                                const addon11ImagePath = `ItemAddons/addon${randomItems[0].rang}.png`;
-                                photoAddonPlaceholderImg11.src = addon11ImagePath;
-                            } else {
-                                photoPlaceholderImg.src = 'default/image/path.png';
-                            }
-                            if (randomItems[1].photo_main) {
-                                const addon1ImagePath = `ItemAddons/${randomItems[1].photo_main}`;
-                                photoAddonPlaceholderImg2.src = addon1ImagePath;
-
-                                const addon11ImagePath = `ItemAddons/addon${randomItems[1].rang}.png`;
-                                photoAddonPlaceholderImg22.src = addon11ImagePath;
-                            } else {
-                                photoPlaceholderImg.src = 'default/image/path.png';
-                            }  
+                        if (ItemAddonsList.length > 0) {
+                            if (ItemAddonsCheck){
                             
-                            if(randomItems.number == 100000){
-                            
+                                const randomItems2 = getItemsAddonsTipe(ItemAddonsList,tipeItem);
+                                const randomItemsAddon = getRandomItemsAddons(randomItems2);
+                                // Обновляем текстовое описание
+                                //textDown.textContent += "Киллер:" + randomKiller.name_ru;
+                                console.log("5    "+randomItemsAddon[0].photo_main);
+                                console.log("6    "+randomItemsAddon[1].photo_main);
 
-                            }else{
+                                // Обновляем изображение в photo-placeholder
+                                if (randomItemsAddon[0].photo_main) {
+                                    if(randomItemsAddon[0].number === 100000){
+                                        const addon1ImagePath = `Items/empty.png`;
+                                        photoAddonPlaceholderImg1.src = addon1ImagePath;
+
+                                        const addon11ImagePath = `ItemAddons/addon${randomItemsAddon[0].rang}.png`;
+                                        photoAddonPlaceholderImg11.src = addon11ImagePath; 
+                                    }else{
+                                        const addon1ImagePath = `ItemAddons/${randomItemsAddon[0].photo_main}`;
+                                        photoAddonPlaceholderImg1.src = addon1ImagePath;
+    
+                                        const addon11ImagePath = `ItemAddons/addon${randomItemsAddon[0].rang}.png`;
+                                        photoAddonPlaceholderImg11.src = addon11ImagePath; 
+                                    }
+                                    
+                                } else {
+                                    photoPlaceholderImg.src = 'default/image/path.png';
+                                }
+                                if (randomItemsAddon[1].photo_main) {
+                                    if(randomItemsAddon[0].number === 100000){
+                                        const addon1ImagePath = `Items/empty.png`;
+                                        photoAddonPlaceholderImg2.src = addon1ImagePath;
+
+                                        const addon11ImagePath = `ItemAddons/addon${randomItemsAddon[1].rang}.png`;
+                                        photoAddonPlaceholderImg22.src = addon11ImagePath; 
+                                    }else{
+                                        const addon1ImagePath = `ItemAddons/${randomItemsAddon[1].photo_main}`;
+                                        photoAddonPlaceholderImg2.src = addon1ImagePath;
+
+                                        const addon11ImagePath = `ItemAddons/addon${randomItemsAddon[1].rang}.png`;
+                                        photoAddonPlaceholderImg22.src = addon11ImagePath;  
+                                    }
+
+                                    
+                                } else {
+                                    photoPlaceholderImg.src = 'default/image/path.png';
+                                }  
                                 
-                            }
+                                
                                                             
-
+                        }else{
+                            //нет предмета
+                        }
                         } else {
                             textOverlay.textContent = 'Данные не найдены';
                         }
