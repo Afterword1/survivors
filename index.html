@@ -469,17 +469,23 @@
                     return [];
                 }
 
-                // Фильтруем элементы, оставляя только те, у которых .tipe совпадает с nomber
-                let filteredItems = perks.filter((item, index, array) => {
-                    // Оставляем два последних элемента всегда
-                    if (index >= array.length - 2) {
-                        return true;
-                    }
-                    // Для остальных элементов проверяем .tipe
-                    return item.tipe === nomber;
-                });
+                // Создаем новый массив для результата
+                let result = [];
 
-                return filteredItems;
+                // Перебираем элементы массива perks
+                for (let i = 0; i < perks.length; i++) {
+                    // Если это один из двух последних элементов, добавляем его в результат
+                    if (i >= perks.length - 2) {
+                        result.push(perks[i]);
+                    } else {
+                        // Для остальных элементов проверяем, совпадает ли .tipe с nomber
+                        if (perks[i].tipe === nomber) {
+                            result.push(perks[i]);
+                        }
+                    }
+                }
+
+                return result;
             }
 
             // Функция для получения четырех случайных разных перков
