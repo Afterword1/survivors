@@ -474,12 +474,15 @@
 
                 // Перебираем элементы массива perks
                 for (let i = 0; i < perks.length; i++) {
+                    console.log(perks[i]);
                     // Если это один из двух последних элементов, добавляем его в результат
                     if (i >= perks.length - 2) {
+                        console.log('-2');
                         result.push(perks[i]);
                     } else {
                         // Для остальных элементов проверяем, совпадает ли .tipe с nomber
                         if (perks[i].tipe === nomber) {
+                            console.log('совпало');
                             result.push(perks[i]);
                         }
                     }
