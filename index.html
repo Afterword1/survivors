@@ -506,6 +506,8 @@
                         console.error('Ошибка при загрузке JSON:', error);
                         textOverlay.textContent = 'Ошибка загрузки';
                     });
+                    
+                    const randomItems;
 
                     fetch('data/itens.json')  // Замените на фактический путь к вашему JSON
                     .then(response => response.json())
@@ -514,7 +516,7 @@
                         let itensList = data.items;
                                 
                         if (itensList.length > 0) {
-                            const randomItems = getRandomItems(itensList);
+                            randomItems = getRandomItems(itensList);
                             // Обновляем текстовое описание
                             //textDown.textContent += "Киллер:" + randomKiller.name_ru;
                             console.log("0");
@@ -526,52 +528,7 @@
                                 photoPlaceholderImg.src = 'default/image/path.png';
                             } 
                             
-                            if(randomItems.number == 100000){
                             
-
-                            }else{
-                                fetch('data/ItemAddons.json')  // Замените на фактический путь к вашему JSON
-                                .then(response2 => response2.json())
-                                .then(data2 => {
-                                    
-                                    let ItemAddonsList = data2.ItemAddons;
-                                            
-                                    if (ItemAddonsList.length > 0) {
-                                        const randomItems = getRandomItemsAddons(itensList);
-                                        // Обновляем текстовое описание
-                                        //textDown.textContent += "Киллер:" + randomKiller.name_ru;
-                                        console.log("3   "+randomItems[0].photo_main);
-                                        // Обновляем изображение в photo-placeholder
-                                        if (randomItems[0].photo_main) {
-                                            const addon1ImagePath = `ItemAddons/${randomItems[0].photo_main}`;
-                                            photoAddonPlaceholderImg1.src = addon1ImagePath;
-                                        } else {
-                                            photoPlaceholderImg.src = 'default/image/path.png';
-                                        }
-                                        if (randomItems[1].photo_main) {
-                                            const addon1ImagePath = `ItemAddons/${randomItems[1].photo_main}`;
-                                            photoAddonPlaceholderImg2.src = addon1ImagePath;
-                                        } else {
-                                            photoPlaceholderImg.src = 'default/image/path.png';
-                                        }  
-                                        
-                                        if(randomItems.number == 100000){
-                                        
-            
-                                        }else{
-                                            
-                                        }
-                                                                     
-            
-                                    } else {
-                                        textOverlay.textContent = 'Данные не найдены';
-                                    }
-                                })
-                                .catch(error => {
-                                    console.error('Ошибка при загрузке JSON:', error);
-                                    textOverlay.textContent = 'Ошибка загрузки';
-                                });
-                            }
                                                          
 
                         } else {
@@ -583,6 +540,55 @@
                         textOverlay.textContent = 'Ошибка загрузки';
                     });
                     
+                    
+                    
+                    if(randomItems.number == 100000){
+
+                    }else{
+                        fetch('data/ItemAddons.json')  // Замените на фактический путь к вашему JSON
+                        .then(response => response.json())
+                        .then(data => {
+                            
+                            let ItemAddonsList = data.ItemAddons;
+                                    
+                            if (ItemAddonsList.length > 0) {
+                                const randomItems = getRandomItemsAddons(itensList);
+                                // Обновляем текстовое описание
+                                //textDown.textContent += "Киллер:" + randomKiller.name_ru;
+                                console.log("3   "+randomItems[0].photo_main);
+                                // Обновляем изображение в photo-placeholder
+                                if (randomItems[0].photo_main) {
+                                    const addon1ImagePath = `ItemAddons/${randomItems[0].photo_main}`;
+                                    photoAddonPlaceholderImg1.src = addon1ImagePath;
+                                } else {
+                                    photoPlaceholderImg.src = 'default/image/path.png';
+                                }
+                                if (randomItems[1].photo_main) {
+                                    const addon1ImagePath = `ItemAddons/${randomItems[1].photo_main}`;
+                                    photoAddonPlaceholderImg2.src = addon1ImagePath;
+                                } else {
+                                    photoPlaceholderImg.src = 'default/image/path.png';
+                                }  
+                                
+                                if(randomItems.number == 100000){
+                                
+    
+                                }else{
+                                    
+                                }
+                                                             
+    
+                            } else {
+                                textOverlay.textContent = 'Данные не найдены';
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Ошибка при загрузке JSON:', error);
+                            textOverlay.textContent = 'Ошибка загрузки';
+                        });
+                    }
+
+
                     fetch('data/perks.json')  // Замените на фактический путь к вашему JSON
                     .then(response => response.json())
                     .then(data => {
