@@ -501,20 +501,15 @@
                     .then(data => {
                         
                         let itensList = data.items;
-                        
-                        console.log("itensList.photo_main = ");
-                        console.log(itensList[1].photo_main);
-                        
+                                
                         if (itensList.length > 0) {
                             const randomItems = getRandomItems(itensList);
                             // Обновляем текстовое описание
                             //textDown.textContent += "Киллер:" + randomKiller.name_ru;
-                            console.log("itensList.photo_main = ");
-                            console.log(itensList[1].photo_main);
                             
                             // Обновляем изображение в photo-placeholder
-                            if (itensList.photo_main) {
-                                const skillsImagePath = `Items/${itensList.photo_main}`;
+                            if (itensList[1].photo_main) {
+                                const skillsImagePath = `Items/${itensList[1].photo_main}`;
                                 photoPlaceholderImg.src = skillsImagePath;
                             } else {
                                 photoPlaceholderImg.src = 'default/image/path.png';
