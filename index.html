@@ -531,7 +531,7 @@
 
                             }else{
                                 fetch('data/ItemAddons.json')  // Замените на фактический путь к вашему JSON
-                                .then(response => response.json())
+                                .then(response2 => response2.json())
                                 .then(data2 => {
                                     
                                     let ItemAddonsList = data2.ItemAddons;
@@ -540,7 +540,7 @@
                                         const randomItems = getRandomItemsAddons(itensList);
                                         // Обновляем текстовое описание
                                         //textDown.textContent += "Киллер:" + randomKiller.name_ru;
-                                        console.log("2   "+randomItems[0].photo_main);
+                                        console.log("3   "+randomItems[0].photo_main);
                                         // Обновляем изображение в photo-placeholder
                                         if (randomItems[0].photo_main) {
                                             const addon1ImagePath = `ItemAddons/${randomItems[0].photo_main}`;
