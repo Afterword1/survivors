@@ -1,0 +1,41 @@
+{
+  "survs": [
+      {
+        "number": 0,
+        "name_ru": "Дуайт Фэйрфилд",
+        "name_en": "Dwight Fairfield",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"storeBackground_DF.png",
+        "rang":0
+      },{
+        "number": 1,
+        "name_ru": "Мэг Томас",
+        "name_en": "Meg Thomas",
+        "perks1": 3,
+        "perks2": 4,
+        "perks3": 5,
+        "photo_main":"storeBackground_MT.png",
+        "rang":0
+      },{
+        "number": 2,
+        "name_ru": "Клодетт Морель",
+        "name_en": "Claudette Morel",
+        "perks1": 6,
+        "perks2": 7,
+        "perks3": 8,
+        "photo_main":"storeBackground_CM.png",
+        "rang":0
+      },{
+        "number": 3,
+        "name_ru": "Джейк Парк",
+        "name_en": "Jake Park",
+        "perks1": 6,
+        "perks2": 7,
+        "perks3": 8,
+        "photo_main":"storeBackground_JP.png",
+        "rang":0
+      }
+    ]
+  }
