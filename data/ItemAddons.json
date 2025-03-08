@@ -92,32 +92,32 @@
         "rang":2,
         "tipe":0
       },{
-        "number": 4,
-        "name_ru": "Аптечка первой помощи",
-        "name_en": "Emergency Med-Kit",
-        "photo_main":"iconItems_firstAidKit.png",
-        "rang":1,
+        "number": 13,
+        "name_ru": "Самоклеющиеся бинты",
+        "name_en": "Self Adherent Wrap",
+        "photo_main":"iconAddon_selfAdherentWrap.png",
+        "rang":3,
         "tipe":1
       },{
-        "number": 4,
-        "name_ru": "Аптечка первой помощи",
-        "name_en": "Emergency Med-Kit",
-        "photo_main":"iconItems_firstAidKit.png",
+        "number": 14,
+        "name_ru": "Бинты",
+        "name_en": "Gauze Roll",
+        "photo_main":"iconAddon_gauseRoll.png",
+        "rang":2,
+        "tipe":1
+      },{
+        "number": 15,
+        "name_ru": "Повязки",
+        "name_en": "Bandages",
+        "photo_main":"iconAddon_bandages.png",
+        "rang":4,
+        "tipe":1
+      },{
+        "number": 16,
+        "name_ru": "Гелевые повязки",
+        "name_en": "Gel Dressings",
+        "photo_main":"iconAddon_gelDressings.png",
         "rang":0,
-        "tipe":1
-      },{
-        "number": 4,
-        "name_ru": "Аптечка первой помощи",
-        "name_en": "Emergency Med-Kit",
-        "photo_main":"iconItems_firstAidKit.png",
-        "rang":3,
-        "tipe":1
-      },{
-        "number": 4,
-        "name_ru": "Аптечка первой помощи",
-        "name_en": "Emergency Med-Kit",
-        "photo_main":"iconItems_firstAidKit.png",
-        "rang":3,
         "tipe":1
       },{
         "number": 100000,
