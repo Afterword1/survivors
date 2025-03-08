@@ -124,14 +124,14 @@
         "name_ru": "Пусто",
         "name_en": "Empty",
         "photo_main":"empty.png",
-        "rang":1,
+        "rang":5,
         "tipe":100000
       },{
         "number": 100000,
         "name_ru": "Пусто",
         "name_en": "Empty",
         "photo_main":"empty.png",
-        "rang":1,
+        "rang":5,
         "tipe":100000
       }
     ]
