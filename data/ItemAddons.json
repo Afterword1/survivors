@@ -1,0 +1,131 @@
+{
+  "ItemAddons": [
+      {
+        "number": 0,
+        "name_ru": "Аккумулятор с мощным зарядом",
+        "name_en": "Long Life Battery",
+        "photo_main":"iconAddon_longLifeBattery.png",
+        "rang":2,
+        "tipe":0
+      },{
+        "number": 1,
+        "name_ru": "Сверхмощная батарейка",
+        "name_en": "Heavy Duty",
+        "photo_main":"iconAddon_heavyDutyBattery.png",
+        "rang":3,
+        "tipe":0
+      },{
+        "number": 2,
+        "name_ru": "Батарейка",
+        "name_en": "Battery",
+        "photo_main":"iconAddon_battery.png",
+        "rang":4,
+        "tipe":0
+      },{
+        "number": 3,
+        "name_ru": "Тонкая нить накаливания",
+        "name_en": "Low Amp Filament",
+        "photo_main":"iconAddon_threadedFilament.png",
+        "rang":3,
+        "tipe":0
+      },{
+        "number": 4,
+        "name_ru": "Странная лампочка",
+        "name_en": "Odd Bulb",
+        "photo_main":"iconAddon_oddBulb.png",
+        "rang":0,
+        "tipe":0
+      },{
+        "number": 5,
+        "name_ru": "Кожаная рукоять",
+        "name_en": "Leather Grip",
+        "photo_main":"iconAddon_leatherGrip.png",
+        "rang":4,
+        "tipe":0
+      },{
+        "number": 6,
+        "name_ru": "Фокусирующая линза",
+        "name_en": "Focus Lens",
+        "photo_main":"iconAddon_focusLens.png",
+        "rang":3,
+        "tipe":0
+      },{
+        "number": 7,
+        "name_ru": "Электроламп",
+        "name_en": "Power Bulb",
+        "photo_main":"iconAddon_powerBulb.png",
+        "rang":4,
+        "tipe":0
+      },{
+        "number": 8,
+        "name_ru": "Широкоугольные линзы",
+        "name_en": "Wide Lens",
+        "photo_main":"iconAddon_wideLens.png",
+        "rang":4,
+        "tipe":0
+      },{
+        "number": 9,
+        "name_ru": "Tir оптика",
+        "name_en": "Tir Optic",
+        "photo_main":"iconAddon_tirOptic.png",
+        "rang":3,
+        "tipe":0
+      },{
+        "number": 10,
+        "name_ru": "Резиновая рукоятка",
+        "name_en": "Rubber Grip",
+        "photo_main":"iconAddon_rubberGrip.png",
+        "rang":3,
+        "tipe":0
+      },{
+        "number": 11,
+        "name_ru": "Интенсивный галоген",
+        "name_en": "Intense Halogen",
+        "photo_main":"iconAddon_intenseHalogen.png",
+        "rang":2,
+        "tipe":0
+      },{
+        "number": 12,
+        "name_ru": "Высококлассные сапфировые линзы",
+        "name_en": "High-End Sapphire Lens",
+        "photo_main":"iconAddon_highEndSapphireLens.png",
+        "rang":2,
+        "tipe":0
+      },{
+        "number": 4,
+        "name_ru": "Аптечка первой помощи",
+        "name_en": "Emergency Med-Kit",
+        "photo_main":"iconItems_firstAidKit.png",
+        "rang":1,
+        "tipe":1
+      },{
+        "number": 4,
+        "name_ru": "Аптечка первой помощи",
+        "name_en": "Emergency Med-Kit",
+        "photo_main":"iconItems_firstAidKit.png",
+        "rang":0,
+        "tipe":1
+      },{
+        "number": 4,
+        "name_ru": "Аптечка первой помощи",
+        "name_en": "Emergency Med-Kit",
+        "photo_main":"iconItems_firstAidKit.png",
+        "rang":3,
+        "tipe":1
+      },{
+        "number": 4,
+        "name_ru": "Аптечка первой помощи",
+        "name_en": "Emergency Med-Kit",
+        "photo_main":"iconItems_firstAidKit.png",
+        "rang":3,
+        "tipe":1
+      },{
+        "number": 100000,
+        "name_ru": "Пусто",
+        "name_en": "Empty",
+        "photo_main":"empty.png",
+        "rang":1,
+        "tipe":1
+      }
+    ]
+  }
