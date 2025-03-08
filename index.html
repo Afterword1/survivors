@@ -386,6 +386,8 @@
             const textOverlay = document.querySelector('.text-overlay');
             const nonSquarePhotoImg = document.getElementById('non-square-photo-img');
             const photoPlaceholderImg = document.getElementById('photo-placeholder-img');
+            const photoPlaceholderImg0 = document.getElementById('photo-addonplaceholder00-img');
+
             const photoAddonPlaceholderImg1 = document.getElementById('photo-addonplaceholder1-img');
             const photoAddonPlaceholderImg2 = document.getElementById('photo-addonplaceholder2-img');
             const photoAddonPlaceholderImg11 = document.getElementById('photo-addonplaceholder11-img');
@@ -508,6 +510,7 @@
                     });
 
                     let ItemAddonsCheck = true;
+                    let tipeItem = 0;
 
                     fetch('data/itens.json')  // Замените на фактический путь к вашему JSON
                     .then(response => response.json())
@@ -524,11 +527,16 @@
                             if (randomItems.photo_main) {
                                 const skillsImagePath = `Items/${randomItems.photo_main}`;
                                 photoPlaceholderImg.src = skillsImagePath;
+
+                                const addon11ImagePath = `ItemAddons/addon${randomItems.rang}.png`;
+                                photoPlaceholderImg0.src = addon11ImagePath;
+
                             } else {
                                 photoPlaceholderImg.src = 'default/image/path.png';
                             } 
-                            console.log(randomItems.number);
-                            
+                            console.log(randomItems.tipe);
+                            tipeItem = randomItems.tipe;
+
                             if(randomItems.number === 100000){
                                 ItemAddonsCheck = false;
                             }else{
