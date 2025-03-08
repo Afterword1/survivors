@@ -506,10 +506,10 @@
                             const randomItems = getRandomItems(itensList);
                             // Обновляем текстовое описание
                             //textDown.textContent += "Киллер:" + randomKiller.name_ru;
-                            
+                            console.log("0");
                             // Обновляем изображение в photo-placeholder
-                            if (itensList[1].photo_main) {
-                                const skillsImagePath = `Items/${itensList[1].photo_main}`;
+                            if (randomItems.photo_main) {
+                                const skillsImagePath = `Items/${randomItems.photo_main}`;
                                 photoPlaceholderImg.src = skillsImagePath;
                             } else {
                                 photoPlaceholderImg.src = 'default/image/path.png';
