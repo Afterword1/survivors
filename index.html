@@ -449,6 +449,17 @@
             }
 
             // Функция для получения четырех случайных разных перков
+            function getRandomItemsAddons(perks, emptyChecked) {
+                // Если галочка "empty-addons" НЕ установлена
+                if (!emptyChecked) {
+                    // Удаляем последние 4 перка
+                    perks.splice(-2);
+                }
+                const shuffledAddons = [...perks].sort(() => 0.5 - Math.random());
+                return [shuffledAddons[0], shuffledAddons[1]];
+            }
+
+            // Функция для получения четырех случайных разных перков
             function getForRandomOfferings(Offerings, emptyChecked) {
                 // Если галочка "empty-addons" НЕ установлена
                 if (!emptyChecked) {
@@ -513,8 +524,55 @@
                                 photoPlaceholderImg.src = skillsImagePath;
                             } else {
                                 photoPlaceholderImg.src = 'default/image/path.png';
+                            } 
+                            
+                            if(randomItems.number == 100000){
+                            
+
+                            }else{
+                                fetch('data/ItemAddons.json')  // Замените на фактический путь к вашему JSON
+                                .then(response => response.json())
+                                .then(data => {
+                                    
+                                    let ItemAddonsList = data.ItemAddons;
+                                            
+                                    if (ItemAddonsList.length > 0) {
+                                        const randomItems = getRandomItemsAddons(itensList);
+                                        // Обновляем текстовое описание
+                                        //textDown.textContent += "Киллер:" + randomKiller.name_ru;
+                                        console.log("1");
+                                        // Обновляем изображение в photo-placeholder
+                                        if (randomItems[0].photo_main) {
+                                            const addon1ImagePath = `ItemAddons/${randomItems[0].photo_main}`;
+                                            photoAddonPlaceholderImg1.src = addon1ImagePath;
+                                        } else {
+                                            photoPlaceholderImg.src = 'default/image/path.png';
+                                        }
+                                        if (randomItems[1].photo_main) {
+                                            const addon1ImagePath = `ItemAddons/${randomItems[1].photo_main}`;
+                                            photoAddonPlaceholderImg2.src = addon1ImagePath;
+                                        } else {
+                                            photoPlaceholderImg.src = 'default/image/path.png';
+                                        }  
+                                        
+                                        if(randomItems.number == 100000){
+                                        
+            
+                                        }else{
+                                            
+                                        }
+                                                                     
+            
+                                    } else {
+                                        textOverlay.textContent = 'Данные не найдены';
+                                    }
+                                })
+                                .catch(error => {
+                                    console.error('Ошибка при загрузке JSON:', error);
+                                    textOverlay.textContent = 'Ошибка загрузки';
+                                });
                             }
-                               
+                                                         
 
                         } else {
                             textOverlay.textContent = 'Данные не найдены';
