@@ -519,7 +519,7 @@
                             const randomItems = getRandomItems(itensList);
                             // Обновляем текстовое описание
                             //textDown.textContent += "Киллер:" + randomKiller.name_ru;
-                            console.log("0");
+                            //console.log("0");
                             // Обновляем изображение в photo-placeholder
                             if (randomItems.photo_main) {
                                 const skillsImagePath = `Items/${randomItems.photo_main}`;
@@ -528,12 +528,11 @@
                                 photoPlaceholderImg.src = 'default/image/path.png';
                             } 
                             console.log(randomItems.number);
+                            
                             if(randomItems.number === 100000){
                                 ItemAddonsCheck = false;
-                                console.log("Условие выполнено!");
                             }else{
                                 ItemAddonsCheck = true;
-                                console.log("Условие не выполнено!");
                             }
                                                          
 
@@ -544,9 +543,7 @@
                     .catch(error => {
                         console.error('Ошибка при загрузке JSON:', error);
                         textOverlay.textContent = 'Ошибка загрузки';
-                    });
-                    
-                    
+                    });                
                     
                     
                     fetch('data/ItemAddons.json')  // Замените на фактический путь к вашему JSON
@@ -560,6 +557,8 @@
                             // Обновляем текстовое описание
                             //textDown.textContent += "Киллер:" + randomKiller.name_ru;
                             console.log("5    "+randomItems[0].photo_main);
+                            console.log("6    "+randomItems[1].photo_main);
+
                             // Обновляем изображение в photo-placeholder
                             if (randomItems[0].photo_main) {
                                 const addon1ImagePath = `ItemAddons/${randomItems[0].photo_main}`;
