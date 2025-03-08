@@ -462,6 +462,27 @@
             }
 
             // Функция для получения четырех случайных разных перков
+            function getItemsAddonsTipe(perks, nomber) {
+                // Проверяем, что perks является массивом
+                if (!Array.isArray(perks)) {
+                    console.error("perks должен быть массивом");
+                    return [];
+                }
+
+                // Фильтруем элементы, оставляя только те, у которых .tipe совпадает с nomber
+                let filteredItems = perks.filter((item, index, array) => {
+                    // Оставляем два последних элемента всегда
+                    if (index >= array.length - 2) {
+                        return true;
+                    }
+                    // Для остальных элементов проверяем .tipe
+                    return item.tipe === nomber;
+                });
+
+                return filteredItems;
+            }
+
+            // Функция для получения четырех случайных разных перков
             function getForRandomOfferings(Offerings, emptyChecked) {
                 // Если галочка "empty-addons" НЕ установлена
                 if (!emptyChecked) {
@@ -561,7 +582,8 @@
                         let ItemAddonsList = data.ItemAddons;
                                 
                         if (ItemAddonsList.length > 0&ItemAddonsCheck) {
-                            const randomItems = getRandomItemsAddons(ItemAddonsList);
+                            const randomItems2 = getItemsAddonsTipe(ItemAddonsList,tipeItem);
+                            const randomItems = getRandomItemsAddons(randomItems2);
                             // Обновляем текстовое описание
                             //textDown.textContent += "Киллер:" + randomKiller.name_ru;
                             console.log("5    "+randomItems[0].photo_main);
