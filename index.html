@@ -542,7 +542,7 @@
                         let itensList = data.items;
                                 
                         if (itensList.length > 0) {
-                            const randomItems = getRandomItems(itensList);
+                            const randomItems = getRandomItems(itensList, document.getElementById('empty-items').checked);
                             // Обновляем текстовое описание
                             //textDown.textContent += "Киллер:" + randomKiller.name_ru;
                             //console.log("0");
@@ -636,6 +636,13 @@
                                                             
                         }else{
                             //нет предмета
+                            const addon1ImagePath = `Items/empty.png`;
+                            const addon11ImagePath = `ItemAddons/addon5.png`;
+                            
+                            photoAddonPlaceholderImg1.src = addon1ImagePath;
+                            photoAddonPlaceholderImg11.src = addon11ImagePath;
+                            photoAddonPlaceholderImg2.src = addon1ImagePath;
+                            photoAddonPlaceholderImg22.src = addon11ImagePath; 
                         }
                         } else {
                             textOverlay.textContent = 'Данные не найдены';
