@@ -473,20 +473,19 @@
                 let result = [];
 
                 // Перебираем элементы массива perks
-                for (let i = 0; i < perks.length; i++) {
-                    console.log(perks[i]);
-                    // Если это один из двух последних элементов, добавляем его в результат
-                    if (i >= perks.length - 2) {
-                        console.log('-2');
+                for (let i = 0; i < perks.length-2; i++) {
+                    // Для остальных элементов проверяем, совпадает ли .tipe с nomber
+                    if (perks[i].tipe === nomber) {
+                        console.log(perks[i]);
+                        console.log('совпало');
                         result.push(perks[i]);
-                    } else {
-                        // Для остальных элементов проверяем, совпадает ли .tipe с nomber
-                        if (perks[i].tipe === nomber) {
-                            console.log('совпало');
-                            result.push(perks[i]);
-                        }
                     }
                 }
+
+                // Добавляем два последних элемента perks в result
+                let lastTwoPerks = perks.slice(-2); // Получаем два последних элемента
+                result = result.concat(lastTwoPerks); // Добавляем их в result
+                
                 console.log(result);
                 return result;
             }
