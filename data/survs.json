@@ -36,6 +36,375 @@
         "perks3": 8,
         "photo_main":"storeBackground_JP.png",
         "rang":0
+      },{
+        "number": 4,
+        "name_ru": "Нея Карлссон",
+        "name_en": "Nea Karlsson",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"storeBackground_NK.png",
+        "rang":0
+      },{
+        "number": 5,
+        "name_ru": "Лори Строуд",
+        "name_en": "Laurie Strode",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"storeBackground_LS.png",
+        "rang":0
+      },{
+        "number": 6,
+        "name_ru": "Эйс Висконти",
+        "name_en": "Ace Visconti",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"storeBackground_AV.png",
+        "rang":0
+      },{
+        "number": 7,
+        "name_ru": "Уильям \"Билл\" Овербек",
+        "name_en": "Feng Min",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"storeBackground_BO.png",
+        "rang":0
+      },{
+        "number": 8,
+        "name_ru": "Фенг Мин",
+        "name_en": "Dwight Fairfield",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"storeBackground_FM.png",
+        "rang":0
+      },{
+        "number": 9,
+        "name_ru": "Дэвид Кинг",
+        "name_en": "David King",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"storeBackground_DK.png",
+        "rang":0
+      },{
+        "number": 10,
+        "name_ru": "Квентин Смит",
+        "name_en": "Quentin Smith",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"storeBackground_QS.png",
+        "rang":0
+      },{
+        "number": 11,
+        "name_ru": "Детектив Дэвид Тэпп",
+        "name_en": "David Tapp, detective",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"storeBackground_FS.png",
+        "rang":0
+      },{
+        "number": 12,
+        "name_ru": "Кейт Денсон",
+        "name_en": "Kate Denson",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"storeBackground_GS.png",
+        "rang":0
+      },{
+        "number": 13,
+        "name_ru": "Адам Фрэнсис",
+        "name_en": "Adam Francis",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"storeBackground_AF.png",
+        "rang":0
+      },{
+        "number": 14,
+        "name_ru": "Джефф Йохансен",
+        "name_en": "Jeff Johansen",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"storeBackground_KS.png",
+        "rang":0
+      },{
+        "number": 15,
+        "name_ru": "Джейн Ромеро",
+        "name_en": "Jane Romero",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"storeBackground_MS.png",
+        "rang":0
+      },{
+        "number": 16,
+        "name_ru": "Эшли Джей Уильямс",
+        "name_en": "Ashley J. Williams",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"storeBackground_ML.png",
+        "rang":0
+      },{
+        "number": 17,
+        "name_ru": "Стив Харрингтон",
+        "name_en": "Steve Harrington",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"QM_storeBackground.png",
+        "rang":0
+      },{
+        "number": 18,
+        "name_ru": "Нэнси Уиллер",
+        "name_en": "Nancy Wheeler",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"QF_storeBackground.png",
+        "rang":0
+      },{
+        "number": 19,
+        "name_ru": "Юи Кимура",
+        "name_en": "Yui Kimura",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"SS_storeBackground.png",
+        "rang":0
+      },{
+        "number": 20,
+        "name_ru": "Зарина Кассир",
+        "name_en": "Zarina Kassir",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"US_storeBackground.png",
+        "rang":0
+      },{
+        "number": 21,
+        "name_ru": "Шерил Мейсон",
+        "name_en": "Cheryl Mason",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S22_storeBackground.png",
+        "rang":0
+      },{
+        "number": 22,
+        "name_ru": "Феликс Рихтер",
+        "name_en": "DFelix Richter",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S23_storeBackground.png",
+        "rang":0
+      },{
+        "number": 23,
+        "name_ru": "Элоди Ракото",
+        "name_en": "Elodie Rakoto",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S24_storeBackground.png",
+        "rang":0
+      },{
+        "number": 24,
+        "name_ru": "Ли Юнчин",
+        "name_en": "Yun-Jin Lee",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S25_storeBackground.png",
+        "rang":0
+      },{
+        "number": 25,
+        "name_ru": "Джилл Валентайн",
+        "name_en": "Jill Valentine",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S26_storeBackground.png",
+        "rang":0
+      },{
+        "number": 26,
+        "name_ru": "Леон Скотт Кеннеди",
+        "name_en": "Leon Scott Kennedy",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S27_storeBackground.png",
+        "rang":0
+      },{
+        "number": 27,
+        "name_ru": "Микаэла Рид",
+        "name_en": "Mikaela Reid",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S28_storeBackground.png",
+        "rang":0
+      },{
+        "number": 28,
+        "name_ru": "Хонас Васкес",
+        "name_en": "Jonah Vasquez",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S29_storeBackground.png",
+        "rang":0
+      },{
+        "number": 29,
+        "name_ru": "Ёити Асакава",
+        "name_en": "Yoichi Asakawa",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S30_storeBackground.png",
+        "rang":0
+      },{
+        "number": 30,
+        "name_ru": "Хэдди Каур",
+        "name_en": "Haddie Kaur",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S31_storeBackground.png",
+        "rang":0
+      },{
+        "number": 31,
+        "name_ru": "Ада Вонг",
+        "name_en": "Ada Wong",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S32_storeBackground.png",
+        "rang":0
+      },{
+        "number": 32,
+        "name_ru": "Ребекка Чемберс",
+        "name_en": "Rebecca Chambers",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S33_storeBackground.png",
+        "rang":0
+      },{
+        "number": 33,
+        "name_ru": "Витторио Тоскано",
+        "name_en": "Vittorio Toscano",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S34_storeBackground.png",
+        "rang":0
+      },{
+        "number": 34,
+        "name_ru": "Талита Лира",
+        "name_en": "Thalita Lyra",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S35_storeBackground.png",
+        "rang":0
+      },{
+        "number": 35,
+        "name_ru": "Ренато Лира",
+        "name_en": "Renato Lyra",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S36_storeBackground.png",
+        "rang":0
+      },{
+        "number": 36,
+        "name_ru": "Габриэль Сома",
+        "name_en": "Gabriel Soma",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S37_storeBackground.png",
+        "rang":0
+      },{
+        "number": 37,
+        "name_ru": "Николас Кейдж",
+        "name_en": "Nicolas Cage",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S38_storeBackground.png",
+        "rang":0
+      },{
+        "number": 38,
+        "name_ru": "Эллен Рипли",
+        "name_en": "Ellen Ripley",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S39_storeBackground.png",
+        "rang":0
+      },{
+        "number": 39,
+        "name_ru": "Алан Уэйк",
+        "name_en": "Alan Wake",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S40_storeBackground.png",
+        "rang":0
+      },{
+        "number": 40,
+        "name_ru": "Сейбл Уорд",
+        "name_en": "Sable Ward",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S41_storeBackground.png",
+        "rang":0
+      },{
+        "number": 41,
+        "name_ru": "Аэстри Язар",
+        "name_en": "Aestri Yazar",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S42_storeBackground.png",
+        "rang":0
+      },{
+        "number": 42,
+        "name_ru": "Лара Крофт",
+        "name_en": "Lara Croft",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S43_storeBackground.png",
+        "rang":0
+      },{
+        "number": 43,
+        "name_ru": "Тревор Бельмонт",
+        "name_en": "Trevor Belmont",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"S44_storeBackground.png",
+        "rang":0
+      },{
+        "number": 44,
+        "name_ru": "Тори Кейн",
+        "name_en": "Taurie Cain",
+        "perks1": 0,
+        "perks2": 1,
+        "perks3": 2,
+        "photo_main":"DBD_GELATO_WEBPAGE_Character_Page_SURVIVOR_ONLY_923529776d.png",
+        "rang":0
       }
     ]
   }
