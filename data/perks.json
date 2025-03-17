@@ -1,114 +1,1495 @@
 {
   "Killers_perks": [
-      {
-        "number": 0,
-        "name_ru": "Прояви себя",
-        "name_en": "Prove Thyself",
-        "description_ru":"Каждый другой выживший, работающий с генератором в радиусе 4м, повышает скорость починки на {процентов}. Такой же бонус дается всем прочим выжившим в радиусе действия. Единовременно на выжившего может действовать только один такой эффект. I уровень 6%,II уровень 8%,III уровень 10%",
-        "description_en":"Increases the Repair speed by a stack-able 6/8/10 % per other Survivor within 4 metres of your location, up to a maximum of 18/24/30 %. Prove Thyself extends its effect to all Survivors within its range.",
-        "photo_main":"iconPerks_ProveThyself.png",
-        "rang":0,
-        "DLS":0
-      },{
-        "number": 1,
-        "name_ru": "Лидер",
-        "name_en": "Leader",
-        "description_ru":"Вы умеете добиться от своей команды эффективной совместной работы. В радиусе 8 м от вас на {процентов} повышается скорость следующих действий: лечение, поломка, снятие с крюков, очищение, открытие ворот и сундуков. Одновременно может действовать только один эффект лидерства. Эффект сохраняется на Выживших вне радиуса воздействия лидера в течение 15 сек. I уровень 15% II уровень 20% III уровень 25%.",
-        "description_en":"",
-        "photo_main":"iconPerks_Leader.png",
-        "rang":0,
-        "DLS":0
-      },{
-        "number": 2,
-        "name_ru": "Связь",
-        "name_en": "Bond",
-        "description_ru":"У вас появляется способность чтения ауры. Вы видите ауры союзников в радиусе {метров}. I уровень 20 метров II уровень 28 метров III уровень 36 метров",
-        "description_en":"",
-        "photo_main":"iconPerks_Bond.png",
-        "rang":0,
-        "DLS":0
-      },{
-        "number": 3,
-        "name_ru": "Адреналин ",
-        "name_en": "Adrenaline",
-        "description_ru":"ВКогда вы на грани побега, Вас подпитывает внезапный прилив энергии. Навык активируется при подаче питания на ворота. Мгновенно исцеляет одно состояние здоровья (из смертельно раненого в раненого или из раненого в здорового), увеличивает скорость бега до 150% от вашей обычной скорости в течение 3 секунд. Вызывает усталость на {секунд}. \"Усталость\" не дает выжившим активировать утомляющие навыки. I уровень 60 секунд II уровень 50 секунд III уровень 40 секунд",
-        "description_en":"",
-        "photo_main":"iconPerks_Adrenaline.png",
-        "rang":0,
-        "DLS":1
-      },{
-        "number": 4,
-        "name_ru": "Быстрый и тихий",
-        "name_en": "Quick & Quiet",
-        "description_ru":"Вы шумите не так сильно, как другие, когда быстро перепрыгиваете через препятствия или прячетесь в шкафчиках. Радиус обнаружения этих шумов снижается на 100%. Этот эффект может сработать только один раз в {секунд}. I уровень 30 сек. II уровень 25 сек. III уровень 20 сек.",
-        "description_en":"",
-        "photo_main":"iconPerks_QuickAndQuiet.png",
-        "rang":0,
-        "DLS":1
-      },{
-        "number": 5,
-        "name_ru": "Спринтер",
-        "name_en": "Sprint Burst",
-        "description_ru":"Спринтуйте со скоростью в 150% от обычного бега в течение 3-х секунд. Накладывает эффект \"Усталость\" на {секунд}. Навык \"Спринтер\" невозможно использовать во время усталости. Вы не можете снять усталость во время бега. \"Усталость\" не дает выжившим активировать утомляющие навыки. I уровень 60 сек. II уровень 50 сек. III уровень 40 сек.",
-        "description_en":"",
-        "photo_main":"iconPerks_SprintBurst.png",
-        "rang":0,
-        "DLS":1
-      },{
-        "number": 6,
-        "name_ru": "Сам себе доктор",
-        "name_en": "Self Care",
-        "description_ru":"У Вас появляется способность лечить себя без аптечки, но со скоростью {процентов} от обычной скорости лечения. I 25% уровень II уровень 30% III уровень 35%.",
-        "description_en":"",
-        "photo_main":"iconPerks_SelfCare.png",
-        "rang":0,
-        "DLS":2
-      },{
-        "number": 7,
-        "name_ru": "Познания в ботанике",
-        "name_en": "Botany Knowledge",
-        "description_ru":"Вы умеете изготавливать замедляющие кровотечение настойки из растений, растущих вокруг лагеря. Скорость лечения увеличивается на {процентов}. Эффективность лечебных предметов снижается на 20%. I уровень 30% II уровень 40% III уровень 50%.",
-        "description_en":"",
-        "photo_main":"iconPerks_BotanyKnowledge.png",
-        "rang":0,
-        "DLS":2
-      },{
-        "number": 8,
-        "name_ru": "Сострадание",
-        "name_en": "Empathy",
-        "description_ru":"У Вас появляется способность чтения ауры. Вы видите ауры умирающих или травмированных союзников в радиусе {метров} от вас. \"Сострадание\" не позволяет видеть ауры союзников, когда те находятся в прямом контакте с убийцей. I уровень 64 метра II уровень 96 метров III уровень 128 метров",
-        "description_en":"",
-        "photo_main":"iconPerks_Empathy.png",
-        "rang":0,
-        "DLS":2
-      },{
-        "number": 9,
-        "name_ru": "Спокойствие духа",
-        "name_en": "Calm Spirit",
-        "description_ru":"Похоже, животные доверяют вам, поскольку зачастую сохраняют спокойствие в вашем присутствии. Уменьшает шансы спугнуть лесных обитателей на 100%. Спокойствие вашего духа позволяет сдерживать желание закричать. Позволяет открывать сундуки и очищать/благословлять тотемы беззвучно, но скорость снижается на {процентов} I уровень 40% II уровень 35% III уровень 30%.",
-        "description_en":"",
-        "photo_main":"iconPerks_CalmSpirit.png",
-        "rang":0,
-        "DLS":3
-      },{
-        "number": 10,
-        "name_ru": "Железная воля",
-        "name_en": "Iron Will",
-        "description_ru":"Вы сможете, сосредоточившись, войти в медитативное состояние, чтобы заглушить боль. Вопли от вызванной травмами боли заглушаются на {процентов}. Не действует во время \"Усталости\". Не вызывает \"Усталость\". \"Усталость\" не дает выжившим активировать утомляющие навыки. I уровень 80% II уровень 90% III уровень 100%.",
-        "description_en":"",
-        "photo_main":"iconPerks_IronWill.png",
-        "rang":0,
-        "DLS":3
-      },{
-        "number": 11,
-        "name_ru": "Крушитель",
-        "name_en": "Saboteur",
-        "description_ru":"У вас появляется способность чтения ауры. Когда убийца несет выжившего, вы видите ауры крюков в радиусе 56 м от места, где подобрали выжившего. Секущие крюки подсвечены желтым. Позволяет ломать крюки без инструментов. Поломка крюка без инструментов занимает 2.3 сек. Повторно выполнить действие поломки можно спустя {секунд}. I уровень 70 сек. II уровень 65 сек. III уровень 60 сек.",
-        "description_en":"",
-        "photo_main":"iconPerks_Saboteur.png",
-        "rang":0,
-        "DLS":3
-      },{
+    {
+      "number": 1,
+      "photo_main": "Temnoe_chuvstvo.png",
+      "name_en": "Dark Sense",
+      "description_en": "Unlocks potential in your Aura-reading ability: Whenever a Generator is completed, Dark Sense activates: The Aura of the Killer is revealed to you for 5/7/10 seconds once they come within 24 metres of your location. Dark Sense deactivates after use. \"Take it from an old-timer: Slow down, don't rush and try not to worry so much! The best way to beat him is to know how he thinks.\" — Murf, The Lost Tapes",
+      "name_ru": "Темное чувство",
+      "description_ru": "У Вас появляется способность чтения ауры. Каждый раз после полной починки генератора активируется \"Темное чутье\". Во время действия \"Темного чутья\" вы будете видеть ауру убийцы в радиусе 24 м в течение {секунд}. После этого вы перестанете видеть ауру, а \"Темное чутье\" отключится. I уровень | II уровень | III уровень 5 сек. | 7 сек. | 10 сек.",
+      "rang": 0,
+      "DLS": "All"
+  },
+  {
+      "number": 2,
+      "photo_main": "Dezhavju.png",
+      "name_en": "Déjà Vu",
+      "description_en": "Paranoia paired with your horror of failure helps prepare you from repeating the same mistakes. Unlocks potential in your Aura-reading ability: The Auras of whichever 3 Generators are currently in closest proximity to one another are revealed to you. Increases your Repair speed on those Generators by 4/5/6 %. Held Map automatically track Auras revealed by Déjà Vu.",
+      "name_ru": "Дежавю",
+      "description_ru": "Вы видите ауры 3 генераторов, находящихся близко друг к другу. Скорость ремонта увиденных генераторов повышается на {процентов}. I уровень | II уровень | III уровень 4% | 5% | 6%",
+      "rang": 0,
+      "DLS": "All"
+  },
+  {
+      "number": 3,
+      "photo_main": "Nadezhda.png",
+      "name_en": "Hope",
+      "description_en": "The growing odds of a successful escape fill you with hope and give you wings. Once the Exit Gates are powered, Hope activates: Grants a permanent 5/6/7 % Haste Status Effect. \"Buckle up, fuckos! Let's roll.\" — Nikki, The Lost Tapes",
+      "name_ru": "Надежда",
+      "description_ru": "Растущие шансы на побег вселяют в вас надежду и окрыляют. После того, как на ворота подано питание, вы получаете эффект \" Спешка \" на {процентов}. \"Спешка\" увеличивает скорость передвижения выжившего. I уровень | II уровень | III уровень 5% | 6% | 7%",
+      "rang": 0,
+      "DLS": "All"
+  },
+  {
+      "number": 4,
+      "photo_main": "Krovnye_uzy.png",
+      "name_en": "Kindred",
+      "description_en": "Unlocks potential in your Aura-reading ability. Whenever any Survivor is hooked, Kindred activates and applies the following effects: The Aura of the Killer is revealed to all Survivors whenever the Killer comes within 8/12/16 metres of the Hook. If you are the Hooked Survivor, the Auras of all Survivors are revealed to each other. If you are not the Hooked Survivor, the Auras of all other Survivors are only revealed to you. \"Be kind to one another, We're all in this together\" — Sujan, The Lost Tapes",
+      "name_ru": "Кровные узы",
+      "description_ru": "У вас появляется способность чтения ауры. Когда вы висите на крюке, все выжившие видят ауры друг друга. Если убийца находится в пределах {метров} от вас, его аура также подсвечивается всем другим выжившим. Когда на крюке висит кто-то другой, вы видите ауры всех остальных выживших. Если убийца находится в пределах {метров} от повешенного на крюк выжившего, вы также видите ауру убийцы. I уровень | II уровень | III уровень 8 метров | 12 метров | 16 метров",
+      "rang": 0,
+      "DLS": "All"
+  },
+  {
+      "number": 5,
+      "photo_main": "Legkoves.png",
+      "name_en": "Lightweight",
+      "description_en": "Your running is light and soft, making your tracks harder to follow. Reduces the Lifetime of your Scratch Marks by 3/4/5 seconds. Reduces the Spawn chance of patches of Scratch Marks by -60 %, making their spacing inconsistent. \"Take it slow, he knows where you have been... just like I have always said: 'live slow and die old'.\" — Dylan, The Lost Tapes",
+      "name_ru": "Легковес",
+      "description_ru": "Ваш бег легок и аккуратен, и вас сложнее отследить. Следы-трещины остаются видимыми на {секунд} меньше и появляются с разными интервалами. I уровень | II уровень | III уровень 3 сек. | 4 сек. | 5 сек.",
+      "rang": 0,
+      "DLS": "All"
+  },
+  {
+      "number": 6,
+      "photo_main": "Nikto_ne_ostalsja_pozadi.png",
+      "name_en": "No One Left Behind",
+      "description_en": "It is inconceivable to leave someone behind. Once the Exit Gates are powered, No One Left Behind activates and applies the following effects: Increases the Action speeds for Healing and Unhooking by 50/75/100 %. Increases the strength and duration of the Haste Status Effect of Survivors unhooked by you by +10 % and +5 seconds respectively. The Auras of all other Survivors are revealed to you. \"Yeah, no shit. But I believe we can outsmart and overthrow him if we work together. Don't be predictable and selfish!\" — Clyde, The Lost Tapes",
+      "name_ru": "Никто не остался позади",
+      "description_ru": "Нельзя оставлять кого-то на произвол судьбы. Как только на ворота подастся питание, на вас будут действовать следующие эффекты: {процент} прибавки к скорости лечения и снятия с крюка других выживших; при снятии выжившего с крюка он получает 10% Спешки на 15 сек.; вы видите ауры всех других выживших. Спешка увеличивает скорость передвижения выжившего. I уровень | II уровень | III уровень 50% | 75% | 100%",
+      "rang": 0,
+      "DLS": "All"
+  },
+  {
+      "number": 7,
+      "photo_main": "Maroderskoe_chut'e.png",
+      "name_en": "Plunderer's Instinct",
+      "description_en": "Unlocks potential in your Aura-reading ability and improves your luck when finding Items in Chests: The Auras of the following objects are revealed to you within 32/48/64 metres: Closed Chests located in the environment. Items sitting inside opened Chests. Items dropped in the environment. Increases the Odds of finding Items of higher Rarities in Chests by +50 %. \"The pioneers used to loot these babies for hours.\" — Aizeyu, The Lost Tapes",
+      "name_ru": "Мародерское чутье",
+      "description_ru": "У вас появляется способность чтения ауры. Показывает неоткрытые сундуки и предметы вокруг в радиусе {метров}. Повышает шансы найти более редкий предмет в сундуке на 50%. I уровень | II уровень | III уровень 32 метров | 48 метров | 64 метров",
+      "rang": 0,
+      "DLS": "All"
+  },
+  {
+      "number": 8,
+      "photo_main": "Predchuvstvie.png",
+      "name_en": "Premonition",
+      "description_en": "You have the undeniable capability to sense danger. Receive an auditory warning when looking in the direction of the Killer within a 45 ° cone and at a maximum range of 36 metres. Premonition has a cool-down of 60/45/30 seconds. \"I have a bad feeling about this!\"",
+      "name_ru": "Предчувствие",
+      "description_ru": "Вы, без сомнения, умеете чувствовать приближающуюся опасность. Вы получаете звуковое предупреждение, когда смотрите в сторону убийцы в секторе с обзором 45 градусов , находясь не более чем в 36 м от него. Предчувствию требуется {секунд} на восстановление после каждой активации. I уровень | II уровень | III уровень 60 сек. | 45 сек. | 30 сек.",
+      "rang": 0,
+      "DLS": "All"
+  },
+  {
+      "number": 9,
+      "photo_main": "Ustojchivost'.png",
+      "name_en": "Resilience",
+      "description_en": "You are motivated in dire situations. Increases the Action speeds for the following interactions by 3/6/9 %: Blessing or Cleansing Totems. Healing yourself or other Survivors. Opening Exit Gates. Repairing Generators. Sabotaging Hooks. Searching Chests. Unhooking other Survivors. Vaulting Windows. \"Focus, even in these desperate times.\"",
+      "name_ru": "Устойчивость",
+      "description_ru": "Вы мотивированы в сложных ситуациях. Дает {процентов} дополнительной скорости при починке, поломке, лечении, снятии с крюка , прыжках через препятствия , очистке или благословении тотемов, открытии ворот и сундуков , пока вы ранены. I уровень | II уровень | III уровень 3% | 6% | 9%",
+      "rang": 0,
+      "DLS": "All"
+  },
+  {
+      "number": 10,
+      "photo_main": "Skol'zkoe_mjaso.png",
+      "name_en": "Slippery Meat",
+      "description_en": "You have developed an efficient way to get off Hooks. Grants the ability to attempt +3 additional Self-Unhooks during the first Hook Stage. Increases the chances to successfully perform a Self-Unhook by 2/3/4 %.",
+      "name_ru": "Скользкое мясо",
+      "description_ru": "Вы разработали эффективный способ спрыгивать с крюков . Дает дополнительные попытки сбежать с крюка (максимум 3). Ваши шансы спрыгнуть с крюка увеличиваются на {процентов}. I уровень | II уровень | III уровень 2% | 3% | 4%",
+      "rang": 0,
+      "DLS": "All"
+  },
+  {
+      "number": 11,
+      "photo_main": "Melkaja_dich'.png",
+      "name_en": "Small Game",
+      "description_en": "You have the undeniable capability to sense danger. Receive an auditory warning upon looking in the direction of Totems in a 45 ° cone within 8/10/12 metres. Small Game has a cool-down of 14/12/10 seconds each time it activates. For each Dull or Hex Totem cleansed by any Player, Small Game is automatically granted 1 Token: Each Token reduces the Detection cone's angle by 5 °, down to a minimum of 20 °. \"Nope.\" — Andy, The Lost Tapes",
+      "name_ru": "Мелкая дичь",
+      "description_ru": "Вы превосходно чувствуете опасность и получаете звуковое предупреждение, когда смотрите в сторону тотемов в радиусе 45 градусов на расстоянии {метров}. Навык \"Мелкая дичь\" можно повторно использовать через {секунд} после каждой активации. За каждый тусклый и проклятый тотем, очищенный любым игроком, вы получаете жетон. Угол обнаружения \"Мелкой дичи\" сужается на 5 градусов за каждый жетон.  | I уровень | II уровень | III уровень Расстояние | 8 метров | 10 метров | 12 метров Время | 15 сек. | 12 сек. | 10 сек.",
+      "rang": 0,
+      "DLS": "All"
+  },
+  {
+      "number": 12,
+      "photo_main": "Murashki_po_spine.png",
+      "name_en": "Spine Chill",
+      "description_en": "An unnatural tingle warns you of impending doom. Whenever the Killer is within 36 metres of your location and looking at you with a clear Line of Sight, Spine Chill activates: Warns of the Killer's proximity and their potential awareness of your location by lighting its icon. Increases your Action speeds for Blessing, Cleansing, Gate-Opening, Healing, Repairing, Sabotaging, Unhooking, and Unlocking by 2/4/6 %. This effect lingers for 0.5 seconds after the Killer loses Line of Sight or exits the Activation range. \"There is a voice that doesn't use words. Listen..\" — Sassy, The Lost Tapes",
+      "name_ru": "Мурашки по спине",
+      "description_ru": "Необычное покалывание предупреждает вас о надвигающейся гибели. Вы будете оповещены, когда убийца находится в радиусе 36 м и смотрит прямо на вас. Ваша скорость починки, поломки, лечения, снятия с крюка, прыжков, [ 1 ] очищения, благословления, открывания ворот и сундуков увеличивается на {процентов}. Действие \"Мурашек по спине\" сохраняется на 0.5 сек. после того, как убийца переведет взгляд или выйдет из радиуса. I уровень | II уровень | III уровень 2% | 4% | 6%",
+      "rang": 0,
+      "DLS": "All"
+  },
+  {
+      "number": 13,
+      "photo_main": "Etomu_ne_byvat'.png",
+      "name_en": "This Is Not Happening",
+      "description_en": "You perform at your best when you are under extreme stress. Increases the Success zone of Great Skill Checks while Repairing and Healing by 10/20/30 % when in the Injured State.",
+      "name_ru": "Этому не бывать",
+      "description_ru": "Вы действуете на пределе возможностей в момент сильного стресса. Когда вы ранены, зона отличной реакции при ее проверке во время починки и лечения увеличивается на {процент}. I уровень | II уровень | III уровень 10% | 20% | 30%",
+      "rang": 0,
+      "DLS": "All"
+  },
+  {
+      "number": 14,
+      "photo_main": "My_spravimsja.png",
+      "name_en": "We'll Make It",
+      "description_en": "Helping others heightens your morale. After unhooking another Survivor, We'll Make It activates: Increases your Altruistic Healing speed by +100 % for 30/60/90 seconds. \"I am confident we can all escape in one piece if we help each other.\"",
+      "name_ru": "Мы справимся",
+      "description_ru": "Вы воодушевляетесь, помогая другим. Снимая выжившего с крюка, вы получаете прирост к скорости лечения других выживших на 100% на {секунд}. I уровень | II уровень | III уровень 30 сек. | 60 сек. | 90 сек.",
+      "rang": 0,
+      "DLS": "All"
+  },
+  {
+      "number": 15,
+      "photo_main": "Tuz_v_rukave.png",
+      "name_en": "Ace in the Hole",
+      "description_en": "Lady Luck always seems to be throwing something good your way. When retrieving an Item from a Chest, there is a chance an Add-on will be attached to it: 100 % chance for an Add-on of Ultra Rare Rarity or lower. 50/75/100 % chance for a second Add-on of Uncommon Rarity or lower. Ace in the Hole allows you to keep any Add-ons your Item has attached to it upon escaping. \"Everything that glitters isn't gold. But gold isn't worth a damn in this place, so this should come in handy.\" — Ace Visconti",
+      "name_ru": "Туз в рукаве",
+      "description_ru": "Госпожа удача всегда подкидывает вам что-нибудь хорошее на пути. При извлечении предмета из сундука есть 100% шанс того, что на нем будет крайне редкое (или менее редкое) улучшение. Шанс {процент} наткнуться на второе улучшение, необычное или менее редкое. При побеге вы сохраняете все улучшения своего предмета. I уровень | II уровень | III уровень 50% | 75% | 100%",
+      "rang": 0,
+      "DLS": "Ace"
+  },
+  {
+      "number": 16,
+      "photo_main": "Igra_v_otkrytuju.png",
+      "name_en": "Open-Handed",
+      "description_en": "Strengthens the potential in your and your team's Aura-reading abilities. Increases the radius of all Aura-reading abilities emanating from yourself or other Survivors by 8/12/16 metres. Survivors can only be affected by one instance of Open-Handed at a time. \"Paying attention is what kept me alive through the years. That, and my good looks of course.\" — Ace Visconti",
+      "name_ru": "Игра в открытую",
+      "description_ru": "Улучшает способность чтения ауры у вас и вашей команды. Увеличивает радиус чтения ауры на {метров}. Одновременно на выживших может действовать только один эффект \"Игры в открытую\" I уровень | II уровень | III уровень 8 метра | 12 метров | 16 метров",
+      "rang": 0,
+      "DLS": "Ace"
+  },
+  {
+      "number": 17,
+      "photo_main": "Povysit'_stavki.png",
+      "name_en": "Up the Ante",
+      "description_en": "All will be well in the end; you just know it. Your confidence strengthens the feeling of hope for those around you. For every Survivor still in the Trial, Up the Ante is granted +1 Token: Increases the Odds of every Survivor succeeding a Self-Unhook attempt by a stack-able 1/2/3 % per Token, up to a maximum of 3/6/9 %. \"What can I say? I'm just a very lucky guy... I'm sure some of it will rub off on you.\" — Ace Visconti",
+      "name_ru": "Повысить ставки",
+      "description_ru": "Все будет хорошо - вы это нутром чуете. Подобная уверенность вселяет надежду и в окружающих. За каждого еще живого выжившего остальные получают бонус - {процентов} к удаче . I уровень | II уровень | III уровень 1% | 2% | 3%",
+      "rang": 0,
+      "DLS": "Ace"
+  },
+  {
+      "number": 18,
+      "photo_main": "Nizhe_travy.png",
+      "name_en": "Low Profile",
+      "description_en": "You work best alone. When it is just you and your pursuer, you know how to disappear. Whenever you are the only Survivor not currently incapacitated by either being downed, carried, or hooked, Low Profile activates: Suppresses your Grunts of Pain and the creation of Pools of Blood and Scratch Marks for 70/80/90 seconds. Low Profile deactivates after use and only accounts for Survivors still participating in the Trial.",
+      "name_ru": "Ниже травы",
+      "description_ru": "Вы предпочитаете работать в одиночку. Оставшись наедине с преследователем, вы знаете как от него скрыться. Этот навык активируется, когда вы остаетесь последним выжившим на ногах. Ваши следы-трещины, лужи крови и стоны от ранений исчезают на {секунд}. I уровень | II уровень | III уровень 70 сек. | 80 сек. | 90 сек.",
+      "rang": 0,
+      "DLS": "Ada"
+  },
+  {
+      "number": 19,
+      "photo_main": "Pospeshnoe_lechenie.png",
+      "name_en": "Reactive Healing",
+      "description_en": "The more the situation becomes compromised, the more determined you become to complete the operation. Whenever another Survivor within 32 metres of your location loses a Health State by any means while you are in the Injured State, you benefit from the following effect: Grants 40/45/50 % of your missing Healing Progression towards your Health Bar.",
+      "name_ru": "Поспешное лечение",
+      "description_ru": "Чем хуже становится ситуация, тем больше вы стремитесь довести операцию до успешного завершения. Когда вы ранены, а другой выживший в пределах 32 м от вас теряет уровень здоровья, ваш прогресс лечения сразу же увеличивается на {процентов} от оставшегося. I уровень | II уровень | III уровень 40% | 45% | 50%",
+      "rang": 0,
+      "DLS": "Ada"
+  },
+  {
+      "number": 20,
+      "photo_main": "Zhuchok.png",
+      "name_en": "Wiretap",
+      "description_en": "You know that the best way to stay one step ahead is to keep tabs on the competition. After repairing Generators for a total of 40 %, Wiretap activates: Press the Active Ability button while near a partially progressed Generator to install a Trap, which stays active for 100/110/120 seconds. Whenever the Killer comes within 14 metres of the Trapped Generator their Aura is revealed to all Survivors. Wiretap deactivates after the Generator is damaged or once the timer runs out. The Auras of Trapped Generators are revealed to all Survivors in yellow.",
+      "name_ru": "Жучок",
+      "description_ru": "Вы знаете, что лучший способ быть на шаг впереди - следить за конкурентами. \"Жучок\" срабатывает после починки генераторов в общей сложности на 40%. Стоя рядом с генератором, нажмите кнопку активной способности 2 , чтобы установить жучок, продолжающий работать в течение {секунд}. Прослушиваемые генераторы подсвечиваются желтым для всех выживших. На генератор можно установить только один жучок. Когда убийца подходит на 14 м к прослушиваемому генератору, его аура подсвечивается для всех выживших. Жучок отключается при повреждении его генератора убийцей или по истечении времени I уровень | II уровень | III уровень 100 сек. | 110 сек. | 120 сек.",
+      "rang": 0,
+      "DLS": "Ada"
+  },
+  {
+      "number": 21,
+      "photo_main": "Samouchka.png",
+      "name_en": "Autodidact",
+      "description_en": "Succeeding a Skill Check while healing another Survivor grants +1 Token, up to a maximum of 3/4/5 Tokens: Suppresses Great Healing Skill Checks. Causes Good Healing Skill Checks to grant Healing progress based on the number of accumulated Tokens: 0 Tokens: -15 %. 1 Token: +0 %. 2 Tokens: +15 %. 3 Tokens: +30 % (limit of Tier I). 4 Tokens: +45 % (limit of Tier II). 5 Tokens: +60 % (limit of Tier III). Autodidact is inactive when healing using a Med-Kit. \"There's no limit to what you can achieve, as long as you back with hard work.\" — Adam Francis",
+      "name_ru": "Самоучка",
+      "description_ru": "Вы начинаете матч с штрафом -15% к прогрессу проверок реакции во время лечения выживших. За каждую успешную проверку реакции во время лечения выживших вы будете получать по жетону, максимальное количество жетонов - {штук}. Каждый жетон дарует вам +15% бонус к прогрессу за каждую успешную проверку реакции во время лечения других выживших. Во время использования навыка \"Самоучка\" вам недоступны отличные проверки реакции. \"Самоучка\" не будет активен при использовании аптечек. I уровень | II уровень | III уровень 3 шт. | 4 шт. | 5 шт.",
+      "rang": 0,
+      "DLS": "Adam"
+  },
+  {
+      "number": 22,
+      "photo_main": "Osvobozhdenie.png",
+      "name_en": "Deliverance",
+      "description_en": "After safely unhooking another Survivor, Deliverance activates: Grants the ability to perform a successful Self-Unhook at any point during the first Hook Stage. Causes the Broken Status Effect for 100/80/60 seconds after unhooking yourself. Deliverance cannot be used during the second Hook Stage or if you are hooked as the Last Survivor Standing. Deliverance is disabled for the remainder of the Trial after use. \"I was raised by a strict man who taught me how to make the best of a bad situation.\" — Adam Francis",
+      "name_ru": "Освобождение",
+      "description_ru": "\" Освобождение \" активируется после безопасного снятия с крюка другого выжившего. Теперь у вас есть 100% шанс снять себя с крюка при попытке бегства. Успешное освобождение с крюка накладывает эффект \" Ослабление \" на {секунд}. \"Ослабление\" не дает выжившим лечиться. I уровень | II уровень | III уровень 100 сек. | 80 сек. | 60 сек.",
+      "rang": 0,
+      "DLS": "Adam"
+  },
+  {
+      "number": 23,
+      "photo_main": "Diversija.png",
+      "name_en": "Diversion",
+      "description_en": "Diversion charges while inside the Terror Radius without being chased by the Killer. After charging for 30/25/20 seconds, it activates: Press the Active Ability button while crouched and motionless to throw a pebble in the direction you are facing, creating a distraction for the Killer 20 metres away from your location: Triggers a Loud Noise Notification. Creates fake Scratch Marks. Diversion deactivates after use and resets its timer. \"There's what is easy and then there's what is right. If you confuse the two, there's no telling what you become.\" — Adam Francis",
+      "name_ru": "Диверсия",
+      "description_ru": "\" Диверсия \" активируется, если вы в течение {секунд} находитесь в радиусе террора убийцы, но не в режиме погони. После активации \"Диверсии\" вы можете нажать кнопку 1-й активной способности (если пригнулись и не шевелитесь), чтобы бросить камешек, который отвлечет убийцу оповещением о шуме в радиусе 20 м. Таймер навыка сбрасывается после использования. Отвлекающее действие включает: оповещение о громком звуке следы-трещины I уровень | II уровень | III уровень 30 сек. | 25 сек. | 20 сек.",
+      "rang": 0,
+      "DLS": "Adam"
+  },
+  {
+      "number": 24,
+      "photo_main": "Vdohnovenie_barda.png",
+      "name_en": "Bardic Inspiration",
+      "description_en": "It's time to give your audience a show. Will you bring the house down or will you choke? Press the Active Ability button while standing and motionless to enter the Performance interaction that lasts up to 15 seconds and empowers other Survivors within 16 metres of your location. The empowering effect depends on the result of you rolling a d20 and lasts for 90 seconds after completing the Performance: 1: You scream, but without notifying the Killer. 2 - 10: Skill Checks grant +1 % Progression. 11 - 19: Skill Checks grant +2 % Progression. 20: Skill Checks grant +3 % Progression. Bardic Inspiration has a cool-down of 110/100/90 seconds after completing the Performance or cancelling it. \"Listen closely! I'm about to save your life!\" — Aestri",
+      "name_ru": "Вдохновение барда",
+      "description_ru": "Покажите публике, на что вы способны! Вы сорвете аплодисменты или провалитесь с позором? Нажмите кнопку способности 1, стоя неподвижно, чтобы начать выступление. Оно длится до 15 сек. и усиливает выживших в радиусе 16 м. Бросьте кубик d20. Эффект действует до 90 сек., если выступление завершено. 1. Вы кричите, но ничего не происходит; 2-10: проверки реакции дают +1% к прогрессу; 11-19: проверки реакции дают +2% к прогрессу; 20: проверки реакции дают +3% к прогрессу; Если способность отменяется или выступление завершается, навык восстанавливается в течение {секунд}. I уровень | II уровень | III уровень 110 сек. | 100 сек. | 90 сек.",
+      "rang": 0,
+      "DLS": "Aestri"
+  },
+  {
+      "number": 25,
+      "photo_main": "Zerkal'naja_illjuzija.png",
+      "name_en": "Mirrored Illusion",
+      "description_en": "A familiar spell made unfamiliar in this corrupted landscape. After repairing Generators for a total of 20 %, Mirrored Illusion activates: Press the Active Ability button when next to either a Chest, Exit Gate, Generator, or a Totem to spawn a Static Illusion that lasts for 40/50/60 seconds. Mirrored Illusion deactivates after triggering successfully. \"Just... stay there... perfect!\" — Baermar",
+      "name_ru": "Зеркальная иллюзия",
+      "description_ru": "Эта оскверненная местность исказила знакомое заклинание. Навык активируется, когда вы выполняете в общей сложности 20% починки генераторов. Нажмите кнопку способности 2, стоя рядом с генератором, тотемом, сундуком или воротами, чтобы создать неподвижную иллюзию на {секунд}. Затем навык отключается. I уровень | II уровень | III уровень 40 сек. | 50 сек. | 60 сек.",
+      "rang": 0,
+      "DLS": "Aestri"
+  },
+  {
+      "number": 26,
+      "photo_main": "Zamri_i_uvidish'.png",
+      "name_en": "Still Sight",
+      "description_en": "A clear mind and calm temperament will always find the means of their escape. After standing still for 6/5/4 seconds, Still Sight activates: The Auras of the Killer as well as any Chests and Generators within 24 metres of your location are revealed to you until you start moving again. \"Breathe in. Breathe out. Now open your eyes.\" — Baermar",
+      "name_ru": "Замри и увидишь",
+      "description_ru": "Ясный ум и хладнокровность всегда помогут найти способ сбежать. Навык активируется, если не двигаться {секунд}. Пока не начнете двигаться, вы будете видеть ауру убийцы, всех генераторов и сундуков в радиусе 24 м. I уровень | II уровень | III уровень 6 сек. | 5 сек. | 4 сек.",
+      "rang": 0,
+      "DLS": "Aestri"
+  },
+  {
+      "number": 27,
+      "photo_main": "IconPerks_boonIllumination.png",
+      "name_en": "Boon: Illumination",
+      "description_en": "Your keen insight is something best shared with others. Press and hold the Active Ability button on a Dull or Hex Totem to bless it and create a Boon Totem. Soft chimes ring out in a radius of 24 metres. All Survivors benefit from the following effects when inside the Boon Totem's radius: The Auras of all Chests and Generators are revealed to you in blue. Increases your Action speeds for Blessing and Cleansing by 6/8/10 % while you have a lit Boon Totem. Survivors can only be affected by one instance of Boon: Illumination at a time. Only one Totem can be blessed by your Boon Perks at a time and all of their effects are active on the same Boon Totem. \"A shift in reality. Heavy with hidden meanings.\" — Return",
+      "name_ru": "Дар: освещение",
+      "description_ru": "Ваша проницательность может принести большую пользу окружающим. Нажмите и удерживайте кнопку способности 1 рядом с проклятым или тусклым тотемом, чтобы благословить его и создать дарующий тотем. Легкий звон будет слышен в пределах 24 м. В радиусе действия дарующего тотема выжившие видят синие ауры всех сундуков и генераторов. Если вы зажгли дарующий тотем, то начинаете очищать и благословлять тотемы на {процентов} быстрее. Одновременно можно благословить только один тотем. На вашем дарующем тотеме будут действовать все взятые вами навыки \"Дара\". I уровень | II уровень | III уровень 6% | 8% | 10%",
+      "rang": 0,
+      "DLS": "Alan"
+  },
+  {
+      "number": 28,
+      "photo_main": "Voin_sveta.png",
+      "name_en": "Champion of Light",
+      "description_en": "The glow of the Flashlight looks a little different, feels a little warmer. Shining a Flashlight applies the following effect: Grants a +50 % Haste Status Effect. Blinding the Killer by any means applies the following effect: Causes them to suffer from a -20 % Hindered Status Effect for 6 seconds. This effect does not stack. Champion of Light has a cool-down of 80/70/60 seconds after blinding the Killer. \"I squeezed the Flashlight like my life depended on it, willing it to stop coming any closer.\" — Departure",
+      "name_ru": "Воин света",
+      "description_ru": "Свет фонарика кажется чуть другим и несколько более теплым. Этот навык активируется, когда вы держите фонарик. Светя фонариком, вы получаете \"Спешку\" 50%. Если вы ослепляете убийцу фонариком, на него накладывается \"Замедление\" 20% на 6 сек. Этот эффект не складывается. Затем навык перезаряжается в течение {секунд}. \"Спешка\" повышает скорость передвижения выжившего. \"Замедление\" снижает скорость передвижения убийцы. I уровень | II уровень | III уровень 80 сек. | 70 сек. | 60 сек.",
+      "rang": 0,
+      "DLS": "Alan"
+  },
+  {
+      "number": 29,
+      "photo_main": "Dedlajn.png",
+      "name_en": "Deadline",
+      "description_en": "Desperation creeps in, and you push yourself to work harder. Whenever you are in the Injured State, Deadline activates: Increases the Odds of triggering Skill Checks by 6/8/10 % while repairing or healing. Causes Skill Checks to appear in random places. Reduces the penalty for missed Skill Checks by -50 %. \"The night had been one desperate situation after another.\" — Departure",
+      "name_ru": "Дедлайн",
+      "description_ru": "Отчаяние просачивается вам в душу, но заставляет работать еще усерднее. Этот навык активируется, когда вас ранят. Проверка реакции при починке или лечении происходит на {процентов} чаще и в случайных местах. Наказание за провал проверки уменьшается на 50%. I уровень | II уровень | III уровень 6% | 8% | 10%",
+      "rang": 0,
+      "DLS": "Alan"
+  },
+  {
+      "number": 30,
+      "photo_main": "Pristegnis'.png",
+      "name_en": "Buckle Up",
+      "description_en": "Unlocks potential in your Aura-reading ability. When healing a Survivor in the Dying State, Buckle Up activates: The Aura of the Killer is revealed to the both of you. Completing a Healing Action on the dying Survivor suppresses their Scratch Marks and grants them a +50 % Haste Status Effect for 3/4/5 seconds. Buckle Up does not cause the Exhausted Status Effect. \"Ghost beaters never leave a man behind.\" — Ash Williams",
+      "name_ru": "Пристегнись",
+      "description_ru": "У вас появляется способность чтения ауры. Когда вы исцеляете умирающего выжившего: Вы оба можете видеть ауру убийцы. После лечения умирающего выжившего до состояния \"Ранение\": исцеленный выживший получает 50% спешки на {секунд} и не оставляет следов-трещин. \"Спешка\" повышает скорость передвижения выжившего. I уровень | II уровень | III уровень 3 сек. | 4 сек. | 5 сек.",
+      "rang": 0,
+      "DLS": "Ash"
+  },
+  {
+      "number": 31,
+      "photo_main": "Raskachka.png",
+      "name_en": "Flip-Flop",
+      "description_en": "You have an uncanny ability to escape the inevitable. Recovering in the Dying State also charges the Wiggle Meter at 50 % of the Recovery rate and up to a maximum of 40/45/50 % of Wiggle Progression. \"Catch ya on the flip-flop.\" — Ash Williams",
+      "name_ru": "Раскачка",
+      "description_ru": "У вас удивительная способность избегать неизбежного. Когда убийца подхватывает вас в состоянии \"При смерти\", 50% вашего возвращения в чувства направляется на раскачивание, до максимальных {процентов} раскачивания. I уровень | II уровень | III уровень 40% | 45% | 50%",
+      "rang": 0,
+      "DLS": "Ash"
+  },
+  {
+      "number": 32,
+      "photo_main": "Proverka_na_prochnost'.png",
+      "name_en": "Mettle of Man",
+      "description_en": "Evil has a way of always finding you. After triggering a third Protection Hit by any means, Mettle of Man activates: While in the Injured State, Mettle of Man shields you from the next attack that would put you into the Dying State. After healing back to full health by any means, Mettle of Man reveals your Aura to the Killer whenever you are farther than 12/14/16 metres from their location. Mettle of Man deactivates after entering the Dying State by any means. Increases your chance of becoming the initial Obsession by increasing the default value by +100 %. The Killer can only be obsessed with one Survivor at a time. \"Evil has a bullseye on my back the size of Tiger Stadium.\" — Ash Williams",
+      "name_ru": "Проверка на прочность",
+      "description_ru": "Зло всегда знает, где вас искать. \" Проверка на прочность \" активируется, если 3 раз(а) происходит событие \"Удар на себя\". После активации следующее событие, которое должно бы перевести вас из раненого в предсмертное состояние состояние, не причинит вреда. При следующем восстановлении здоровья до максимума, если вы будете дальше, чем в {метров} от убийцы, ваша аура станет ему видна. \" Проверка на прочность \" отключится, когда вы окажетесь в предсмертном состоянии. Повышает шанс стать объектом одержимости убийцы. Одновременно убийца может быть одержим только одним выжившим. I уровень | II уровень | III уровень 12 м. | 14 м. | 16 м.",
+      "rang": 0,
+      "DLS": "Ash"
+  },
+  {
+      "number": 33,
+      "photo_main": "Odolzhennoe_vremja.png",
+      "name_en": "Borrowed Time",
+      "description_en": "You are fuelled with an unexpected energy when saving an ally from a Hook. The Survivors you unhook benefit from the following effects: Extends the duration of their Endurance Status Effect by 6/8/10 seconds. Extends the duration of their Haste Status Effect by 10 seconds. \"Probably stings like hell, but it ain't gonna kill ya. Up and at 'em soldier. Time to move!\" — Bill Overbeck",
+      "name_ru": "Одолженное время",
+      "description_ru": "Спасение союзника от повешения неожиданно наполняет вас энергией. После снятия выжившего с крюка этот выживший: сохраняет эффект \" Стойкость \" на {секунд} дольше, сохраняет бонус к скорости передвижения на 10 сек. дольше. Во время действия \"Стойкости\" вместо смертельного ранения выживший получает \"Глубокую рану\". С \"Глубокой раной\" выживший окажется при смерти, если его не подлатают, пока не истекло время. I уровень | II уровень | III уровень 6 сек. | 8 сек. | 10 сек.",
+      "rang": 0,
+      "DLS": "Bill"
+  },
+  {
+      "number": 34,
+      "photo_main": "Ostavlennyj_pozadi.png",
+      "name_en": "Left Behind",
+      "description_en": "You will get the job done... no matter the cost. Once you are the Last Survivor Standing, Left Behind activates: The Aura of the Hatch is revealed to you within 24/28/32 metres. \"I'm not horse-shittin' around. I'm doing this alone!\" — Bill Overbeck",
+      "name_ru": "Оставленный позади",
+      "description_ru": "Пробуждает у персонажа способность к чтению ауры. Если вы - последний выживший в матче, то видите ауру люка в радиусе {метров}. I уровень | II уровень | III уровень 24 м. | 28 м. | 32 м.",
+      "rang": 0,
+      "DLS": "Bill"
+  },
+  {
+      "number": 35,
+      "photo_main": "Nesokrushimyj.png",
+      "name_en": "Unbreakable",
+      "description_en": "Past battles have taught you a thing or two about survival. Once per Trial, you can completely recover from the Dying State. Your Recovery speed is increased by 25/30/35 %. \"Goddammit, I am seriously FUBAR!\" — Bill Overbeck",
+      "name_ru": "Несокрушимый",
+      "description_ru": "Былые битвы научили вас выживать. Вы можете самостоятельно подняться на ноги из предсмертного состояния один раз за матч . Скорость вашего восстановления увеличена на {процентов}. I уровень | II уровень | III уровень 25% | 30% | 35%",
+      "rang": 0,
+      "DLS": "Bill"
+  },
+  {
+      "number": 36,
+      "photo_main": "Krovavyj_dogovor.png",
+      "name_en": "Blood Pact",
+      "description_en": "It is as if a latent part of yourself has awakened. You feel like you can reach out beyond yourself for assistance. When either you or the Obsession become injured by any means, Blood Pact activates: Your Auras are constantly revealed to one another. Completing a Healing Action on the Obsession or having them complete one on yourself, grants both of you a 5/6/7 % Haste Status Effect. This effect lasts for as long as you both remain within 16 metres of one another. Blood Pact is temporarily disabled if you yourself are the Obsession. Reduces your chance of becoming the initial Obsession by reducing the default value by -100 %. The Killer can only be obsessed with one Survivor at a time.",
+      "name_ru": "Кровавый договор",
+      "description_ru": "Внутри вас словно что-то пробудилось. Вы чувствуете, что ради помощи другим способны на все. Если вы или объект одержимости ранены, вы видите ауры друг друга. Вылечив объект одержимости или будучи вылеченными объектом одержимости, вы оба получаете эффект \" Спешка \", увеличивающий скорость до {процентов}, пока не отдалитесь друг от друга на 16 метров. Уменьшает вероятность стать объектом одержимости. Навык отключается, если вы сами становитесь объектом одержимости. Убийца может быть одержим только одним выжившим за раз. \"Спешка\" увеличивает скорость передвижения выжившего. I уровень | II уровень | III уровень 5% | 6% | 7%",
+      "rang": 0,
+      "DLS": "Cheryl"
+  },
+  {
+      "number": 37,
+      "photo_main": "Skrytyj_sojuz.png",
+      "name_en": "Repressed Alliance",
+      "description_en": "You are accustomed to being hunted by malicious forces, and you have begun using it to your advantage. After repairing Generators for a total of 55/50/45 seconds, Repressed Alliance activates: Press the Active Ability button to call upon The Entity to block the Generator you are currently repairing for 30 seconds, after which Repressed Alliance deactivates. The Aura of the blocked Generator is revealed to all Survivors in white. Repressed Alliance can only be triggered when no other Survivors are repairing your Generator.",
+      "name_ru": "Скрытый союз",
+      "description_ru": "Вы привыкли к преследующим вас темным силам и научились обращать это себе на пользу. \" Скрытый союз \" активируется, когда вы чините генераторы суммарно в течение {секунд}. Во время действия навыка нажмите кнопку 1-й активной способности во время починки генератора, чтобы призвать Сущность заблокировать его на 30 сек . После этого навык отключается. Это взаимодействие недоступно, если другие выжившие чинят генератор. Ауры заблокированных генераторов подсвечиваются белым для всех выживших. I уровень | II уровень | III уровень 55 сек. | 50 сек. | 45 сек.",
+      "rang": 0,
+      "DLS": "Cheryl"
+  },
+  {
+      "number": 38,
+      "photo_main": "Obereg_dushi.png",
+      "name_en": "Soul Guard",
+      "description_en": "You have been through immense hardship and you're stronger for it. After being healed from or having recovered from the Dying State, you benefit from the following effect: Grants the Endurance Status Effect for 4/6/8 seconds. Endurance is cancelled prematurely when performing a Conspicuous Action. While suffering from the Cursed Status Effect, you benefit from the following effects: Grants the ability to fully recover yourself from the Dying State. Soul Guard has a cool-down of 30 seconds.",
+      "name_ru": "Оберег души",
+      "description_ru": "Вы пережили немыслимые испытания, которые закалили вас. Вылечившись или восстановившись из предсмертного состояния, вы получаете эффект \" Стойкость \" на {секунд}. Если на вас действует порча, вы можете полностью восстановиться из предсмертного состояния. Этот эффект может проявляться каждые 30 сек. Во время действия \"Стойкости\" вместо смертельного ранения выживший получает \"Глубокую рану\". С \"Глубокой раной\" выживший окажется при смерти, если его не подлатают, пока не истекло время. I уровень | II уровень | III уровень 4 сек. | 6 сек. | 8 сек.",
+      "rang": 0,
+      "DLS": "Cheryl"
+  },
+  {
+      "number": 39,
+      "photo_main": "Poznanija_v_botanike.png",
+      "name_en": "Botany Knowledge",
+      "description_en": "You transform plants found around the campfire into tinctures that slow down bleeding. Increases your Healing speed by 30/40/50 %. Reduces the Healing efficiency of Med-Kits by -20 %. \"Basic Botany Knowledge could save your life someday\" — Claudette Morel",
+      "name_ru": "Познания в ботанике",
+      "description_ru": "Вы умеете изготавливать замедляющие кровотечение настойки из растений, растущих вокруг лагеря. Скорость лечения увеличивается на {процентов}. Эффективность лечебных предметов снижается на 20%. I уровень | II уровень | III уровень 30% | 40% | 50%",
+      "rang": 0,
+      "DLS": "Claudette"
+  },
+  {
+      "number": 40,
+      "photo_main": "Sostradanie.png",
+      "name_en": "Empathy",
+      "description_en": "Unlocks potential in your Aura-reading ability: The Auras of injured or dying Survivors are revealed to you within 64/96/128 metres.",
+      "name_ru": "Сострадание",
+      "description_ru": "У Вас появляется способность чтения ауры. Вы видите ауры умирающих или травмированных союзников в радиусе {метров} от вас. \"Сострадание\" не позволяет видеть ауры союзников, когда те находятся в прямом контакте с убийцей. I уровень | II уровень | III уровень 64 метра | 96 метров | 128 метров",
+      "rang": 0,
+      "DLS": "Claudette"
+  },
+  {
+      "number": 41,
+      "photo_main": "Sam_sebe_doktor.png",
+      "name_en": "Self-Care",
+      "description_en": "Unlocks the Self-Care ability: Grants the ability to self-heal without needing a Med-Kit at 25/30/35 % of the regular Healing speed.",
+      "name_ru": "Сам себе доктор",
+      "description_ru": "У Вас появляется способность лечить себя без аптечки, но со скоростью {процентов} от обычной скорости лечения. I уровень | II уровень | III уровень 25% | 30% | 35%",
+      "rang": 0,
+      "DLS": "Claudette"
+  },
+  {
+      "number": 42,
+      "photo_main": "Krepkij_oreshek.png",
+      "name_en": "Dead Hard",
+      "description_en": "You can take a beating. After being unhooked or unhooking yourself, Dead Hard activates whenever you are injured and running, and allows you to tap into your adrenaline bank to avoid taking further damage: Press the Active Ability button to trigger the Endurance Status Effect for 0.5 seconds. Dead Hard deactivates after use. Dead Hard causes the Exhausted Status Effect for 60/50/40 seconds. Dead Hard cannot be used when Exhausted. \"We were walkin' through t'ginnel one night when a beer bottle flew past me, then another, and another. I thought to myself \"Gonna 'ave some fun 'ere lads, let's get stuck in!\". It were a right dust up, I swear down!\" — David King",
+      "name_ru": "Крепкий орешек",
+      "description_ru": "Вы можете пережить серьезную трепку. \"Крепкий орешек\" активируется после того, как вас сняли с крюка или вы слезли с него самостоятельно. Когда вы ранены, выброс адреналина поможет рвануться вперед и избежать урона. Нажмите кнопку активной способности 1 во время бега, чтобы получить эффект \"Стойкость\" на 0.5 сек. Накладывает эффект \" Усталость \" на {секунд}. После этого \"Крепкий орешек\" отключается Во время действия \"Стойкости\" вместо смертельного ранения выживший получает \"Глубокую рану\". С \"Глубокой раной\" выживший окажется при смерти, если его не подлатают, пока не истекло время \"Усталость\" не дает выжившим активировать утомляющие навыки. I уровень | II уровень | III уровень 60 сек. | 50 сек. | 40 сек.",
+      "rang": 0,
+      "DLS": "David"
+  },
+  {
+      "number": 43,
+      "photo_main": "Detektivnoe_chut'e.png",
+      "name_en": "Detective's Hunch",
+      "description_en": "Unlocks potential in your Aura-reading ability. Each time a Generator is completed, the Auras of any Generators, Chests, and Totemswithin 32/48/64 metres are revealed to you for 10 seconds. If you are holding a Map, any objects revealed by Detective's Hunch will automatically be tracked by it. \"Are you able to tell us where you were last night?\" — Detective David Tapp",
+      "name_ru": "Детективное чутье",
+      "description_ru": "У вас появляется способность чтения ауры. После починки генератора вы видите ауры генераторов, сундуков и тотемов в радиусе {метров} на протяжении 10 сек . Если у вас в руках есть карта, которая отслеживает объекты, \" Чутье детектива \" добавит на нее генераторы, сундуки и тотемы. I уровень | II уровень | III уровень 32 м. | 48 м. | 64 м.",
+      "rang": 0,
+      "DLS": "David"
+  },
+  {
+      "number": 44,
+      "photo_main": "Bez_sozhalenija.png",
+      "name_en": "No Mither",
+      "description_en": "Go on out, kid, it is just a scratch. Your thick blood coagulates practically instantly. The following effects apply permanently during the Trial: Suffer from the Broken Status Effect. Suppresses the creation of Pools of Blood. Reduces the volume of Grunts of Pain while either in the Injured or the Dying State by 25/50/75 %. Increases your Recovery speed by 15/20/25 %. Unlocks the Self-Recovery ability, allowing you to fully recover from the Dying State. \"I lost it. Just lamped him one. They went and banned me didn't they. Went t'pub afterwards, had a few pints and moved on to the next chapter. I couldn't be mithered with it all anyway, you know what I mean? Can't be arsed.\" — David King",
+      "name_ru": "Без сожаления",
+      "description_ru": "В течение всего матча вы страдаете от эффекта \" Ослабление \". Ваша густая кровь сворачивается почти мгновенно. Вы не оставляете за собой лужи крови. Стоны от ран всегда приглушены на {процентов}. Вы восстанавливаетесь на {процентов} быстрее и можете полностью восстановиться, будучи при смерти. \"Ослабление\" не дает выжившим лечиться. I уровень | II уровень | III уровень Стоны | 25% | 50% | 75% Восст-е | 15% | 20% | 25%",
+      "rang": 0,
+      "DLS": "David"
+  },
+  {
+      "number": 45,
+      "photo_main": "Vyslezhivanie_podozrevaemogo.png",
+      "name_en": "Stake Out",
+      "description_en": "Getting close to the Killer fills you with determination. Every 15 seconds you are within the Killer's Terror Radius, while not being chased, Stake Out gains 1 Token, up to a maximum of 2/3/4 Tokens. When Stake Out has at least 1 Token, Good Skill Checks consume 1 Token and are considered Great Skill Checks, granting an additional Progression bonus of +1 %. Great Skill Checks do not consume any Tokens. \"I had you, I had you on your knees. You're runnin' scared because we had you. We're gonna close this case!\" — Detective David Tapp",
+      "name_ru": "Выслеживание подозреваемого",
+      "description_ru": "Близость к убийце наполняет вас решимостью. За каждые 15 сек ., что вы находитесь внутри радиуса террора убийцы, но вне погони, вы получаете жетон (до {штук} максимум). Когда у навыка \" Выслеживание подозреваемого \" имеется хотя бы 1 жетон , хорошие проверки реакции автоматически превращаются в отличные, расходуя при этом 1 жетон , и дают дополнительный 1% к степени починки генератора. I уровень | II уровень | III уровень 2 шт. | 3 шт. | 4 шт.",
+      "rang": 0,
+      "DLS": "David"
+  },
+  {
+      "number": 46,
+      "photo_main": "Vyderzhka.png",
+      "name_en": "Tenacity",
+      "description_en": "There is nothing stopping you. Your ferocious tenacity in dire situations allow you to benefit from the following effects: Increases your Crawling speed by 30/40/50 %. Grants the ability to crawl and recover at the same time. Reduces the volume of Grunts of Pain while in the Dying State by -75 %. \"What the hell is this? I'm taking this bastard down!\" — Detective David Tapp",
+      "name_ru": "Выдержка",
+      "description_ru": "Вас ничто не может остановить. Ваша железная выдержка в трудных ситуациях позволяет ползать при смерти на {процентов} быстрее, имея при этом возможность одновременно восстанавливать силы. Вопли от боли в состоянии при смерти заглушены на 75%. I уровень | II уровень | III уровень 30% | 40% | 50%",
+      "rang": 0,
+      "DLS": "David"
+  },
+  {
+      "number": 47,
+      "photo_main": "My_budem_zhit'_vechno.png",
+      "name_en": "We're Gonna Live Forever",
+      "description_en": "Your few friends deserve the best protection. You benefit from the following effect when healing a dying Survivor: Increases your Healing speed by +100 %. Any dying Survivor you heal back to the Injured State benefits from the following effect: Grants the Endurance Status Effect for 6/8/10 seconds. This effect can only be triggered once every 30 seconds. \"Come on then, let's ave' it! I don't give a shit pal.\" — David King",
+      "name_ru": "Мы будем жить вечно",
+      "description_ru": "Ваши немногочисленные друзья заслуживают лучшей защиты. При лечении находящегося при смерти выжившего ваша скорость лечения повышается на 100%. После завершения лечения исцеленный выживший получает \"Стойкость\" на {секунд}. Этот навык восстанавливается за 30 сек. Во время действия \"Стойкости\" вместо смертельного ранения выживший получает \"Глубокую рану\". Получив глубокую рану, выживший окажется при смерти, если не получит лечение до истечения времени. I уровень | II уровень | III уровень 6 сек. | 8 сек. | 10 сек.",
+      "rang": 0,
+      "DLS": "David"
+  },
+  {
+      "number": 48,
+      "photo_main": "Svjaz'.png",
+      "name_en": "Bond",
+      "description_en": "Unlocks potential in your Aura-reading ability: The Auras of all other Survivors are revealed to you within 20/28/36 metres. \"We have to work as a team, I need you to survive so that I can survive!\" — Dwight Fairfield",
+      "name_ru": "Связь",
+      "description_ru": "У вас появляется способность чтения ауры. Вы видите ауры союзников в радиусе {метров}. I уровень | II уровень | III уровень 20 метров | 28 метров | 36 метров",
+      "rang": 0,
+      "DLS": "Dwight"
+  },
+  {
+      "number": 49,
+      "photo_main": "Lider.png",
+      "name_en": "Leader",
+      "description_en": "You are able to organise a team to cooperate more efficiently. Other Survivors within 8 metres of your location benefit from the following effect: Increases the Action speeds for Cleansing, Gate-Opening, Healing, Sabotaging, Unhooking, and Unlocking by 15/20/25 %. This effect lingers for 15 seconds after leaving the Area of Effect. Survivors can only be affected by one instance of Leader at a time.",
+      "name_ru": "Лидер",
+      "description_ru": "Вы умеете добиться от своей команды эффективной совместной работы. В радиусе 8 м от вас на {процентов} повышается скорость следующих действий: лечение, поломка, снятие с крюков, очищение, открытие ворот и сундуков. Одновременно может действовать только один эффект лидерства. Эффект сохраняется на Выживших вне радиуса воздействия лидера в течение 15 сек . I уровень | II уровень | III уровень 15% | 20% | 25%",
+      "rang": 0,
+      "DLS": "Dwight"
+  },
+  {
+      "number": 50,
+      "photo_main": "Projavi_sebja.png",
+      "name_en": "Prove Thyself",
+      "description_en": "Increases the Repair speed by a stack-able 6/8/10 % per other Survivor within 4 metres of your location, up to a maximum of 18/24/30 %. Prove Thyself extends its effect to all Survivors within its range. Survivors can only be affected by one instance of Prove Thyself at a time. \"Show me what you can do!\" — Dwight Fairfield",
+      "name_ru": "Прояви себя",
+      "description_ru": "Каждый другой выживший, работающий с генератором в радиусе 4м , повышает скорость починки на {процентов}. Такой же бонус дается всем прочим выжившим в радиусе действия. Единовременно на выжившего может действовать только один такой эффект. I уровень | II уровень | III уровень 6% | 8% | 10%",
+      "rang": 0,
+      "DLS": "Dwight"
+  },
+  {
+      "number": 51,
+      "photo_main": "Himicheskaja_lovushka.png",
+      "name_en": "Chemical Trap",
+      "description_en": "In the Fog, an officer must adapt to the materials at hand. After repairing Generators for a total of 20 %, Chemical Trap activates: Press the Active Ability button while near a dropped Pallet to install a Trap, which stays active for 40/50/60 seconds. When the Killer breaks the Trapped Pallet, its Trap explodes, spraying the Killer with a chemical compound: Causes the Killer to suffer from a -50 % Hindered Status Effect for 4 seconds. Chemical Trap deactivates after triggering successfully or once the timer runs out. The Auras of Trapped Pallets are revealed to all Survivors in yellow. \"How do we kill it, Ash?\" — Ellen Ripley",
+      "name_ru": "Химическая ловушка",
+      "description_ru": "В Тумане офицеру приходится использовать то, что есть под рукой. \"Химическая ловушка\" активируется при починке любого генератора в общей сложности на 20%. Стоя рядом с упавшими досками, нажмите кнопку активной способности 2, чтобы установить ловушку, которая будет действовать {секунд}. Ауры досок, на которые установлены ловушки, будут подсвечены желтым для всех выживших. Одновременно на доске может быть активна только одна \"Химическая ловушка\". Когда убийца разрушает доски с ловушкой, та взрывается и замедляет его на 50% на 4 сек. I уровень | II уровень | III уровень 40 сек. | 50 сек. | 60 сек.",
+      "rang": 0,
+      "DLS": "Ellen"
+  },
+  {
+      "number": 52,
+      "photo_main": "Legkostup.png",
+      "name_en": "Light-Footed",
+      "description_en": "Crossing paths with deadly Killers has taught you the value of discretion. Whenever you are healthy, Light-Footed activates: Suppresses the sound of your footsteps while running. Light-Footed has a cool-down of 28/24/20 seconds after performing a Rush Vault action. \"Come on, cat.\" — Ellen Ripley",
+      "name_ru": "Легкоступ",
+      "description_ru": "Встречи с беспощадными убийцами научили вас ценить скрытность. Этот навык активируется, пока вы здоровы. Вы бегаете бесшумно. Этот навык перезаряжается в течение {секунд} после ускорения. I уровень | II уровень | III уровень 28 сек. | 24 сек. | 20 сек.",
+      "rang": 0,
+      "DLS": "Ellen"
+  },
+  {
+      "number": 53,
+      "photo_main": "Schastlivaja_zvezda.png",
+      "name_en": "Lucky Star",
+      "description_en": "You know how to stay calm in the face of incomprehensible danger. While hiding inside a Locker, you benefit from the following effect: Suppresses your Grunts of Pain. After exiting the Locker you benefit from the following effects for 30 seconds: Suppresses your Grunts of Pain and the creation of Pools of Blood. The Auras of the other Survivors are revealed to you. The Aura of the closest Generator is revealed to you in yellow. Lucky Star has a cool-down of 40/35/30 seconds. \"You are my... lucky star...\" — Ellen Ripley",
+      "name_ru": "Счастливая звезда",
+      "description_ru": "Вы способны сохранять спокойствие даже перед лицом чудовищной опасности. Прячась в шкафчике, вы не стонете от боли. Выбравшись из шкафчика, вы видите ауры ближайшего генератора и других выживших, а еще не оставляете следов крови и не стонете в течение 30 сек. Этот навык восстанавливается {секунд}. I уровень | II уровень | III уровень 40 сек. | 35 сек. | 30 сек.",
+      "rang": 0,
+      "DLS": "Ellen"
+  },
+  {
+      "number": 54,
+      "photo_main": "Izuchenie.png",
+      "name_en": "Appraisal",
+      "description_en": "You have a careful eye that notices what many overlook. Appraisal has 3 Tokens at the start of the Trial: Consume -1 Token to perform the Rummage action on an already unlocked Chest in order to retrieve a second Item from it. Increases Rummaging speed by 40/60/80 %. Rummaging is only available once per Chest.",
+      "name_ru": "Изучение",
+      "description_ru": "Там, где другие ничего не заметят, вы увидите многое. В начале матча вы получаете жетоны в количестве 3 шт. Вы можете потратить жетон на обыск открытого сундука для поиска предмета. Сундук можно обыскать только один раз. Вы обыскиваете сундуки на {процентов} быстрее. I уровень | II уровень | III уровень 40% | 60% | 80%",
+      "rang": 0,
+      "DLS": "Élodie"
+  },
+  {
+      "number": 55,
+      "photo_main": "Ulovka.png",
+      "name_en": "Deception",
+      "description_en": "Your adventurous lifestyle requires moments of crafty misdirection. Interacting with a Locker while holding the Sprint button has the following effects: Prevents you from entering the Locker, allowing you to run past it. Causes the doors of the Locker to swiftly open and close, feining a Survivor entering it. Triggers a Loud Noise Notification at the location of the Locker. Suppresses the creation of Scratch Marks and Pools of Blood for 3 seconds. Deception has a cool-down of 30/25/20 seconds.",
+      "name_ru": "Уловка",
+      "description_ru": "Ваша жизнь была полна приключений и приучила вас напрягать извилины. При взаимодействии со шкафчиком на бегу прозвучит громкое уведомление о месте, где вы находитесь. При этом вы не будете оставлять следы-трещины в последующие 3 сек. Во время бега и действия этого навыка вы не будете залезать в шкафчики. \"Уловку\" можно применять раз в {секунд}. I уровень | II уровень | III уровень 30 сек. | 25 сек. | 20 сек.",
+      "rang": 0,
+      "DLS": "Élodie"
+  },
+  {
+      "number": 56,
+      "photo_main": "Otchajannaja_bor'ba.png",
+      "name_en": "Power Struggle",
+      "description_en": "You have never given up and you are not about to start now. Reveals the Auras of available Pallets whenever you are in the Dying State. While being carried by The Killer, reaching 25/20/15 % Wiggling progression activates Power Struggle: You can drop a nearby, standing Pallet to stun the Killer and escape their grasp. Power Struggle deactivates after triggering successfully. \"I relied on others to protect me once and I lost everything. Never again.\" — Élodie Rakoto",
+      "name_ru": "Отчаянная борьба",
+      "description_ru": "Вы не привыкли сдаваться и не собираетесь мириться с поражениями. Находясь при смерти, вы всегда видите ауры доступных досок Если убийца несет вас, а шкала попыток вырваться заполняется на {процентов}, активируется \"Отчаянная борьба\". Пока действует навык \"Отчаянная борьба\", вы можете опрокинуть ближайшую стоящую доску и оглушить убийцу. I уровень | II уровень | III уровень 25% | 20% | 15%",
+      "rang": 0,
+      "DLS": "Élodie"
+  },
+  {
+      "number": 57,
+      "photo_main": "Stroim_na_veka.png",
+      "name_en": "Built to Last",
+      "description_en": "You know how to get the most out of your tools. Hiding inside a Locker for 14/13/12 seconds while carrying a depleted Item has the following effect: First use: Recharges the Item to 99 %. Second use: Recharges the Item to 66 %. Third use: Recharges the Item to 33 %. Built to Last is disabled for the remainder of the Trial after the third use. \"Architecture is the soul of civilisation.\" — Felix Richter",
+      "name_ru": "Строим на века",
+      "description_ru": "Вы умеете извлечь максимум пользы из своих инструментов. Проведя в шкафчике {секунд} с полностью использованным предметом в руках, вы восстановите 99% его зарядов. Каждое использование способности \"Строим на века\" снижает количество восстановленных зарядов на 33%. I уровень | II уровень | III уровень 14 сек. | 13 сек. | 12 сек.",
+      "rang": 0,
+      "DLS": "Felix"
+  },
+  {
+      "number": 58,
+      "photo_main": "Otchajannye_mery.png",
+      "name_en": "Desperate Measures",
+      "description_en": "You refuse to fail, even during your darkest hour. Increases your Action speeds for Healing and Unhooking by 10/12/14 % for each injured, hooked, or dying Survivor, up to a maximum of 40/48/56 %. \"When they come with a wrecking ball, build stronger walls.\" — Felix Richter",
+      "name_ru": "Отчаянные меры",
+      "description_ru": "Вы отказываетесь сдаваться даже в самую трудную минуту. Увеличивает скорость вашего лечения и снятия с крюка на {процентов} за каждого раненого, повешенного на крюк или умирающего выжившего. I уровень | II уровень | III уровень 10% | 12% | 14%",
+      "rang": 0,
+      "DLS": "Felix"
+  },
+  {
+      "number": 59,
+      "photo_main": "Vizioner.png",
+      "name_en": "Visionary",
+      "description_en": "You are remarkably focused on your means of escape. The Auras of Generators are revealed to you within 32 metres. Each time a Generator is completed, Visionary is deactivated for 20/18/16 seconds.",
+      "name_ru": "Визионер",
+      "description_ru": "Вы на редкость сосредоточены на поисках способов выбраться. Вы видите ауры генераторов в радиусе 32 м. После любой починки генератора \" Визионер \" отключается на {секунд}. I уровень | II уровень | III уровень 20 сек. | 18 сек. | 16 сек.",
+      "rang": 0,
+      "DLS": "Felix"
+  },
+  {
+      "number": 60,
+      "photo_main": "Trevoga.png",
+      "name_en": "Alert",
+      "description_en": "Your acute senses are on high alert. Whenever the Killer performs the Break or Damage Action, Alert triggers: Their Aura is revealed to you for 3/4/5 seconds. \"I have true sight,\" — Feng Min",
+      "name_ru": "Тревога",
+      "description_ru": "Вы постоянно находитесь в состоянии боевой готовности. Когда Убийца рушит препятствия, он раскрывает вам свое местоположение на {секунд}. I уровень | II уровень | III уровень 3 сек. | 4 сек. | 5 сек.",
+      "rang": 0,
+      "DLS": "Feng"
+  },
+  {
+      "number": 61,
+      "photo_main": "Gibkost'.png",
+      "name_en": "Lithe",
+      "description_en": "Performing a Rushed Vault triggers Lithe: Grants a +50 % Haste Status Effect for 3 seconds. Lithe causes the Exhausted Status Effect for 60/50/40 seconds. Lithe cannot be used when Exhausted. \"U mad?\" — Feng Min",
+      "name_ru": "Гибкость",
+      "description_ru": "После ускоренного прыжка через препятствие вы получаете ускорение в виде 150% от вашей обычной скорости бега на 3 сек . Вызывает \" Усталость \" на {секунд}. \" Гибкость \" невозможно использовать в состоянии \" Усталости \". \"Усталость\" не дает выжившим активировать утомляющие навыки. I уровень | II уровень | III уровень 60 сек. | 50 сек. | 40 сек.",
+      "rang": 0,
+      "DLS": "Feng"
+  },
+  {
+      "number": 62,
+      "photo_main": "Tehnik.png",
+      "name_en": "Technician",
+      "description_en": "You are apt at handling machinery with the greatest care and precision. When repairing a Generator, the following effects apply: Reduces the audible range of your Repair noises by -8 metres. Suppresses the explosion and accompanying Loud Noise Notification when failing a Skill Check. Failing a Skill Check instantly regresses the Generator by 5/4/3 % of its maximum possible Progression in addition to the default Progression penalty. \"I am gonna stealth this one.\" — Feng Min",
+      "name_ru": "Техник",
+      "description_ru": "Вы способны аккуратно и безошибочно обращаться с техникой. Радиус, в котором можно услышать звук починки генератора, который вы заводите, сокращен на 8 метров . При провале проверки реакции , произойдет следующее: Генератор не взорвется. Генератор будет терять прогресс с обычной скоростью. Будет потеряно еще {процентов} прогресса. I уровень | II уровень | III уровень 5% | 4% | 3%",
+      "rang": 0,
+      "DLS": "Feng"
+  },
+  {
+      "number": 63,
+      "photo_main": "Prizvanie.png",
+      "name_en": "Made for This",
+      "description_en": "You were born to survive, and raised to adapt. Whenever you are in the Injured State, Made for This activates and you benefit from the following effects: Grants the Endurance Status Effect for 6/8/10 seconds, after completing a Healing action on another Survivor. Endurance is cancelled prematurely when performing a Conspicuous Action. Grants a 1/2/3 % Haste Status Effect while running and also suffering from the Deep Wound Status Effect. \"I didn't come here to be robot food!\" — Gabriel Soma",
+      "name_ru": "Призвание",
+      "description_ru": "Вы были рождены выживать и приучены адаптироваться. Навык \"Призвание\" активируется, когда вы оказываетесь ранены. После завершения лечения другого выжившего вы получаете эффект \"Стойкость\" на {секунд} С \"Глубокой раной\" скорость вашего бега увеличивается на {процентов} Во время действия \"Стойкости\" вместо смертельного ранения выживший получает \"Глубокую рану\". С \"Глубокой раной\" выживший окажется при смерти, если его не подлатают, пока не истекло время.  | I уровень | II уровень | III уровень Бег | 1% | 2% | 3% Стойкость | 6 сек. | 8 сек. | 10 сек.",
+      "rang": 0,
+      "DLS": "Gabriel"
+  },
+  {
+      "number": 64,
+      "photo_main": "Utilizator.png",
+      "name_en": "Scavenger",
+      "description_en": "Where others see junk, you see valuable improvised tools. While holding a depleted Toolbox, Scavenger activates: Succeeding at Great Repairing Skill Checks grants 1 Token, up to a maximum of 5 Tokens. Reaching the maximum number of Tokens automatically consumes them and fully recharges the Toolbox. Recharging a Toolbox will reduce your Repair speed by -50 % for the next 40/35/30 seconds. Scavenger grants the ability to rummage through an opened Chest once per Trial and will guarantee a basic Toolbox. \"It's amazing what people will throw away around here.\" — Gabriel Soma",
+      "name_ru": "Утилизатор",
+      "description_ru": "Где другие видят мусор, вы видите ценные импровизированные инструменты. Навык \"Утилизатор\" активируется, когда вы держите в руках пустой ящик с инструментами. Пройдя на отлично проверку реакции при починке, вы получаете 1 жетон (можно иметь не более 5). Накопив максимум жетонов, вы теряете их и автоматически полностью восполняете свой ящик с инструментами. При этом ваша скорость починки генератора замедляется на 50% на {секунд}. Этот навык позволяет раз за матч обыскать открытый сундук и получить обычный ящик с инструментами. I уровень | II уровень | III уровень 40 сек. | 35 сек. | 30 сек.",
+      "rang": 0,
+      "DLS": "Gabriel"
+  },
+  {
+      "number": 65,
+      "photo_main": "Remontnik.png",
+      "name_en": "Troubleshooter",
+      "description_en": "No amount of distraction will shake you from your primary task. When you are chased by the Killer, Troubleshooter activates: The Aura of the Generator with the most progress is revealed to you. The Aura of the Killer is revealed to you for 4/5/6 seconds after dropping a Pallet. These effects linger for 6/8/10 seconds after ending the Chase, after which Troubleshooter deactivates. \"Nothing gets done around here if I don't do it.\" — Gabriel Soma",
+      "name_ru": "Ремонтник",
+      "description_ru": "Ничто не сможет отвлечь вас от главной задачи. Когда за вами гонится убийца, активируется навык \"Наладчик [ 1 ] \". Вы будете видеть ауру генератора, наиболее близкого к починке При сбросе доски вы увидите ауру убийцы на {секунд} Эффект сохраняется на {секунд} после погони, затем пропадает.  | I уровень | II уровень | III уровень Аура | 4 сек. | 5 сек. | 6 сек. Эффект | 6 сек. | 8 сек. | 10 сек.",
+      "rang": 0,
+      "DLS": "Gabriel"
+  },
+  {
+      "number": 66,
+      "photo_main": "Sobrannost'.png",
+      "name_en": "Inner Focus",
+      "description_en": "You have honed your ability to see through the haze of the Ravage. Grants the ability to see the Scratch Marks of other Survivors. Whenever another Survivor loses a Health State due to the Killer, the Aura of the latter is revealed to your for 6/8/10 seconds. \"The death, the trauma, the fear... it all leads here. The Overlap.\" — Haddie Kaur, Ravages of the Abyss Episode 11",
+      "name_ru": "Собранность",
+      "description_ru": "Вы развили у себя способность видеть сквозь дымку Разрухи. Вы видите следы-трещины других выживших. Когда убийца заставляет другого выжившего потерять уровень здоровья, вы в течение {секунд} видите ауру убийцы. I уровень | II уровень | III уровень 6 сек. | 8 сек. | 10 сек.",
+      "rang": 0,
+      "DLS": "Haddie"
+  },
+  {
+      "number": 67,
+      "photo_main": "Userdie.png",
+      "name_en": "Overzealous",
+      "description_en": "Fighting back against the Ravage motivates and inspires you. After cleansing or blessing a Totem, Overzealous activates: Dull Totem: Increases your Repair speed by 8/9/10 %. Hex Totem: Increases your Repair speed by 16/18/20 %. Overzealous deactivates after losing a Health State by any means. \"The Ravage senses us. We need to work fast.\" — Haddie Kaur, Ravages of the Abyss Episode 9",
+      "name_ru": "Усердие",
+      "description_ru": "Борьба с Разрухой вдохновляет и мотивирует вас. Очистив любой тотем, вы активируете этот навык. Ваша скорость починки генераторов увеличивается на {процентов}. Этот бонус удваивается, если вы очистите или благословите проклятый тотем. Этот навык деактивируется, если вы потеряете уровень здоровья. I уровень | II уровень | III уровень 8% | 9% | 10%",
+      "rang": 0,
+      "DLS": "Haddie"
+  },
+  {
+      "number": 68,
+      "photo_main": "Ostatochnoe_projavlenie.png",
+      "name_en": "Residual Manifest",
+      "description_en": "A lifetime of chasing the darkness has taught you that the best disinfectant is light. After a successful Killer Blind, the Killer suffers from the Blindness Status Effect for 20/25/30 seconds. Residual Manifest grants the ability to rummage through an opened Chest once per Trial and will guarantee a basic Flashlight. \"I'll never see what Haddie sees. But so long as I'm with her, I know I'm safe.\" — Jordan Rois, Ravages of the Abyss Episode 5",
+      "name_ru": "Остаточное проявление",
+      "description_ru": "Жизнь, проведенная в следовании за тьмой, научила вас, что лучше всего прогонять ее светом. После ослепления убийцы тот получает эффект \"Слепота\" на {секунд}. Этот навык позволяет один раз за матч обыскать уже открытый сундук и гарантировано получить базовый фонарик. \"Слепота\" не дает убийце видеть ауры. I уровень | II уровень | III уровень 20 сек. | 25 сек. | 30 сек.",
+      "rang": 0,
+      "DLS": "Haddie"
+  },
+  {
+      "number": 69,
+      "photo_main": "Spokojstvie_duha.png",
+      "name_en": "Calm Spirit",
+      "description_en": "Animals seem to trust you as they often stay calm in your presence. Prevents Crows from being alerted by your proximity and flying off, unless they are being stepped on. Suppresses the urge to scream from any cause at all times. Suppresses all noises related to unlocking Chests, and cleansing or blessing Totems. Reduces the Interaction speeds with Chests and Totems by 40/35/30 %.",
+      "name_ru": "Спокойствие духа",
+      "description_ru": "Похоже, животные доверяют вам, поскольку зачастую сохраняют спокойствие в вашем присутствии. Уменьшает шансы спугнуть лесных обитателей на 100% Спокойствие вашего духа позволяет сдерживать желание закричать Позволяет открывать сундуки и очищать/благословлять тотемы беззвучно, но скорость снижается на {процентов} I уровень | II уровень | III уровень 40% | 35% | 30%",
+      "rang": 0,
+      "DLS": "Jake"
+  },
+  {
+      "number": 70,
+      "photo_main": "Zheleznaja_volja.png",
+      "name_en": "Iron Will",
+      "description_en": "You are able to concentrate and enter a meditative-like state to numb some pain. Reduces the volume of Grunts of Pain while in the Injured State by 80/90/100 %. Iron Will cannot be used when suffering from Exhaustion, but does not cause the Exhausted Status Effect.",
+      "name_ru": "Железная воля",
+      "description_ru": "Вы сможете, сосредоточившись, войти в медитативное состояние, чтобы заглушить боль. Вопли от вызванной травмами боли заглушаются на {процентов}. Не действует во время \"Усталости\". Не вызывает \"Усталость\". \"Усталость\" не дает выжившим активировать утомляющие навыки. I уровень | II уровень | III уровень 80% | 90% | 100%",
+      "rang": 0,
+      "DLS": "Jake"
+  },
+  {
+      "number": 71,
+      "photo_main": "Krushitel'.png",
+      "name_en": "Saboteur",
+      "description_en": "Unlocks potential in your Aura-reading ability: While the Killer is carrying another Survivor, the Auras of all Hooks within 56 metres of their original Pick-up location are revealed to you: The Auras of normal Hooks are white. The Auras of Scourge Hooks are yellow. Unlocks the ability to sabotage Hooks without Toolboxes: Increases the Sabotage speed without a Toolbox by +30 %. This effect has a cool-down of 70/65/60 seconds after use.",
+      "name_ru": "Крушитель",
+      "description_ru": "У вас появляется способность чтения ауры. Когда убийца несет выжившего, вы видите ауры крюков в радиусе 56 м от места, где подобрали выжившего. Секущие крюки подсвечены желтым. Позволяет ломать крюки без инструментов. Поломка крюка без инструментов занимает 2.3 сек . Повторно выполнить действие поломки можно спустя {секунд}. I уровень | II уровень | III уровень 70 сек. | 65 сек. | 60 сек.",
+      "rang": 0,
+      "DLS": "Jake"
+  },
+  {
+      "number": 72,
+      "photo_main": "Naprolom.png",
+      "name_en": "Head On",
+      "description_en": "When your mind is set, there better be no one standing in your way. After hiding in a Locker for 3 seconds, Head On activates: Performing a Rush Exit out of the Locker stuns a nearby Killer for 3 seconds. Head On causes the Exhausted Status Effect for 60/50/40 seconds. Head On cannot be used while Exhausted or when having accrued Idle Crows. \"People are remembered for the challenges they overcome. You can run away and forget what you're capable of or you can face your fears and remind the world of who you are.\" — Jane Romero",
+      "name_ru": "Напролом",
+      "description_ru": "Вы сосредотачиваетесь на цели, и горе тем, кто встанет у вас на пути. Если вы прячетесь в шкафчике 3 сек ., активируется навык \" Напролом \". Чтобы использовать его, быстро выбегите из шкафчика, когда навык активен. Если убийца находится в зоне действия навыка \" Напролом \", вы оглушите его на 3 сек . Вызывает эффект \" Усталость \" на {секунд}. Усталые персонажи не могут бежать напролом. Во время бега \" Усталость \" не проходит. \" Напролом \" нельзя использовать, если рядом есть вороны. \"Усталость\" не дает выжившим активировать утомляющие навыки. I уровень | II уровень | III уровень 60 сек | 50 сек. | 40 сек.",
+      "rang": 0,
+      "DLS": "Jane"
+  },
+  {
+      "number": 73,
+      "photo_main": "Ravnovesie.png",
+      "name_en": "Poised",
+      "description_en": "Achieving goals boosts your confidence. Whenever a Generator is completed, you benefit from the following effect for 10/12/14 seconds: Suppresses the creation of your Scratch Marks. First starting to repair a given Generator reveals the Aura of the Killer to you for 6 seconds. \"Ok, stay calm. Don't overthink it and just keep moving forward: you got this.\" — Jane Romero",
+      "name_ru": "Равновесие",
+      "description_ru": "Достигая целей, вы набираетесь уверенности. Впервые начав ремонтировать генератор, вы видите ауру убийцы в течение 6 сек. После починки генератора вы не оставляете следы-трещины {секунд}. I уровень | II уровень | III уровень 10 сек. | 12 сек. | 14 сек.",
+      "rang": 0,
+      "DLS": "Jane"
+  },
+  {
+      "number": 74,
+      "photo_main": "Solidarnost'.png",
+      "name_en": "Solidarity",
+      "description_en": "Sharing painful experiences has the power to heal. While injured and healing another Survivor without using a Med-Kit, you benefit from the following effect: Passively heal yourself at a rate of 50/60/70 % of your Altruistic Healing speed. \"Showing up when things get rough, listening to people's problems, and supporting those in need; that's how you become stronger, that's how you grow.\" — Jane Romero",
+      "name_ru": "Солидарность",
+      "description_ru": "Иногда очень полезно делиться болезненными воспоминаниями. Если вы в раненном состоянии лечите выжившего без аптечки, то лечитесь сами в пропорции {процентов}. I уровень | II уровень | III уровень 50% | 60% | 70%",
+      "rang": 0,
+      "DLS": "Jane"
+  },
+  {
+      "number": 75,
+      "photo_main": "Uhod_za_bol'nym.png",
+      "name_en": "Aftercare",
+      "description_en": "Unlocks potential in your Aura-reading ability. The Auras of the last 1/2/3 Survivor(s) are permanently revealed to you, once any of the following conditions have been met: You have unhooked them. They have unhooked you. You have completed a Healing action on them. They have completed a Healing action on you. Those Survivors also have your Aura revealed to them. Aftercare resets its effect once you are hooked. \"A Mercy that Rips the Storm. Oil work to honour my best buddies who happen to be the best musicians I know. Their first album is still my favourite. It got me through a dark time in my life.\" — Jeff, oil on canvas, 16x16",
+      "name_ru": "Уход за больным",
+      "description_ru": "Навык открывает способность к чтению ауры. Вы способны видеть ауру каждого Выжившего: которого вы снимаете с крюка или который снимает с крюка вас; которого вы вылечиваете или который вылечивает вас. Выжившие также видят вашу ауру. Вы можете создать до {кол-во} связи. Если Убийца повесит вас на крюк, имеющиеся с Выжившими связи разрушаются. I уровень | II уровень | III уровень 1 выживший | 2 выживших | 3 выживших",
+      "rang": 0,
+      "DLS": "Jeff"
+  },
+  {
+      "number": 76,
+      "photo_main": "Polomka.png",
+      "name_en": "Breakdown",
+      "description_en": "Whenever you are unhooked by another Survivor or unhook yourself, the following effects apply: The Aura of the Killer is revealed to you for 4/5/6 seconds. Causes the Hook to break instantly. Hooks broken by Breakdown take 180 seconds to respawn. \"Charge from the Belly of the Beast. Here's a sketch/painting on a piece of wood I saw by the side of this road. I felt like it got a story to tell. And it didn't waste its second chance.\" — Jeff, ink and oil wash on slice of wood, 12x16",
+      "name_ru": "Поломка",
+      "description_ru": "Каждый раз, когда вас снимают с крюка, либо когда вы сами с него слезаете, крюк ломается, и вы видите ауру убийцы в течение {секунд}. Крюк, сломанный этим навыком, восстанавливается 180 секунд . I уровень | II уровень | III уровень 4 сек. | 5 сек. | 6 сек.",
+      "rang": 0,
+      "DLS": "Jeff"
+  },
+  {
+      "number": 77,
+      "photo_main": "Iskazhenie.png",
+      "name_en": "Distortion",
+      "description_en": "Start the Trial with 1 Token. Whenever the Killer attempts to read your Aura, Distortion activates and consumes -1 Token, applying the following effects for 8/10/12 seconds: Blocks your Aura from being read. Suppresses the creation of your Scratch Marks. For every 15 seconds spent in a Chase, Distortion recharges +1 Token, up to a maximum of 2 Tokens. Distortion does not activate when you are in the Dying State.",
+      "name_ru": "Искажение",
+      "description_ru": "Навык активируется, когда убийца видит вашу ауру. \"Искажение\" изначально имеет 1 шт. жетонов. Когда убийца считывает вашу ауру, срабатывает эффект искажения, поглощая 1 жетон. В следующие {секунд} убийца не будет видеть вашу ауру и оставленные вами следы-трещины. За каждые 15 сек. погони вы возвращаете себе 1 жетон, максимум до 2. Эффект не появляется, если вы находитесь при смерти. I уровень | II уровень | III уровень 8 сек. | 10 сек. | 12 сек.",
+      "rang": 0,
+      "DLS": "Jeff"
+  },
+  {
+      "number": 78,
+      "photo_main": "Fugasnaja_mina.png",
+      "name_en": "Blast Mine",
+      "description_en": "When direct combat is not an option, you still find ways to strike back. After repairing Generators for a total of 40 %, Blast Mine activates: Press the Active Ability button while near a partially progressed Generator to install a Trap, which stays active for 100/110/120 seconds. When the Killer damages the Trapped Generator, its Trap explodes half-way through: Stuns the Killer for 4 seconds. Blinds all Players within 12.5 metres of the Trapped Generator. Blast Mine deactivates after triggering successfully or once the timer runs out. The Auras of Trapped Generators are revealed to all Survivors in yellow. \"You want S.T.A.R.S.? I'll give you S.T.A.R.S.!\" — Jill Valentine",
+      "name_ru": "Фугасная мина",
+      "description_ru": "Если прямая конфронтация невозможна, вы все равно найдете способ нанести ответный удар. \" Фугасная мина \" становится доступна после того, как суммарный прогресс починки генераторов достигнет 40%. Стоя рядом с генератором, нажмите кнопку активной способности 2 , чтобы поставить фугасную мину, которая будет действовать {секунд}. Затронутые генераторы получат желтую ауру, которая будет видна всем выжившим. На генераторе может находиться только одна мина. Когда убийца повреждает заминированный генератор, мина взрывается, оглушая убийцу и ослепляя всех поблизости. Фугасная мина деактивируется при повреждении генератора убийцей или по истечении срока действия. I уровень | II уровень | III уровень 100 сек. | 110 сек. | 120 сек.",
+      "rang": 0,
+      "DLS": "Jill"
+  },
+  {
+      "number": 79,
+      "photo_main": "Protivodejstvie.png",
+      "name_en": "Counterforce",
+      "description_en": "You know how to withstand an enemy stronger than you, and it starts with hunting down and knocking out their support. You cleanse Totems 20 % faster. Gain another, stack-able 20 % Cleansing Speed bonus per cleansed Totem. After cleansing a Totem, the Aura of the Totem farthest from you is revealed to you for 2/3/4 seconds. \"I don't mind a little detective work.\" — Jill Valentine",
+      "name_ru": "Противодействие",
+      "description_ru": "Вы умеете справляться с врагами, которые сильнее вас. Тут главное найти и обезвредить их средства поддержки. Вы очищаете тотемы на 20% быстрее. После очистки вам на {секунд} открывается аура самого дальнего от вас тотема, и вы получаете бонус к скорости очистки тотемов в размере 20% до конца матча. Бонусы могут складываться. I уровень | II уровень | III уровень 2 сек. | 3 сек. | 4 сек.",
+      "rang": 0,
+      "DLS": "Jill"
+  },
+  {
+      "number": 80,
+      "photo_main": "Popravka.png",
+      "name_en": "Resurgence",
+      "description_en": "You have come back from near impossible odds... and you will do it again. Being unhooked or unhooking yourself grants you 50/60/70 % Healing progress. \"It's my turn, bitch!\" — Jill Valentine",
+      "name_ru": "Поправка",
+      "description_ru": "Вы вернулись, хотя были обречены на смерть... Если понадобится, вы сделаете это снова. Вы получаете {процентов} к прогрессу лечения сразу после того, как собственными силами или с чьей-то помощью снялись с крюка. I уровень | II уровень | III уровень 50% | 60% | 70%",
+      "rang": 0,
+      "DLS": "Jill"
+  },
+  {
+      "number": 81,
+      "photo_main": "IconPerks_boonExponential.png",
+      "name_en": "Boon: Exponential",
+      "description_en": "When it seems like your number is up, you consider ways to recalculate the odds. Press and hold the Active Ability button on a Dull or Hex Totem to bless it and create a Boon Totem. Soft chimes ring out in a radius of 24 metres. All Survivors benefit from the following effects when inside the Boon Totem's radius: 90/95/100 % bonus to the Recovery speed. Unlocks the Self-Recovery ability, allowing you to fully recover from the Dying State. Only one Totem can be blessed by your Boon Perks at a time and all of their effects are active on the same Boon Totem. \"It is not our time to die... probably.\" — Jonah Vasquez",
+      "name_ru": "Дар: экспонента",
+      "description_ru": "Когда кажется, что дни сочтены, вы ищете способ изменить вероятность печального исхода. Зажмите кнопку способности рядом с тусклым или проклятым тотемом, чтобы благославить его и создать дарующий тотем. Легкий звон будет слышен в пределах 24 м. Выжившие в пределах радиуса действия тотема получат бонус {процентов} к скорости восстановления и могут полностью восстановиться, будучи при смерти. За раз можно благославить только один тотем. Все экипированные дарующие навыки активируются на вашем дарующем тотеме. I уровень | II уровень | III уровень 90% | 95% | 100%",
+      "rang": 0,
+      "DLS": "Jonah"
+  },
+  {
+      "number": 82,
+      "photo_main": "Korrektirovka.png",
+      "name_en": "Corrective Action",
+      "description_en": "You quickly analyse problems and correct others' work when they make a mistake. You start the Trial with 1/2/3 Token(s). Whenever you succeed a Great Skill Check, Corrective Action gains +1 Token, up to a maximum of 5 Tokens: Converts any Failed Skill Check of another Survivor into a Good Skill Check instead and consumes -1 Token. The Aura of that Survivor is revealed to you for 6 seconds. Corrective Action does not apply to any special Skill Checks. \"Cannot hurt to have another set of eyes on the problem.\" — Jonah Vasquez",
+      "name_ru": "Корректировка",
+      "description_ru": "Вы быстро анализируете проблемы и поправляете других людей, когда они совершают ошибки. В начале матча у вас есть жетоны ({штук}). Далее вы получаете 1 жетон за каждую отличную проверку реакции. Можно накопить до 5 жетонов. Когда выживший проваливает обычную проверку реакции, вы расходуете 1 жетон, а проваленная проверка реакции становится успешной. Кроме того, вы видите его ауру в течение 6 сек. I уровень | II уровень | III уровень 1 жетон | 2 жетона | 3 жетона",
+      "rang": 0,
+      "DLS": "Jonah"
+  },
+  {
+      "number": 83,
+      "photo_main": "Preodolenie.png",
+      "name_en": "Overcome",
+      "description_en": "You have calculated how much energy you can risk to expend. Becoming injured by any means triggers Overcome: Extends the duration of the On-hit Speed Boost by +2 seconds. Overcome causes the Exhausted Status Effect for 60/50/40 seconds. Overcome cannot be used when Exhausted. \"After careful analysis, we are getting the hell out of here!\" — Jonah Vasquez",
+      "name_ru": "Преодоление",
+      "description_ru": "Вы вычислили, каким объемом своего запаса сил можно рисковать. Когда вас ранят, вы сохраняете бонус к скорости передвижения еще 2 сек. \"Преодоление\" накладывает эффект \"Усталость\" на {секунд}. \"Преодоление\" нельзя использовать во время действия эффекта \"Усталость\". \"Усталость\" не дает выжившим активировать утомляющие навыки. I уровень | II уровень | III уровень 60 сек. | 50 сек. | 40 сек.",
+      "rang": 0,
+      "DLS": "Jonah"
+  },
+  {
+      "number": 84,
+      "photo_main": "Cherez_kraj.png",
+      "name_en": "Boil Over",
+      "description_en": "You are a battler and do everything to escape a foe's grasp. While being carried by the Killer, the following effects apply: Increases the strength of the Struggle Effects on the Killer from your Wiggling by 60/70/80 %. Suppresses the ability of the Killer to read the Auras of all Hooks within 16 metres. Grants +33 % of your current Wiggle progression upon landing, if the Killer drops from height. \"Buck and Wild, Swing to be free, Your hands just can't keep ahold of me.\" — Kate Denson's \"Boil Over\"",
+      "name_ru": "Через край",
+      "description_ru": "Вы боец и сделаете все возможное, чтобы вырваться из лап врага. Вы извиваетесь в руках убийцы на {процентов} сильнее, когда пытаетесь сбежать. Вы подавляете способность убийцы видеть ауры крюков в радиусе 16 м. Вы получаете 33% к текущему прогрессу вырывания, когда убийца падает с большой высоты. I уровень | II уровень | III уровень 60% | 70% | 80%",
+      "rang": 0,
+      "DLS": "Kate"
+  },
+  {
+      "number": 85,
+      "photo_main": "Potantsuj_so_mnoj.png",
+      "name_en": "Dance With Me",
+      "description_en": "When performing a Rushed Action to vault a Window or exit a Locker, Dance With Me triggers its effect: Suppresses the creation of Scratch Marks for 3 seconds. Dance With Me has a cool-down of 30/25/20 seconds. \"Another show's off and runnin', Dance with me, cuz there's a storm a commin' Follow my boots, try to keep up, Dance with me, until sun up.\" — Kate Denson's \"Dance with Me\"",
+      "name_ru": "Потанцуй со мной",
+      "description_ru": "После ускоренного прыжка через препятствия или выхода из шкафчика \"на бегу\", вы не оставляете следов-трещин в течение 3 секунд . Потанцуй со мной можно использовать снова через {секунд} после активации. I уровень | II уровень | III уровень 30 сек. | 25 сек. | 20 сек.",
+      "rang": 0,
+      "DLS": "Kate"
+  },
+  {
+      "number": 86,
+      "photo_main": "Unikal'naja_vozmozhnost'.png",
+      "name_en": "Windows of Opportunity",
+      "description_en": "Unlocks potential in your Aura-reading ability. The Auras of Breakable Walls, Pallets, and Windows are revealed to you within 24/28/32 metres. \"Rise and shine, work hard, carve out your name, Take aim, pull the trigger, hit the bulls eye for fame, Know the value of faith, an' family, and don't you complain, Open wide, your windows of opportunity\" — Kate Denson's \"Windows of Opportunity\"",
+      "name_ru": "Уникальная возможность",
+      "description_ru": "Открывает способность чтения ауры. Ауры досок, разрушаемых стен и препятствий , через которые можно перепрыгнуть, видны вам, когда вы находитесь в пределах {метров} от них. I уровень | II уровень | III уровень 24м | 28м | 32м",
+      "rang": 0,
+      "DLS": "Kate"
+  },
+  {
+      "number": 87,
+      "photo_main": "Snorovka.png",
+      "name_en": "Finesse",
+      "description_en": "The threat of danger can motivate any creature to strengthen its resolve. Whenever you are healthy, Finesse activates: Increases your Vaulting speed for a Fast Vault by +20 %. Finesse has a cool-down of 40/35/30 seconds after performing a Fast Vault. \"Just need to push myself a bit further.\" — Lara Croft",
+      "name_ru": "Сноровка",
+      "description_ru": "Перед лицом опасности любая может набраться решимости. Этот навык активируется, когда вы здоровы. Скорость ваших быстрых прыжков увеличивается на 20% Навык восстанавливается {секунд} после вашего быстрого прыжка. I уровень | II уровень | III уровень 40 сек. | 35 сек. | 30 сек.",
+      "rang": 0,
+      "DLS": "Lara"
+  },
+  {
+      "number": 88,
+      "photo_main": "Zakalka.png",
+      "name_en": "Hardened",
+      "description_en": "Live long enough, and survival will run in your blood. After unlocking a Chest and either blessing or cleansing a Totem, Hardened activates: Suppresses the urge to scream from any cause and instead causes the Aura of the Killer to be revealed to you for 3/4/5 seconds. \"Got to keep quiet. That thing is still out there.\" — Lara Croft",
+      "name_ru": "Закалка",
+      "description_ru": "Чем дольше живешь, тем больше привыкаешь выживать. Навык активируется, когда вы совершаете все это: открываете сундук очищаете или благословляете тотем. До конца матча каждый раз, когда вы должны закричать, вместо этого вы видите ауру убийцы в течение {секунд}. I уровень | II уровень | III уровень 3 сек. | 4 сек. | 5 сек.",
+      "rang": 0,
+      "DLS": "Lara"
+  },
+  {
+      "number": 89,
+      "photo_main": "Spetsialist.png",
+      "name_en": "Specialist",
+      "description_en": "Adventure. Exploration. Excavation. You are in your element. Whenever you unlock or rummage through a Chest, Specialist gains +1 Token, up to a maximum of 6 Tokens: Succeeding a Great Repair Skill Check while repairing a Generator consumes all Tokens. Permanently reduces the Repair Charges requirement of that Generator by 2/3/4 Charges per Token, up to a maximum of 12/18/24 Charges. \"Well, then. Doesn't this feel familiar?\" — Lara Croft",
+      "name_ru": "Специалист",
+      "description_ru": "Приключения. Исследования. Раскопки. Вы в своей стихии. Когда вы открываете или обыскиваете сундук, дает 1 жетон (не более 6). Когда вы проходите проверку реакции на отлично при починке генератора, расходуются все жетоны. За каждый израсходованный жетон требуемый порог починки генератора снижается на {зарядов}. I уровень | II уровень | III уровень 2 ед. | 3 ед. | 4 ед.",
+      "rang": 0,
+      "DLS": "Lara"
+  },
+  {
+      "number": 90,
+      "photo_main": "Reshajuschij_udar.png",
+      "name_en": "Decisive Strike",
+      "description_en": "Using whatever is at hand, you stab your aggressor in an ultimate attempt to escape. After being unhooked or unhooking yourself, Decisive Strike activates for the next 40/50/60 seconds: When grabbed or picked up by the Killer, succeed a Skill Check to stab the Killer and escape from their grasp. Stuns the Killer for 4 seconds. Causes you to become the next Obsession. Decisive Strike is deactivated once the Exit Gates are powered. Decisive Strike is disabled for the remainder of the Trial after use. Decisive Strike is deactivated prematurely when performing a Conspicuous Action and remains disabled for the remainder of the Trial. Increases your chance of becoming the initial Obsession by increasing the default value by +100 %. The Killer can only be obsessed with one Survivor at a time. \"There is nothing to be scared of.\" — Laurie Strode",
+      "name_ru": "Решающий удар",
+      "description_ru": "Пырните врага при попытке сбежать. Когда вы слезаете с крюка (самостоятельно или с помощью друга), на {секунд} активируется \" Решающий удар \". Пока он действует, вы можете вырваться из рук убийцы, если пройдете проверку реакции. При этом вы оглушите его на 4 сек. После успешной или неудачной проверки реакции \" Решающий удар \" отключается Оглушив убийцу, вы становитесь объектом его одержимости Навык и его эффекты отключаются при подаче питания к вратам Увеличивает ваш шанс стать объектом одержимости. Действия, привлекающие внимание, отключают \" Решающий удар \". Убийца может быть одержим только одним выжившим за раз. I уровень | II уровень | III уровень 40 сек. | 50 сек. | 60 сек.",
+      "rang": 0,
+      "DLS": "Laurie"
+  },
+  {
+      "number": 91,
+      "photo_main": "Ob'ekt_oderzhimosti.png",
+      "name_en": "Object of Obsession",
+      "description_en": "A supernatural bond links you to the Killer. Whenever the Killer reads your Aura, Object of Obsession activates for the same duration as their Aura-reading action: The Aura of the Killer is revealed to you. Increases your Action speeds for Cleansing, Healing, and Repairing actions by 2/4/6 %. If you are the Killer's current Obsession, the following effect triggers automatically every 30 seconds: Your Aura is revealed to the Killer for 3 seconds. Increases your chance of becoming the initial Obsession by increasing the default value by +100 %. The Killer can only be obsessed with one Survivor at a time. \"He was watching me!\" — Laurie Strode",
+      "name_ru": "Объект одержимости",
+      "description_ru": "Вас и убийцу связывают сверхъестественные узы. Когда ваша аура становится видна убийце, вы сами видите ауру убийцы и получаете +{процентов} к скорости лечения, починки и очищения. Если вы стали объектом одержимости, ваша аура становится видна убийце в течение 3 сек. каждые 30 сек . Увеличивает ваш шанс стать объектом одержимости. Убийца может быть одержим только одним выжившим за раз. I уровень | II уровень | III уровень 2% | 4% | 6%",
+      "rang": 0,
+      "DLS": "Laurie"
+  },
+  {
+      "number": 92,
+      "photo_main": "Edinstvennyj_vyzhivshij.png",
+      "name_en": "Sole Survivor",
+      "description_en": "As more of your friends fall to the Killer, you become shrouded in isolation and the Killer's Aura-reading abilities towards you are disrupted. Each time a Survivor other than yourself is killed or sacrificed, Sole Survivor gains 1 Token, up to a maximum of 3 Tokens: Grants a stack-able radius of 20/22/24 metres per Token around you, up to a maximum of 60/66/72 metres, within which you are immune to the Killer's Aura-reading abilities. When you are the Last Survivor Standing, you benefit from the following effects: Increases your Repair speed by +75 %. Increases your Gate and Hatch Opening speeds by +50 %. Increases your chance of becoming the initial Obsession by increasing the default value by +100 %. The Killer can only be obsessed with one Survivor at a time. \"It was the boogeyman.\" — Laurie Strode",
+      "name_ru": "Единственный выживший",
+      "description_ru": "Чем больше ваших союзников погибает от рук убийцы, тем сильнее вы отрешаетесь от мира, что мешает убийце различать вашу ауру . Каждый раз, когда выжившего убивают или приносят в жертву, вы получаете жетон. Убийца не может читать вашу ауру на расстоянии до {метров} за каждый жетон. Когда в живых из выживших остаетесь только вы: при починке генераторов ваши действия ускоряются на 75%; при открытии ворот или люка ваши действия ускоряются на 50%. Увеличивает ваши шансы стать объектом одержимости. Одновременно убийца может быть одержим только одной жертвой. I уровень | II уровень | III уровень 20 метров | 22 метра | 24 метра",
+      "rang": 0,
+      "DLS": "Laurie"
+  },
+  {
+      "number": 93,
+      "photo_main": "Stisnuv_zuby.png",
+      "name_en": "Bite the Bullet",
+      "description_en": "Pain hurts you as much as anyone, but you would prefer others do not know that. When healing yourself or another Survivor, you benefit from the following effects: Suppresses all noises related to Healing and Grunts of Pain. Failed Healing Skill Checks do not trigger a Loud Noise Notification. Reduces the Penalty to 3/2/1 % of the total Progression. \"I can do this.\" — Leon Scott Kennedy",
+      "name_ru": "Стиснув зубы",
+      "description_ru": "Вы тоже чувствуете боль, но не любите показывать это окружающим. Во время лечения вы и выживший, которого вы лечите, не шумите, в том числе не вскрикиваете от боли. Неудачная проверка реакции при лечении не наказывается звуковым сигналом, а прогресс лечения снижается только на {процентов}. I уровень | II уровень | III уровень 3% | 2% | 1%",
+      "rang": 0,
+      "DLS": "Leon"
+  },
+  {
+      "number": 94,
+      "photo_main": "Svetovaja_granata.png",
+      "name_en": "Flashbang",
+      "description_en": "You have adapted to a world in chaos and making what you can from the debris. After repairing Generators for a total of 50/45/40 %, Flashbang activates: Press the Active Ability button while hiding inside a Locker to craft a Flash Grenade. Flashbang deactivates after use. \"Get outta my face!\" — Leon Scott Kennedy",
+      "name_ru": "Световая граната",
+      "description_ru": "Вы приспособились к общему хаосу и научились мастерить полезное из хлама. Когда прогресс починки любого генератора достигает {процентов}, становится доступна \"Световая граната\". Залезьте в шкафчик и нажмите кнопку активной способности 1, чтобы сделать световую гранату. 1 заряд Взрывается с грохотом и вспышкой света Подает звуковой сигнал Можно использовать для отвлечения или ослепления Сбегая из матча, вы не берете гранату с собой. I уровень | II уровень | III уровень 50% | 45% | 40%",
+      "rang": 0,
+      "DLS": "Leon"
+  },
+  {
+      "number": 95,
+      "photo_main": "Duh_novichka.png",
+      "name_en": "Rookie Spirit",
+      "description_en": "You keep a careful eye on objectives when they are slipping away. While repairing Generators, succeed 5/4/3 Good or Great Skill Checks to activate Rookie Spirit for the remainder of the Trial: The Auras of any regressing Generators are revealed to you until they stop regressing by any means. \"I'll stop this, lieutenant. I promise.\" — Leon Scott Kennedy",
+      "name_ru": "Дух новичка",
+      "description_ru": "Вы помните о поставленных задачах даже в сложных ситуациях. Ваши хорошие или отличные проверки реакции {штук} при починке генераторов позволяют активировать \"Дух новичка\" до конца матча. После активации вы сможете видеть ауры ветшающих генераторов. I уровень | II уровень | III уровень 5 | 4 | 3",
+      "rang": 0,
+      "DLS": "Leon"
+  },
+  {
+      "number": 96,
+      "photo_main": "Adrenalin.png",
+      "name_en": "Adrenaline",
+      "description_en": "You are fuelled by unexpecting energy when on the verge of escape. Once the Exit Gates are powered, Adrenaline activates: Instantly heal the equivalent of 1 Health State. Grants a +50 % Haste Status Effect for 3 seconds. Adrenaline ignores an existing Exhausted Status Effect , but causes it for 60/50/40 seconds.",
+      "name_ru": "Адреналин",
+      "description_ru": "Когда вы на грани побега, Вас подпитывает внезапный прилив энергии. Навык активируется при подаче питания на ворота. Мгновенно исцеляет одно состояние здоровья (из смертельно раненого в раненого или из раненого в здорового), увеличивает скорость бега до 150% от вашей обычной скорости в течение 3 секунд . Вызывает усталость на {секунд}. [ 1 ] \"Усталость\" не дает выжившим активировать утомляющие навыки. I уровень | II уровень | III уровень 60 секунд | 50 секунд | 40 секунд",
+      "rang": 0,
+      "DLS": "Meg"
+  },
+  {
+      "number": 97,
+      "photo_main": "Bystryj_i_tihij.png",
+      "name_en": "Quick & Quiet",
+      "description_en": "You do not make as much noise as others when quickly vaulting over obstacles or hiding in Lockers. Suppresses both the Loud Noise Notification and the sound effects triggered by rushing to vault Windows, Pallets, or rushing to enter or exit Lockers. Quick & Quiet has a cool-down of 30/25/20 seconds.",
+      "name_ru": "Быстрый и тихий",
+      "description_ru": "Вы шумите не так сильно, как другие, когда быстро перепрыгиваете через препятствия или прячетесь в шкафчиках . Радиус обнаружения этих шумов снижается на 100%. Этот эффект может сработать только один раз в {секунд}. I уровень | II уровень | III уровень 30 сек. | 25 сек. | 20 сек.",
+      "rang": 0,
+      "DLS": "Meg"
+  },
+  {
+      "number": 98,
+      "photo_main": "Sprinter.png",
+      "name_en": "Sprint Burst",
+      "description_en": "Starting to run triggers Sprint Burst: Grants a +50 % Haste Status Effect for 3 seconds. Sprint Burst causes the Exhausted Status Effect for 60/50/40 seconds. Sprint Burst cannot be used when Exhausted. \"See you if you can catch up...\" — Meg Thomas",
+      "name_ru": "Спринтер",
+      "description_ru": "Спринтуйте со скоростью в 150% от обычного бега в течение 3-х секунд . Накладывает эффект \" Усталость \" на {секунд}. Навык \" Спринтер \" невозможно использовать во время усталости . Вы не можете снять усталость во время бега. \"Усталость\" не дает выжившим активировать утомляющие навыки. I уровень | II уровень | III уровень 60 сек. | 50 сек. | 40 сек.",
+      "rang": 0,
+      "DLS": "Meg"
+  },
+  {
+      "number": 99,
+      "photo_main": "IconPerks_boonCircleOfHealing.png",
+      "name_en": "Boon: Circle of Healing",
+      "description_en": "A Boon that offers comfort amidst the terror. Press and hold the Active Ability button on a Dull or Hex Totem to bless it and create a Boon Totem. Soft chimes ring out in a radius of 24 metres. All Survivors benefit from the following effects when inside the Boon Totem's radius: Increases the Altruistic Healing speeds by 50/75/100 % when not using a Med-Kit. If a Survivor is injured, their Aura is revealed to all other Survivors. Survivors can only be affected by one instance of Boon: Circle of Healing at a time. Only one Totem can be blessed by your Boon Perks at a time and all of their effects are active on the same Boon Totem. \"Try this, it is better than anything you'll find in a pharmacy.\" — Mikaela Reid",
+      "name_ru": "Дар: круг исцеления",
+      "description_ru": "Дар, успокаивающий посреди творящегося ужаса. Зажмите кнопку способности 1 рядом с тусклым или проклятым тотемом, чтобы благословить его и создать дарующий тотем. Легкий звон будет слышен в пределах 24м. Выжившие в пределах радиуса действия тотема получают бонус {процентов} к скорости лечения других. Аптечки не дают бонусов для лечения в радиусе действия дарующего тотема. Ауры раненых выживших будут видны всем остальным выжившим, пока они находятся в радиусе действия дарующего тотема. За раз можно благословить только один тотем. Все экипированные дарующие навыки активируются на вашем дарующем тотеме. I уровень | II уровень | III уровень 50% | 75% | 100%",
+      "rang": 0,
+      "DLS": "Mikaela"
+  },
+  {
+      "number": 100,
+      "photo_main": "IconPerks_boonShadowStep.png",
+      "name_en": "Boon: Shadow Step",
+      "description_en": "A Boon that conceals the truth. Press and hold the Active Ability button on a Dull or Hex Totem to bless it and create a Boon Totem. Soft chimes ring out in a radius of 24 metres. All Survivors benefit from the following effects when inside the Boon Totem's radius: Scratch Marks are suppressed. Auras are hidden from The Killer. Both effects linger for 2/3/4 seconds after leaving the Boon Totem's range. Only one Totem can be blessed by your Boon Perks at a time and all of their effects are active on the same Boon Totem. \"Stick to the shadows and cover your tracks.\" — Mikaela Reid",
+      "name_ru": "Дар: уход в тень",
+      "description_ru": "Дар, скрывающий правду. Зажмите кнопку способности рядом с тусклым или проклятым тотемом, чтобы благословить его и создать дарующий тотем. Легкий звон будет слышен в пределах 24м. Следы-трещины и ауры выживших в пределах радиуса действия тотема будут скрыты от убийцы. Эффект продолжает действовать еще {секунд} после выхода из радиуса действия тотема. За раз можно благословить только один тотем. Все экипированные дарующие навыки активируются на вашем дарующем тотеме. I уровень | II уровень | III уровень 2 сек. | 3 сек. | 4 сек.",
+      "rang": 0,
+      "DLS": "Mikaela"
+  },
+  {
+      "number": 101,
+      "photo_main": "Jasnovidenie.png",
+      "name_en": "Clairvoyance",
+      "description_en": "There is an intrinsic energy in you that sees beyond your vision. After cleansing or blessing a Totem, Clairvoyance activates: While empty-handed, press and hold the Use Item button to unlock your full Aura-reading potential for up to 8/9/10 seconds, allowing you to see the Auras of the following environmental objects within 64 metres: Chests Exit Gate Switches Generators Hatch Hooks \"Does anyone else see that? Just me?\" — Mikaela Reid",
+      "name_ru": "Ясновидение",
+      "description_ru": "В вас струится особая энергия, которая позволяет заглядывать за пределы обычного зрения. \"Ясновидение\" активируется с каждым очищенным или благословленным вами тотемом. Не держа ничего в руках, зажмите кнопку способности, чтобы раскрыть свой потенциал к чтению аур. Вы можете делать это в течение {секунд}. Вы будете видеть ауры рычагов ворот, генераторов, крюков, сундуков и люка в пределах 64м. I уровень | II уровень | III уровень 8 сек. | 9 сек. | 10 сек.",
+      "rang": 0,
+      "DLS": "Mikaela"
+  },
+  {
+      "number": 102,
+      "photo_main": "Luchshe_vmeste.png",
+      "name_en": "Better Together",
+      "description_en": "You seek justice and uncover the truth no matter what obstacle stands in your way. While repairing a Generator, its Aura is highlighted in yellow to all other Survivors within 32 metres. Whenever the Killer downs a Survivor while you are repairing a Generator, the Auras of all other Survivors are revealed to you for 8/9/10 seconds. \"Let's burn that lab to the ground.\" — Nancy Wheeler",
+      "name_ru": "Лучше вместе",
+      "description_ru": "Вы жаждете справедливости и всегда докапываетесь до истины несмотря ни на что. Аура генератора, который вы чините в настоящий момент, видна всем выжившим в радиусе 32 м . Если во время вашей работы с генератором убийца тяжело ранит кого-то из выживших, вы видите ауру всех выживших на протяжении {секунд}. I уровень | II уровень | III уровень 8 сек. | 9 сек. | 10 сек.",
+      "rang": 0,
+      "DLS": "Nancy"
+  },
+  {
+      "number": 103,
+      "photo_main": "Fiksatsija.png",
+      "name_en": "Fixated",
+      "description_en": "When you have a goal in mind, there is no turning back; better to ask forgiveness than permission. Increases your Walking speed by 10/15/20 %. Unlocks the ability to see your own Scratch Marks. \"I wanna finish what we started. I want to kill it.\" — Nancy Wheeler",
+      "name_ru": "Фиксация",
+      "description_ru": "Если вы ставите цель, то идете к ней до конца: лучше просить прощения, чем разрешения. Вы всегда видите собственные следы-трещины. Ваша скорость ходьбы возрастает на {процентов}. I уровень | II уровень | III уровень 10% | 15% | 20%",
+      "rang": 0,
+      "DLS": "Nancy"
+  },
+  {
+      "number": 104,
+      "photo_main": "Vnutrennjaja_sila.png",
+      "name_en": "Inner Strength",
+      "description_en": "You look inwards and trust your instincts when you feel lost and alone. Each time you cleanse a Totem, Inner Strength activates: You are automatically healed 1 Health State while hiding inside a Locker for 10/9/8 seconds when injured or suffering from the Deep Wound Status Effect. Inner Strength does not activate if you currently suffer from the Broken Status Effect. \"All this time I've been trying so hard to pretend like everything's fine, but it's not.\" — Nancy Wheeler",
+      "name_ru": "Внутренняя сила",
+      "description_ru": "Когда кажется, что вы одни, а впереди — непроглядная тьма, вы вглядываетесь в себя и доверяетесь инстинктам. После каждой очистки тотема активируется \"Внутренняя сила\". Если на вас действует эффект \"Ослабление\", \"Внутренняя сила\" не активируется. Пока \"Внутренняя сила\" активна, вы полностью исцеляетесь от ранений, если прячетесь в шкафчике {секунд}. После срабатывания \"Внутренняя сила\" отключается. I уровень | II уровень | III уровень 10 сек. | 9 сек. | 8 сек.",
+      "rang": 0,
+      "DLS": "Nancy"
+  },
+  {
+      "number": 105,
+      "photo_main": "Lovkoe_prizemlenie.png",
+      "name_en": "Balanced Landing",
+      "description_en": "Your agility and cat-like relexes are incomparable. After falling from a height, you benefit from the following effects: Reduces the duration of the Stagger upon landing by -75 %. Suppresses all noises associated with falling. Grants a +50 % Haste Status Effect for 3 seconds upon landing. Balanced Landing causes the Exhausted Status Effect for 60/50/40 seconds. Balanced Landing cannot be used when Exhausted. \"I have jumped from higher places.\" — Nea Karlsson",
+      "name_ru": "Ловкое приземление",
+      "description_ru": "Ваша ловкость достойна уважения. Обладая кошачьей реакцией, после падений с высоты вы на 75% меньше подвержены оглушению и вскрикиваете на 100% тише. После приземления скорость бега составляет 150% от обычной скорости на протяжении 3 сек . Накладывает эффект \" Усталость \" на {секунд}. \" Ловкое приземление \" нельзя использовать, пока не пройдет усталость . \"Усталость\" не дает выжившим активировать утомляющие навыки. I уровень | II уровень | III уровень 60 сек. | 50 сек. | 40 сек.",
+      "rang": 0,
+      "DLS": "Nea"
+  },
+  {
+      "number": 106,
+      "photo_main": "Uroki_ulits.png",
+      "name_en": "Streetwise",
+      "description_en": "Long nights out taught you to do a lot with what you have got. Increases the Efficiency of your Items by 15/20/25 %. Streetwise extends its effect to all other Survivors within 8 metres of your location and lingers for 15 seconds. \"You are doing it wrong! Let me show you how it is done.\" — Nea Karlsson",
+      "name_ru": "Уроки улиц",
+      "description_ru": "Долгие ночи научили вас пользоваться тем, что оказалось под рукой. Замедляет расход заряда предмета на {процентов} для вас и союзников, находящихся в пределах 8 метров от вас. При выходе из радиуса действия эффект сохраняется на 15 секунд . I уровень | II уровень | III уровень 15% | 20% | 25%",
+      "rang": 0,
+      "DLS": "Nea"
+  },
+  {
+      "number": 107,
+      "photo_main": "Gorodskoj_beg.png",
+      "name_en": "Urban Evasion",
+      "description_en": "Years of evading the cops taught you a thing or two about stealth. Increases your Crouching Movement speed by 90/95/100 %. \"The paint is still fresh but I am long gone.\" — Nea Karlsson",
+      "name_ru": "Городской бег",
+      "description_ru": "Годы беготни от полицейских научили вас парочке трюков. Присев, Вы передвигаетесь на {процентов} быстрее. I уровень | II уровень | III уровень 90% | 95% | 100%",
+      "rang": 0,
+      "DLS": "Nea"
+  },
+  {
+      "number": 108,
+      "photo_main": "Dramaturgija.png",
+      "name_en": "Dramaturgy",
+      "description_en": "When people bring you on to their project, they do so because of the unexpected magic you bring to your performance. Whenever you are Healthy, Dramaturgy activates: While running, press the Active Ability button to run with knees high for 0.5 seconds to gain a +25 % Haste Status Effect for 2 seconds, followed by one of the following effects: Suffer from the Exposed Status Effect for 12 seconds. Extend the duration of the Haste Status Effect for another 2 seconds. Scream, but without notifying the Killer. Receive a random Item of Rare Rarity, with a random selection of Add-ons attached to it, automatically dropping any previously held Item. The same effect cannot happen twice in a row. Dramaturgy causes the Exhausted Status Effect for 60/50/40 seconds. Dramaturgy cannot be used when Exhausted. \"Take the part. It's a good movie, he says. What's the worst that can happen?\" — Nicolas Cage",
+      "name_ru": "Драматургия",
+      "description_ru": "Вас приглашают участвовать в проектах за непревзойденное владение магией импровизации. \"Драматургия\" активируется, когда вы здоровы. Во время бега нажмите кнопку активной способности 2, чтобы бежать, высоко поднимая колени, в течение 0,5 секунд и получить \"Спешку\" на 25% на 2 сек. с неизвестным последующим эффектом: вы станете уязвимы на 12 сек.; получите \"Спешку\" 25% на 2 сек.; закричите, но ничего не произойдет; получите случайный редкий предмет со случайными дополнениями и выроните носимый предмет Эффект не повторяется два раза подряд. \"Драматургия\" вызывает усталость на {секунд}. Нельзя использовать при усталости. Базовые атаки будут смертельно ранить уязвимых выживших, даже если те не ранены. \"Спешка\" повышает скорость передвижения выжившего. \"Усталость не позволяет выжившим использовать утомляющие навыки I уровень | II уровень | III уровень 60 сек. | 50 сек. | 40 сек.",
+      "rang": 0,
+      "DLS": "Nicolas"
+  },
+  {
+      "number": 109,
+      "photo_main": "Vot_eto_povorot.png",
+      "name_en": "Plot Twist",
+      "description_en": "Big moments are vital, but you know that sometimes an understated read can be just as powerful. Whenever you are in the Injured State, Plot Twist activates: While crouching and motionless, press the Active Ability button to silently enter the Dying State with the following benefits: Suppresses Grunts of Pain. Suppresses Pools of Blood. Grants the ability to fully recover from the Dying State. After full recovery using Plot Twist, you are healed instantly and gain a +50 % Haste Status Effect for 2/3/4 seconds. Plot Twist deactivates after recovering yourself by any means and reactivates once more once the Exit Gates are powered. \"I think you'll find this shooting location... captivating.\" — Pauline Stamper",
+      "name_ru": "Вот это поворот",
+      "description_ru": "Актерская игра важна, но вы-то знаете, что необязательно выкладываться в каждой сцене, чтобы произвести впечатление. Навык \"Вот это поворот\" активируется, когда вы ранены. Нажмите кнопку способности 2 в положении пригнувшись и не двигайтесь, чтобы бесшумно оказаться при смерти. При использовании навыка \"Вот это поворот\" для перехода к предсмертному состоянию: вы не оставляете луж крови и не издаете шум; вы можете полностью оправиться после предсмертного состояния. Восстанавливаясь самостоятельно при помощи навыка \"Вот это поворот\", вы мгновенно исцеляетесь и получаете \"Спешку\" 50% на {секунд}. Навык отключается при восстановлении другим способом. Навык активируется повторно, когда на ворота подается питание. \"Спешка\" повышает скорость передвижения выжившего. I уровень | II уровень | III уровень 2 сек. | 3 сек. | 4 сек.",
+      "rang": 0,
+      "DLS": "Nicolas"
+  },
+  {
+      "number": 110,
+      "photo_main": "Partner_po_stsene.png",
+      "name_en": "Scene Partner",
+      "description_en": "You lock in with your co-star, engaging with and reacting to each other on a higher level. Whenever you are inside the Terror Radius, Scene Partner activates: Looking at the Killer causes you to scream, which reveals their Aura for 4/5/6 seconds. There is a chance of 50 % that you will scream again, extending the Aura-reveal duration by another +2 seconds. Scene Partner has a cool-down of 40 seconds. \"This is not in the script!\" — Nicolas Cage",
+      "name_ru": "Партнер по сцене",
+      "description_ru": "Вы обретаете связь с другой звездой, взаимодействуя с ней на более высоком уровне. Навык \"Партнер по сцене\" активируется, когда вы находитесь в радиусе террора убийцы. При взгляде на убийцу вы закричите, а затем сможете увидеть его ауру на {секунд}. С некоторой вероятностью вы закричите снова и сможете видеть ауру убийцы на 2 сек. дольше. После этого навык \"Партнер по сцене\" перезаряжается 40 сек. I уровень | II уровень | III уровень 4 сек. | 5 сек. | 6 сек.",
+      "rang": 0,
+      "DLS": "Nicolas"
+  },
+  {
+      "number": 111,
+      "photo_main": "Aptekar'.png",
+      "name_en": "Pharmacy",
+      "description_en": "You have a knack for finding medicine. Increases the Unlocking speed of Chests by 70/85/100 %. Reduces the audible range of all noises related to the Unlocking interaction by -20 metres. Pharmacy guarantees an Emergency Med-Kit from all Chests. \"Adrenaline, it is going to keep us awake. I stole it from one of the Nurse's carts.\" — Quentin Smith",
+      "name_ru": "Аптекарь",
+      "description_ru": "У вас талант находить лекарства. Вы открываете сундуки на {процентов} быстрее; Радиус слышимости звука открытия сундуков сокращен на 16 м . Навык Аптекарь гарантирует нахождение аптечки первой помощи при окончании взаимодействия. I уровень | II уровень | III уровень 70% | 85% | 100%",
+      "rang": 0,
+      "DLS": "Quentin"
+  },
+  {
+      "number": 112,
+      "photo_main": "Bessonnitsa.png",
+      "name_en": "Vigil",
+      "description_en": "You look over your friends even in dire situations. Increases the Recovery rate from the following Status Effects by 43/55/66 %: The Blindness, Broken, Exhausted, Exposed, Haemorrhage, Hindered, Mangled, and Oblivious Status Effects. Vigil extends its effect to all Survivors within 16 metres of your location and lingers for 15 seconds. \"I am gonna be here when you wake up. You are gonna make it.\" — Quentin Smith",
+      "name_ru": "Бессонница",
+      "description_ru": "Вы присматриваете за друзьями даже в самые трудные минуты. Вы и ваши союзники в радиусе 16 м оправляетесь от \" Слепоты \", \" Ослабления \", \" Усталости \", \" Уязвимости \", \" Кровотечения \", \" Замедления \", \" Травмы \" и \" Забывчивости \" на {процентов} быстрее. При выходе из радиуса действия эффект сохраняется еще 15 секунд . I уровень | II уровень | III уровень 30% | 35% | 40%",
+      "rang": 0,
+      "DLS": "Quentin"
+  },
+  {
+      "number": 113,
+      "photo_main": "Prosnis'.png",
+      "name_en": "Wake Up!",
+      "description_en": "Unlocks potential in your Aura-reading ability: Once all Generators are completed, Wake Up! activates: The Auras of the Exit Gate Switches are revealed to you permanently while within 128 metres. Your Aura is revealed to all other Survivors within 128 metres while you are opening an Exit Gate. Increases your Gate-Opening speed by a stack-able 8/10/12.5 % for each Survivor still alive in the Trial, including yourself, up to a maximum of 32/40/50 %. \"Ok, look. If we survive the next 24 hours, then I'll take you out on a real date.\" — Quentin Smith",
+      "name_ru": "Проснись",
+      "description_ru": "У вас появляется способность чтения ауры. Когда все генераторы будут отремонтированы, вы сможете увидеть ворота. Во время открытия ворот ваша аура видна другим выжившим. Пока этот навык активен, вы открываете выход на {процентов} быстрее. I уровень | II уровень | III уровень 8% | 10% | 12.5%",
+      "rang": 0,
+      "DLS": "Quentin"
+  },
+  {
+      "number": 114,
+      "photo_main": "Kak_noven'kij.png",
+      "name_en": "Better than New",
+      "description_en": "You are an expert in combat medicine. Patients leave your care reinvigorated. Completing a Healing action on another Survivor grants them the following benefits until they receive damage again: Increases their Action speeds for Blessing, Cleansing, Healing, and Unlocking by 12/14/16 %.",
+      "name_ru": "Как новенький",
+      "description_ru": "Вы эксперт в области военной медицины. Пациенты уходят от вас полными сил. Закончив лечить другого выжившего, вы даете ему бонус {процентов} к скорости лечения, открывания сундуков, а также очищения и благословения тотемов. Бонус сохраняется до тех пор, пока этот выживший не потеряет уровень здоровья. I уровень | II уровень | III уровень 12% | 14% | 16%",
+      "rang": 0,
+      "DLS": "Rebecca"
+  },
+  {
+      "number": 115,
+      "photo_main": "Polnaja_sosredotochennost'.png",
+      "name_en": "Hyperfocus",
+      "description_en": "You throw yourself entirely into your tasks and find ways to be more efficient than anyone else. Succeeding a Great Skill Check while repairing or healing grants +1 Token, up to a maximum of 6 Tokens: Increases the Skill Check Trigger odds and Pointer Rotation speed by +4 % per Token each, up to a maximum of +24 %. Increases the Skill Check Bonus progression by 10/20/30 % of its base value per Token, up to a maximum of 60/120/180 %. Hyperfocus loses all Tokens after succeeding just a Good Skill Check, failing one, or if the action is interrupted by any means.",
+      "name_ru": "Полная сосредоточенность",
+      "description_ru": "Вы целиком посвящаете себя задаче и находите способы выполнить ее эффективнее других. Пройдя проверку реакции при починке или исцелении на отлично, вы получаете 1 жетон навыка, вплоть до максимума в 6 жетонов. Каждый жетон повышает шанс проверки реакции на 4% и скорость указателя при проверке реакции на 4%. Бонус за отличные проверки реакции увеличивается на {процентов} от базового значения. Навык теряет все жетоны при обычном прохождении проверки реакции, провале проверки реакции или при прерывании действия по любой причине. I уровень | II уровень | III уровень 10% | 20% | 30%",
+      "rang": 0,
+      "DLS": "Rebecca"
+  },
+  {
+      "number": 116,
+      "photo_main": "Obodrenie.png",
+      "name_en": "Reassurance",
+      "description_en": "Your presence helps allies focus, assuaging the panic associated with extreme conditions. Press the Active Ability button while within 6 metres of a hooked Survivor to pause their Sacrifice Process for the next 20/25/30 seconds. This also pauses any Skill Checks, if the Survivor is in the Struggle Phase. Reassurance can only be used once per Survivor per Hook Instance.",
+      "name_ru": "Ободрение",
+      "description_ru": "Ваше присутствие помогает союзникам сосредоточиться и перестать паниковать. Находясь в пределах 6 м от выжившего на крюке, нажмите 2-ю кнопку активной способности, чтобы приостановить прогресс его сопротивления на {секунд}. Если он сейчас на этапе сопротивления, приостанавливаются и проверки реакции сопротивления. К одному выжившему \"Ободрение\" можно применять только один раз за насаживание на крюк. I уровень | II уровень | III уровень 20 сек. | 25 сек. | 30 сек.",
+      "rang": 0,
+      "DLS": "Rebecca"
+  },
+  {
+      "number": 117,
+      "photo_main": "Zapasnoj_igrok.png",
+      "name_en": "Background Player",
+      "description_en": "You are not usually the centre of attention and in some cases, this can be a good thing. Whenever another Survivor is picked up, Background Player activates for 10 seconds. Starting to run while it is active causes the following effect: Grants a +50 % Haste Status Effect for 5 seconds. Background Player causes the Exhausted Status Effect for 30/25/20 seconds. Background Player cannot be used when Exhausted. \"You forget about me?\" — Renato Lyra",
+      "name_ru": "Запасной игрок",
+      "description_ru": "Вы редко бываете в центре внимания. Иногда это и хорошо. Когда убийца поднимает другого выжившего, умение \"Запасной игрок\" активируется на 10 сек. Начав бежать, вы делаете рывок и в течение 5 сек. двигаетесь со скоростью 150% от обычной. Невозможно использовать, если на вас уже действует \"Усталость\". Навык вызывает \"Усталость\" на {секунд}. \"Усталость\" не дает выжившим активировать утомляющие навыки. I уровень | II уровень | III уровень 30 сек. | 25 сек. | 20 сек.",
+      "rang": 0,
+      "DLS": "Renato"
+  },
+  {
+      "number": 118,
+      "photo_main": "Vyshe_golovy.png",
+      "name_en": "Blood Rush",
+      "description_en": "Your mind and body are honed for great feats, allowing you to push through with extra effort when necessary. After unhooking yourself or being unhooked, Blood Rush activates for 40/50/60 seconds: Press the Active Ability button to instantly recover from the Exhausted Status Effect. Blood Rush is deactivated after use or performing a Conspicuous Action. Blood Rush is disabled for the remainder of the Trial once the Exit Gates are powered. \"Just gotta... push through!\" — Renato Lyra",
+      "name_ru": "Выше головы",
+      "description_ru": "Ваши тело и разум предназначены для великих дел. При необходимости вы можете совершить больше, чем сами ожидали. После снятия с крюка активируется \"Выше головы\" на {секунд}. При активном эффекте \"Усталость\" нажмите кнопку активной способности 1, чтобы мгновенно избавиться от усталости. Этот навык отключается when it used or [ 1 ] во время действий, привлекающих внимание. \"Выше головы\" перестает работать, как только на ворота подается электричество. \"Усталость\" не дает выжившим активировать утомляющие навыки. I уровень | II уровень | III уровень 40 сек. | 50 сек. | 60 сек. Амулет с изображением данного навыка разблокируется при достижении одного из уровней престижа (7-9) для персонажа Ренато Лира.  | Радужный амулет \"Выше головы\" | Сувенир на память об изученном навыке Необходим для получения достижения \"Опытный Ренато\" Навык добавлен в игру в платном дополнении \" Орудия пыток \" Доступен в режиме \"Своя игра\" без покупки DLC Версия 8.3.0: Навык активируется после снятия с крюка (раннее - при условии, если следующее попадание на крюк приведет к мгновенной смерти) Более не исцеляет и не накладывает эффект \"Ослабление\" после активации, теперь деактивирует эффект \"Усталость\". Теперь действие эффекта навыка прекращается при совершении действий, привлекающих внимание Теперь навык отключается до конца матча после того, как на ворота будет подано питание ",
+      "rang": 0,
+      "DLS": "Renato"
+  },
+  {
+      "number": 119,
+      "photo_main": "IconPerks_teamworkCollectiveStealth.png",
+      "name_en": "Teamwork: Collective Stealth",
+      "description_en": "When someone helps you out, you respond in kind. Whenever another Survivor finishes healing you, Teamwork: Collective Stealth activates, and both you and the Survivor who healed you benefit from the following effect: Suppresses your Scratch Marks for as long as you stay within 8/12/16 metres of one another. This effect lingers for 4 seconds once out of range and resumes upon re-entering it before that timer elapses. Survivors can only be affected by one instance of Teamwork: Collective Stealth at a time. \"I'm good, I'm good... but keep it down.\" — Renato Lyra",
+      "name_ru": "Командная работа: общая скрытность",
+      "description_ru": "Вы привыкли отвечать добром на добро. Когда другой выживший заканчивает лечить вас, вы оба прекращаете оставлять следы-трещины, пока держитесь на расстоянии не более {метров} друг от друга. Если вы выходите за пределы этой области, эффект сохраняется еще 4 сек. Эффект не складывается. I уровень | II уровень | III уровень 8м | 12м | 16м Амулет с изображением данного навыка разблокируется при достижении одного из уровней престижа (7-9) для персонажа Ренато Лира.  | Радужный амулет \"Командная работа: общая скрытность\" | Сувенир на память об изученном навыке Необходим для получения достижения \"Опытный Ренато\" Навык добавлен в игру в платном дополнении \" Орудия пыток \" Доступен в режиме \"Своя игра\" без покупки DLC Версия 8.3.0: Убрана перезарядка в 180/160/140 секунд Дистанция совместно перемещения изменена с 12 до 8/12/16 метров Эффект длится 4 секунды, если выжившие сильно отдалятся друг от друга ",
+      "rang": 0,
+      "DLS": "Renato"
+  },
+  {
+      "number": 120,
+      "photo_main": "IconPerks_invocationWeavingSpiders.png",
+      "name_en": "Invocation: Weaving Spiders",
+      "description_en": "The place where fear festers and terror treads is also where those with the gift can reach across the veil. When in the Basement near the circle, press the Active Ability button to begin the Invocation, which takes 60 seconds to complete. During an Invocation, your Aura is revealed to all other Survivors and they can join in, accelerating the process by +100 %, if they too have an Invocation Perk equipped, or by +50 %, if they have not. Once the Invocation is completed, the following effects apply: Permanently reduces the Repair Charges requirement of all Generators in the Trial by 8/9/10 Charges. You automatically enter the Injured State from any previous Health State, and suffer from the Broken Status Effect for the remainder of the Trial. Completing this Invocation disables all other instances of Invocation: Weaving Spiders for the remainder of the Trial. \"I call upon the spirits of the night, to aid us in our desperate flight!\" — Sable",
+      "name_ru": "Чары: пауки-прядильщики",
+      "description_ru": "Там, где стелется страх и увивается ужас, люди с особым даром могут приподнять завесу. Находясь в подвале рядом с кругом, нажмите кнопку способности 1, чтобы начать сотворение чар. Сотворение занимает 60 сек. Пока вы творите чары, другие выжившие видят вашу ауру и могут к вам присоединиться. Когда чары сотворены: Вы получаете ранение и статус \" Ослабление \" до конца матча. Количество необходимых зарядов всех оставшихся генераторов навсегда уменьшается на {единиц}. После сотворения чар навык отключается у всех выживших. \"Ослабление\" не дает выжившим лечиться. I уровень | II уровень | III уровень 8 зарядов | 9 зарядов | 10 зарядов",
+      "rang": 0,
+      "DLS": "Sable"
+  },
+  {
+      "number": 121,
+      "photo_main": "Sila_vo_mrake.png",
+      "name_en": "Strength in Shadows",
+      "description_en": "A chance for renewed power down where danger calls home. When you are in the Basement, Strength in Shadows activates: Unlocks the Strength in Shadows ability, allowing you to self-heal without needing a Med-Kit at 70 % of the normal Healing speed. Upon finishing a heal in the Basement, the Aura of the Killer is revealed to you for 6/8/10 seconds. \"I'm getting out of here, if it's the last thing I do.\" — Sable",
+      "name_ru": "Сила во мраке",
+      "description_ru": "Там, где опасность наиболее велика, в вас пробуждаются новые силы. Навык активируется, когда вы находитесь в подвале. Открывает способность \"Сила во мраке\", которая позволяет лечить без аптечки со скоростью 70% от обычной. Завершая лечение в подвале, вы видите ауру убийцы в течение {секунд}. I уровень | II уровень | III уровень 6 сек. | 8 сек. | 10 сек.",
+      "rang": 0,
+      "DLS": "Sable"
+  },
+  {
+      "number": 122,
+      "photo_main": "Derzost'.png",
+      "name_en": "Wicked",
+      "description_en": "They can try to hurt you. But you're not going down so easily. The Aura of the Killer is revealed to you for 16/18/20 seconds after unhooking yourself or being unhooked. Grants the ability to perform a successful Self-Unhook at any point during the first Hook Stage, if you are hooked in the Basement. This effect cannot be triggered during the second Hook Stage or if you are hooked as the Last Survivor Standing. \"I haven't let anyone get in my way before. You think I'm gonna start now?\" — Sable",
+      "name_ru": "Дерзость",
+      "description_ru": "Вас могут попытаться ранить, но вы так просто не сдадитесь. Все ваши попытки слезть с крюка в подвале успешны. Слезая с крюка, с помощью товарищей или без, вы видите ауру убийцы в течение {секунд}. I уровень | II уровень | III уровень 16 сек. | 18 сек. | 20 сек.",
+      "rang": 0,
+      "DLS": "Sable"
+  },
+  {
+      "number": 123,
+      "photo_main": "Njan'ka.png",
+      "name_en": "Babysitter",
+      "description_en": "While you have a reputation for being self-centred, you risk it all to help those in need. Whenever you unhook a Survivor, the Aura of the Killer is revealed to you for 8 seconds, while the unhooked Survivor benefits from the following effects for 20/25/30 seconds instead: Suppresses the creation of their Scratch Marks and Pools of Blood. Increases the strength of their Haste Status Effect by +10 %. \"I promised to keep you shitheads safe, and that's exactly what I plan on doing.\" — Steve Harrington",
+      "name_ru": "Нянька",
+      "description_ru": "Вас называют эгоистом, но вы готовы все поставить на карту ради тех, кто попал в беду. Когда вы снимаете выжившего с крюка, спасенный на протяжении следующих {секунд} не оставляет следов-трещин и пятен крови и получает на это время статус 10%-й \"Спешки\". Вы видите ауру убийцы на протяжении 8 сек. \"Спешка\" увеличивает скорость передвижения выжившего. I уровень | II уровень | III уровень 20 сек. | 25 сек. | 30 сек.",
+      "rang": 0,
+      "DLS": "Steve"
+  },
+  {
+      "number": 124,
+      "photo_main": "Tovarischestvo.png",
+      "name_en": "Camaraderie",
+      "description_en": "Life has taught you the importance of friendship which has given you strength. If you are hooked and enter the Struggle Phase, Camaraderie activates: Pauses the Struggle Phase timer for 26/30/34 seconds as soon as any Survivor comes within 16 metres of your Hook. \"So, remember once you get in there... pretend like you don't care. There you go, you're learning my friend. You're learning.\" — Steve Harrington",
+      "name_ru": "Товарищество",
+      "description_ru": "Жизнь научила вас, что дружба важна и придает сил. Когда вы на крюке на стадии сопротивления, активируется навык \"Товарищество\". Если кто-то из выживших окажется в радиусе 16 м от вас, пока действует навык, таймер крюка останавливается на {секунд}. I уровень | II уровень | III уровень 26 сек. | 30 сек. | 34 сек.",
+      "rang": 0,
+      "DLS": "Steve"
+  },
+  {
+      "number": 125,
+      "photo_main": "Vtoroe_dyhanie.png",
+      "name_en": "Second Wind",
+      "description_en": "You have learnt to avoid awkward situations with parents. Part of you still thinks your best option is to run away and hope things will take care of themselves. When you heal another Survivor for the equivalent of 1 Health State, Second Wind activates: The next time you are unhooked or unhook yourself, you suffer from the Broken Status Effect until Second Wind deactivates. You are automatically healed 1 Health State after 28/24/20 seconds. While Second Wind is active, the following conditions will deactivate it: Successfully being healed by Second Wind. Being put into the Dying State before the timer elapses. Second Wind does not activate if you already suffer from the Broken Status Effect. \"Yeah, that's a no.\" — Steve Harrington",
+      "name_ru": "Второе дыхание",
+      "description_ru": "\"Второе дыхание\" открывается, когда вы исцеляете другого выжившего до следующей стадии здоровья. Если на вас действует эффект \"Ослабление\", \"Второе дыхание\" не активируется. Если вы освободитесь с крюка, или вас снимут с крюка во время действия навыка, вы получите эффект \"Ослабление\". Через {секунд} \"Второе дыхание\" полностью вас исцелит. \"Второе дыхание\" прекращается после полного исцеления, или если вы оказываетесь при смерти прежде, чем навык успешно сработает. Вы теряете эффект \"Ослабление\". \"Ослабление\" не дает выжившим лечиться. I уровень | II уровень | III уровень 28 сек. | 24 сек. | 20 сек.",
+      "rang": 0,
+      "DLS": "Steve"
+  },
+  {
+      "number": 126,
+      "photo_main": "S_chistogo_lista.png",
+      "name_en": "Clean Break",
+      "description_en": "At the end of the day, everyone has to look out for themselves. After completing a Healing action on another Survivor, Clean Break activates. Press the Active Ability button while being healed by another Survivor to trigger the following effects: Suffer from the Broken Status Effect. You are automatically healed 1 Health State after 80/70/60 seconds. This effect is cancelled prematurely if you enter the Dying State. Clean Break does not activate if you already suffer from the Broken Status Effect. Clean Break deactivates after healing you. \"I'll be fine! Don't stick your neck out for me.\" — Taurie Cain",
+      "name_ru": "С чистого листа",
+      "description_ru": "В итоге каждый должен заботиться о себе сам. Когда вы закончите лечить другого выжившего, при этом получая лечение от выжившего, нажмите кнопку способности 1, чтобы получить эффект \"Ослабление\". Через {секунд} ваше здоровье восстановится. Этот навык не активируется, если у вас уже был эффект ослабления. Эффект прекращается, если вы находитесь при смерти. \"Ослабление\" не дает выжившим лечиться. I уровень | II уровень | III уровень 80 сек. | 70 сек. | 60 сек. Амулет с изображением данного навыка разблокируется при достижении одного из уровней престижа (7-9) для персонажа Тори Кейн  | Радужный амулет \"С чистого листа\" | Сувенир на память об изученном навыке Необходим для получения достижения \"Опытная Тори\" Добавлен в игру в платном DLC \" Проклятый курс \" Доступен в режиме \"Своя игра\" без покупки DLC ",
+      "rang": 0,
+      "DLS": "Taurie"
+  },
+  {
+      "number": 127,
+      "photo_main": "IconPerks_invocationTreacherousCrows.png",
+      "name_en": "Invocation: Treacherous Crows",
+      "description_en": "One with arcane knowledge has no reason to fear those watchful birds. When in the Basement near the circle, press the Active Ability button to begin the Invocation, which takes 60 seconds to complete. During an Invocation, your Aura is revealed to all other Survivors and they can join in, accelerating the process by +100 %, if they too have an Invocation Perk equipped, or by +50 %, if they have not. Once the Invocation is completed, the following effects apply: Whenever the Killer scares a Crow while a Survivor is inside their Terror Radius, their Aura is revealed to all Survivors for 1/1.5/2 seconds. You automatically enter the Injured State from any previous Health State, and suffer from the Broken Status Effect for the remainder of the Trial. \"Remember your training. They taught you all about the crows.\" — Taurie Cain",
+      "name_ru": "Чары: предательские вороны",
+      "description_ru": "У человека, обладающего тайными знаниями, нет причин бояться внимания птиц. Когда вы окажетесь в подвале рядом с кругом, нажмите кнопку способности 2, чтобы сотворить чары. На сотворение чар уходит 60 сек. Другие выжившие увидят вашу ауру и смогут присоединиться к вам. После сотворения чар: Вы получаете ранение и на оставшуюся часть матча получаете статус \"Ослабление\" Когда выживший оказывается в радиусе террора, а убийца спугивает ворону, его аура на {секунд} становится видна всем выжившим Завершение чар отключает этот навык для всех выживших \"Ослабление\" не дает выжившим лечиться. I уровень | II уровень | III уровень 1 сек. | 1.5 сек. | 2 сек. Амулет с изображением данного навыка разблокируется при достижении одного из уровней престижа (7-9) для персонажа Тори Кейн  | Радужный амулет \"Чары: предательские вороны\" | Сувенир на память об изученном навыке Необходим для получения достижения \"Опытная Тори\" Добавлен в игру в платном DLC \" Проклятый курс \" Доступен в режиме \"Своя игра\" без покупки DLC ",
+      "rang": 0,
+      "DLS": "Taurie"
+  },
+  {
+      "number": 128,
+      "photo_main": "Bremja_na_sebja.png",
+      "name_en": "Shoulder the Burden",
+      "description_en": "Born to be a disciple. Ready to submit to a greater cause. This is your calling. Once per Trial, and while you are not on Death Hook, press the Active Ability button while standing in front of a Hooked Survivor to unhook them and trigger the following effects: Trade 1 Hook State with the other Survivor to their benefit. Causes you to scream and suffer from the Exposed Status Effect for 30/25/20 seconds. \"It's not your time yet. Now go on!\" — Taurie Cain",
+      "name_ru": "Бремя на себя",
+      "description_ru": "Рождена послушницей, готова посвятить всю себя великому делу. Люди называют это призванием. Один раз за матч, если вас не повесили на убивающий крюк, нажмите кнопку способности 2 перед подвешенным выжившим, чтобы снять его с крюка. При снятии с крюка он потеряет 1 стадию крюка, а вы получите 1 стадию крюка. Вы также закричите и получите эффект \"Уязвимость\" на {секунд}. Выживших с эффектом \"Уязвимость\" можно смертельно ранить базовой атакой, даже если они не ранены. I уровень | II уровень | III уровень 60 сек. | 50 сек. | 40 сек.",
+      "rang": 0,
+      "DLS": "Taurie"
+  },
+  {
+      "number": 129,
+      "photo_main": "Na_volju.png",
+      "name_en": "Cut Loose",
+      "description_en": "You get in enough trouble, you know how to get out of it. After performing a Rush Vault action in a Chase, Cut Loose activates for the next 4/5/6 seconds: Suppresses both the Loud Noise Notification and the sound effects triggered by rushing to vault. Successfully performing another Rush Vault action while Cut Loose is active resets the timer. Cut Loose has a cool-down of 45 seconds. \"I know how we can get out of here! Quick, this way!\" — Thalita Lyra",
+      "name_ru": "На волю",
+      "description_ru": "Вы часто попадаете в неприятности, а потому умеете выпутываться из них. Навык активируется после спешного прыжка во время погони. Во время действия этого навыка ваши спешные прыжки бесшумны на протяжении {секунд}. Каждый спешный прыжок, сделанный в это время, обнуляет таймер. Этот навык перезаряжается 45 сек. I уровень | II уровень | III уровень 4 сек. | 5 сек. | 6 сек. Амулет с изображением данного навыка разблокируется при достижении одного из уровней престижа (7-9) для персонажа Талита Лира.  | Радужный амулет \"На волю\" | Сувенир на память об изученном навыке Необходим для получения достижения \"Опытная Талита\" Навык добавлен в игру в платном дополнении \" Орудия пыток \" Доступен в режиме \"Своя игра\" без покупки DLC Thomas DD, дизайнер игры: \" Когда я использую навык \"На волю\", то всегда напеваю песенку из фильма \"Свободные\" [ 1 ] \". ",
+      "rang": 0,
+      "DLS": "Thalita"
+  },
+  {
+      "number": 130,
+      "photo_main": "Druzheskoe_sostjazanie.png",
+      "name_en": "Friendly Competition",
+      "description_en": "You revel in the community spirit of a competition, and inspire others to follow suit. Whenever you complete a Generator with at least one other Survivor, Friendly Competition activates: Increases your Repair speed, and that of the other Survivor(s) who completed the repairs with you, by +5 % for the next 45/60/75 seconds. \"C'mon, let's do this!\" — Thalita Lyra",
+      "name_ru": "Дружеское состязание",
+      "description_ru": "Вы наслаждаетесь духом дружеского соперничества и вдохновляете товарищей. Навык активируется после завершения починки генератора совместно с хотя бы одним выжившим. Вы и другие выжившие, которые закончили чинить генератор вместе с вами, станут чинить быстрее на 5%. Эффект длится {секунд}. Одновременно на выжившего может действовать только один эффект от этого навыка. I уровень | II уровень | III уровень 45 сек. | 60 сек. | 75 сек.",
+      "rang": 0,
+      "DLS": "Thalita"
+  },
+  {
+      "number": 131,
+      "photo_main": "IconPerks_teamworkPowerOfTwo.png",
+      "name_en": "Teamwork: Power of Two",
+      "description_en": "It is hard to keep up with you, but it does not stop people from trying. Whenever you finish healing another Survivor, Teamwork: Power of Two activates, and both you and the healed Survivor benefit from the following effect: Grants a +5 % Haste Status Effect for as long as you stay within 8/12/16 metres of one another. This effect lingers for 4 seconds once out of range and resumes upon re-entering it before that timer elapses. Survivors can only be affected by one instance of Teamwork: Power of Two at a time. \"You good? Then keep up!\" — Thalita Lyra",
+      "name_ru": "Командная работа: быстрая пара",
+      "description_ru": "За вами трудно угнаться, но многие все равно пытаются. Когда вы заканчиваете лечить другого выжившего, вы оба получаете \"Спешку\" 5%, пока держитесь в пределах {метров} друг от друга. Если покинуть эту область, эффект сохраняется еще 4 сек. Эффект не складывается. \"Спешка\" повышает скорость передвижения выжившего I уровень | II уровень | III уровень 8м | 12м | 16м",
+      "rang": 0,
+      "DLS": "Thalita"
+  },
+  {
+      "number": 132,
+      "photo_main": "Likovanie.png",
+      "name_en": "Exultation",
+      "description_en": "Fortune favours the bold, even in the darkest corners of existence. Stunning the Killer with a Pallet upgrades the Rarity of your held Item to the next tier. Recharges the Item by +25 %. Exultation has a cool-down of 40/35/30 seconds. \"You will not take me this day!\" — Trevor",
+      "name_ru": "Ликование",
+      "description_ru": "Удача улыбается отважным даже в самых темных уголках мироздания. Оглушая убийцу доской, вы повышаете редкость предмета в ваших руках на один уровень и возвращаете 25% макс. зарядов предмета. Навык перезаряжается {секунд}. I уровень | II уровень | III уровень 40 сек. | 35 сек. | 30 сек.",
+      "rang": 0,
+      "DLS": "Trevor"
+  },
+  {
+      "number": 133,
+      "photo_main": "Glaza_Bel'monta.png",
+      "name_en": "Eyes of Belmont",
+      "description_en": "A history of vampire-hunting imbues the bloodline with certain abilities. Whenever a Generator is completed, the Aura of the Killer is revealed to you for 1/2/3 seconds. Extends the duration of all instances of the Killer's Aura being revealed to you by +2 seconds. Eyes of Belmont benefits from its own effect. \"Ha! Your secret has been revealed!\" — Trevor",
+      "name_ru": "Глаза Бельмонта",
+      "description_ru": "Его род так долго охотился на вампиров, что обрел небывалые способности. После завершения починки генератора вы видите ауру убийцы в течение {секунд}. Всякий раз, когда аура убийцы становится временно видна, этот эффект продлевается на 2 сек. I уровень | II уровень | III уровень 1 сек. | 2 сек. | 3 сек.",
+      "rang": 0,
+      "DLS": "Trevor"
+  },
+  {
+      "number": 134,
+      "photo_main": "Moment_slavy.png",
+      "name_en": "Moment of Glory",
+      "description_en": "A hero should always have the chance to make a comeback. After performing the Unlocking or Rummaging action on Chests a total of 2 times, Moment of Glory activates: When you become injured, you instantly suffer from the Broken Status Effect. You are automatically healed 1 Health State after 80/70/60 seconds. This effect is cancelled prematurely if you enter the Dying State. Moment of Glory does not activate if you already suffer from the Broken Status Effect. Moment of Glory deactivates after healing you. \"Never lose hope for a brighter tomorrow.\" — Trevor",
+      "name_ru": "Момент славы",
+      "description_ru": "У героя всегда должен оставаться шанс на возвращение. Этот навык активируется, когда вы открываете или обшариваете 2 сундуки. При ранении вы вдобавок получаете ослабление. Один уровень здоровья автоматически восстанавливается через {секунд}, после чего навык перестает действовать. Эффект перестает действовать, если вы оказываетесь при смерти. Навык не будет активирован, если на вас уже наложено ослабление. \"Ослабление\" не дает выжившим лечиться. I уровень | II уровень | III уровень 80 сек. | 70 сек. | 60 сек. Амулет с изображением данного навыка разблокируется при достижении одного из уровней престижа (7-9) для персонажа Тревор Бельмонт‎.  | Радужный амулет \"Момент славы\" | Сувенир на память об изученном навыке Необходим для получения достижения \"Опытный Тревор\" Добавлен в игру в платном дополнении \" Кастлвания \" Доступен в режиме \"Своя игра\" без покупки DLC ",
+      "rang": 0,
+      "DLS": "Trevor"
+  },
+  {
+      "number": 135,
+      "photo_main": "Umudrennyj_tumanom.png",
+      "name_en": "Fogwise",
+      "description_en": "In your countless years in The Fog, you have seen it all, and when you are focused, you can remember most of it too. Succeeding a Great Skill Check while repairing a Generator reveals the Aura of the Killer to you for 4/5/6 seconds. \"I have seen great cruelty... and I have also seen another way.\" — Vittorio Toscano",
+      "name_ru": "Умудренный туманом",
+      "description_ru": "За бесчисленные годы, проведенные в Тумане, вы успели повидать все и можете вспомнить значительную часть увиденного, если сосредоточитесь. При отличной проверке реакции во время починки генератора вы увидите ауру убийцы на {секунд}. I уровень | II уровень | III уровень 4 сек. | 5 сек. | 6 сек.",
+      "rang": 0,
+      "DLS": "Vittorio"
+  },
+  {
+      "number": 136,
+      "photo_main": "Potentsial'naja_energija.png",
+      "name_en": "Potential Energy",
+      "description_en": "Your arcane abilities have adapted to The Entity's Realm after centuries of wandering, granting you unprecedented control over its many devices. After uninterruptedly repairing Generators for a total of 12/10/8 seconds, press the Active Ability button to activate Potential Energy: Continuing to repair the Generator will charge Potential Energy instead of progressing the Generator. Converts 1.5 % of Repair progression into 1 Token, up to a maximum of 20 Tokens. Missing Skill Checks results in losing some Tokens. When Potential Energy has at least 1 Token, press the Active Ability button while repairing a Generator to instantly progress it by +1 % per accumulated Token, deactivating Potential Energy. Potential Energy loses all Tokens and deactivates upon losing a Health State. \"When you look a layer deeper, you realise... everything is connected.\" — Vittorio Toscano",
+      "name_ru": "Потенциальная энергия",
+      "description_ru": "После сотен лет странствий ваши мистические способности подстроились под владения Сущности и позволили получить невероятный контроль над механизмами этого мира. После починки генератора в течение {секунд} без прерываний нажмите 2-ю кнопку активной способности для активации этого навыка. При действующем навыке вы будете не чинить генератор, а заряжать этот навык. За каждые 1.5% починки генератора навык получит жетон (можно получить до 20 жетонов). Пока у навыка есть хотя бы один жетон, а вы работаете над генератором, вы можете разом использовать все жетоны при нажатии 2-й кнопки активной способности, чтобы мгновенно ускорить починку на 1% за каждый жетон. После этого действие навыка прекращается. Если вы потеряете уровень здоровья, когда у навыка есть хотя бы 1 шт. жетонов, навык лишится всех жетонов и перестанет действовать. При пропуске проверки реакции также потеряется часть зарядов. I уровень | II уровень | III уровень 12 сек. | 10 сек. | 8 сек.",
+      "rang": 0,
+      "DLS": "Vittorio"
+  },
+  {
+      "number": 137,
+      "photo_main": "Bystryj_gambit.png",
+      "name_en": "Quick Gambit",
+      "description_en": "When you have the Killer's attention, you know how to keep it; others can be confident they will not be interrupted any time soon. While being chased by the Killer, the following effects apply: The Auras of other Survivors are revealed to you. Increases the Repair speed of other Survivors by 3/4/5 %. Quick Gambit has a cool-down of 60 seconds upon losing a Health State. \"We need not resort to violence. And I shall prove it.\" — Vittorio Toscano",
+      "name_ru": "Быстрый гамбит",
+      "description_ru": "Вы знаете, как удержать на себе внимание убийцы. Пусть остальные не беспокоятся - в ближайшее время их не потревожат. Когда убийца гонится за вами, вы видите ауры других выживших. Выжившие, ремонтирующие генераторы, получают {процент} бонуса к скорости починки. Этот навык начинает уходить в перезарядку при потере вами здоровья и восстанавливается 60 сек. I уровень | II уровень | III уровень 3% | 4% | 5%",
+      "rang": 0,
+      "DLS": "Vittorio"
+  },
+  {
+      "number": 138,
+      "photo_main": "IconPerks_boonDarkTheory.png",
+      "name_en": "Boon: Dark Theory",
+      "description_en": "Your obsessive study of the paranormal has given you unprecedented knowledge of other Realms and planes of existence. Press and hold the Active Ability button on a Dull or Hex Totem to bless it and create a Boon Totem. Soft chimes ring out in a radius of 24 metres. All Survivors benefit from the following effects when inside the Boon Totem's radius: Grants a +2 % Haste Status Effect. This effect lingers for 2/3/4 seconds after leaving the Boon Totem's range. Only one Totem can be blessed by your Boon Perks at a time and all of their effects are active on the same Boon Totem.",
+      "name_ru": "Дар: теория мрака",
+      "description_ru": "Благодаря одержимости паранормальными явлениями вы больше всех знаете о других измерениях и планах бытия. Нажмите и удерживайте кнопку способности рядом с тусклым или проклятым тотемом, чтобы благословить его и создать дарующий тотем. Легкий звон будет слышен в пределах 24 м. В пределах радиуса действия дарующего тотема все выжившие ускоряются на 2%. Эффект продолжает действовать еще {секунд} после выхода из радиуса действия тотема. За раз можно благословить только один тотем. Все экипированные дарующие навыки активируются на вашем дарующем тотеме. \"Спешка\" увеличивает скорость передвижения выжившего. I уровень | II уровень | III уровень 2 сек. | 3 сек. | 4 сек.",
+      "rang": 0,
+      "DLS": "Yoichi"
+  },
+  {
+      "number": 139,
+      "photo_main": "Empaticheskaja_svjaz'.png",
+      "name_en": "Empathic Connection",
+      "description_en": "Your presence psychically projects itself to those in danger. Whenever another Survivor is injured, they can see your Aura within 32/64/96 metres of your location. Increases your Altruistic Healing speed by +30 %.",
+      "name_ru": "Эмпатическая связь",
+      "description_ru": "Те, кому грозит опасность, физически ощущают ваше присутствие. Раненые выжившие видят вашу ауру с расстояния {метров}. Вы лечите других выживших на 30% быстрее. I уровень | II уровень | III уровень 32м | 64м | 96м",
+      "rang": 0,
+      "DLS": "Yoichi"
+  },
+  {
+      "number": 140,
+      "photo_main": "Roditel'skaja_zabota.png",
+      "name_en": "Parental Guidance",
+      "description_en": "You have inherited the ability to hear the dead — and now the dead warn you of danger. After stunning the Killer by any means, Parental Guidance suppresses your Scratch Marks, Pools of Blood, and Grunts of Pain for the next 5/6/7 seconds.",
+      "name_ru": "Родительская забота",
+      "description_ru": "Вы унаследовали способность слышать мертвых. Теперь они предупреждают вас об опасности. После оглушения убийцы любым способом ваши следы-трещины, лужи крови и стоны исчезают на {секунд}. I уровень | II уровень | III уровень 5 сек. | 6 сек. | 7 сек.",
+      "rang": 0,
+      "DLS": "Yoichi"
+  },
+  {
+      "number": 141,
+      "photo_main": "Ljubymi_sredstvami.png",
+      "name_en": "Any Means Necessary",
+      "description_en": "You stand up for yourself, using whatever's on hand to gain an advantage. Press and hold the Active Ability button for 6/5/4 seconds while standing beside a dropped Pallet to reset it to its upright position. Grants the ability to see the Auras of all dropped but not yet destroyed Pallets in the environment. \"I'll hit you with everything I've got. Then I'll do it again.\" — Yui Kimura",
+      "name_ru": "Любыми средствами",
+      "description_ru": "Вы привыкли стоять за себя и получать преимущество любыми средствами. Вы видите ауры упавших досок. Подойдя к упавшей доске, нажмите и удерживайте 1-ю кнопку активной способности в течение {секунд}, чтобы вернуть доску в вертикальное положение. I уровень | II уровень | III уровень 6 сек. | 5 сек. | 4 сек.",
+      "rang": 0,
+      "DLS": "Yui"
+  },
+  {
+      "number": 142,
+      "photo_main": "Forsazh.png",
+      "name_en": "Breakout",
+      "description_en": "You kick into high gear when someone is in trouble, inspiring them to overcome any obstacle. The following effects apply while you are within 5 metres of the Killer carrying another Survivor: Grants you a 5/6/7 % Haste Status Effect. Increases the carried Survivor's Wiggling speed by +25 %. Survivors can only be affected by one instance of Breakout at a time. \"Come, we are going to rip our way out of this.\" — Yui Kimura",
+      "name_ru": "Форсаж",
+      "description_ru": "Завидев человека в беде, вы врубаете повышенную передачу и вместе с ним стараетесь выбраться из передряги. Оказавшись в радиусе 5 м от переносимого выжившего, вы получаете спешку и движетесь на {процентов} быстрее. Скорость попыток вырваться у пойманного выжившего возрастает на 25% . \"Спешка\" увеличивает скорость передвижения выжившего. I уровень | II уровень | III уровень 5% | 6% | 7%",
+      "rang": 0,
+      "DLS": "Yui"
+  },
+  {
+      "number": 143,
+      "photo_main": "Vezenie.png",
+      "name_en": "Lucky Break",
+      "description_en": "You have had your share of scrapes and bruises, but luck is always on your side. Whenever you are in the Injured State, Lucky Break activates: Suppresses the creation of Pools of Blood and Scratch Marks for a maximum of 40/50/60 seconds. Whenever you are healing another Survivor, Lucky Break recharges by the same amount of time spent performing the Healing action, up to its initial maximum. Lucky Break deactivates once its timer runs out or whenever your Health State updates to any other but the Injured State. \"That's not enough to beat me. Not even close.\" — Yui Kimura",
+      "name_ru": "Везение",
+      "description_ru": "Вы получаете свою долю синяков и шишек, но удача всегда на вашей стороне. \" Везение \" начинает действовать, когда вы получаете ранение. Пока действует \"Везение\" , вы перестаете оставлять кровавый след и следы-трещины на {секунд}. За каждую секунду лечения другого выжившего продолжительность \"Везения\" увеличивается на 1 сек. Продолжительность \"Везения\" не может увеличиться больше его первоначального значения. I уровень | II уровень | III уровень 40 сек. | 50 сек. | 60 сек.",
+      "rang": 0,
+      "DLS": "Yui"
+  },
+  {
+      "number": 144,
+      "photo_main": "Za_chuzhoj_schet.png",
+      "name_en": "Fast Track",
+      "description_en": "Sometimes the sacrifice of others is necessary to get ahead. Whenever a Survivor other than yourself is hooked, Fast Track is granted 1/2/3 Token(s), up to a maximum of 9/18/27 Tokens. Succeeding a Great Repair Skill Check consumes all accumulated Tokens. Increases the bonus Progression awarded for succeeding that Skill Check by a stack-able +1 % per Token. \"The weak are sacrificed first. It's nature, it's business... it's the truth most refuse to face.\" — Yun-Jin Lee",
+      "name_ru": "За чужой счет",
+      "description_ru": "Иногда нужно принести в жертву других, чтобы преуспеть самой. Когда другой выживший оказывается на крюке, вы получаете жетоны ({штук}). Вы используете все жетоны после отличной проверки реакции для генератора. Каждый использованный жетон дает 1% дополнительного прогресса починки для отличных проверок реакции. I уровень | II уровень | III уровень 1 шт. | 2 шт. | 3 шт.",
+      "rang": 0,
+      "DLS": "Yun-Jin"
+  },
+  {
+      "number": 145,
+      "photo_main": "Samosohranenie.png",
+      "name_en": "Self-Preservation",
+      "description_en": "Life is unforgiving. The more confirmation you get of that, the more prepared you become. Whenever another Survivor is hit with a Basic Attack or Special Attack within 16 metres of you, Self-Preservation activates: Scratch Marks, Grunts of Pain when injured, and Bleeding are suppressed for the next 6/8/10 seconds. \"Something I learnt in the industry: when the axe is swinging, keep your head down.\" — Yun-Jin Lee",
+      "name_ru": "Самосохранение",
+      "description_ru": "Жизнь не прощает ошибок. Иногда лучше думать только о себе. Когда другому выжившему в радиусе 16 м от вас наносят удар базовой или особой атакой, активируется \"Самосохранение\" Ваши следы-трещины, лужи крови и вопли боли будут скрыты на {секунд} I уровень | II уровень | III уровень 6 сек. | 8 сек. | 10 сек.",
+      "rang": 0,
+      "DLS": "Yun-Jin"
+  },
+  {
+      "number": 146,
+      "photo_main": "Udarnyj_zabeg.png",
+      "name_en": "Smash Hit",
+      "description_en": "When your rival makes a mistake, you seize the opportunity. Stunning the Killer with a Pallet triggers Smash Hit: Grants a +50 % Haste Status Effect for 4 seconds. Smash Hit causes the Exhausted Status Effect for 30/25/20 seconds. Smash Hit cannot be used when Exhausted. \"I have dealt with psychopaths in suits. You're just uglier and worse dressed.\" — Yun-Jin Lee",
+      "name_ru": "Ударный забег",
+      "description_ru": "Когда соперник совершает ошибку, вы оборачиваете ее себе на пользу. Оглушив убийцу доской, вы на 4 сек. повысите свою скорость бега на 150%. На {секунд} вызывает эффект \"Усталость\". Этот навык нельзя использовать при \"Усталости\". \"Усталость\" не дает выжившим активировать утомляющие навыки. I уровень | II уровень | III уровень 30 сек. | 25 сек. | 20 сек.",
+      "rang": 0,
+      "DLS": "Yun-Jin"
+  },
+  {
+      "number": 147,
+      "photo_main": "Radi_ljudej.png",
+      "name_en": "For the People",
+      "description_en": "You risk life and injury for others. While healthy and healing another Survivor without using a Med-Kit, press the Active Ability button to trigger the following effects: Trade 1 Health State with the other Survivor: Instantly heals them to the Injured State, if they were dying or suffering from the Deep Wound Status Effect. Instantly heals them to full health, if they were injured. You yourself become injured and suffer from the Broken Status Effect for the next 80/70/60 seconds. You become the Killer's Obsession, if not already. Reduces your chance of becoming the initial Obsession by reducing the default value by -100 %. The Killer can only be obsessed with one Survivor at a time. \"We can write our own story and decide how it really ends.\" — Zarina Kassir",
+      "name_ru": "Ради людей",
+      "description_ru": "Ради других вы готовы подвергнуть себя опасности. Навык \" Ради людей \" активен, только когда вы полностью здоровы. Когда вы лечите другого выжившего без аптечки, нажмите кнопку 1-й активной способности , чтобы мгновенно перевести выжившего из предсмертного состояния в раненое или из раненого в здоровое. Вы получаете ранение и эффект \" Ослабление \" на {секунд}. Вы становитесь объектом одержимости. Навык уменьшает вероятность стать объектом одержимости в начале матча. Убийца может быть одержим только одним выжившим за раз. \"Ослабление\" не дает выжившим лечиться. I уровень | II уровень | III уровень 80 сек. | 70 сек. | 60 сек.",
+      "rang": 0,
+      "DLS": "Zarina"
+  },
+  {
+      "number": 148,
+      "photo_main": "Bez_oglaski.png",
+      "name_en": "Off the Record",
+      "description_en": "You have learnt that a quiet approach is sometimes best. After being unhooked or unhooking yourself, Off the Record activates for 60/70/80 seconds: Prevents your Aura from being revealed to the Killer, if they attempt to read it. Suppresses Grunts of Pain when injured. Grants the Endurance Status Effect. Endurance is cancelled prematurely when performing a Conspicuous Action. Off the Record deactivates once the Exit Gates are powered. \"Trust me, I investigate thoroughly and discreetly.\" — Zarina Kassir",
+      "name_ru": "Без огласки",
+      "description_ru": "Вы понимаете, что иногда лучше действовать по-тихому. \" Без огласки \" активируется на {секунд}, когда вас снимают с крюка, или если вы снимаете себя сами. Навык и его эффекты отключаются, когда на ворота подается питание. Пока навык активен: убийца не может видеть вашу ауру; вопли от вызванной травмами боли заглушаются на 100%; вы получаете эффект \"Стойкость\" Во время действия \"Стойкости\" вместо смертельного ранения выживший получает \"Глубокую рану\". С \"Глубокой раной\" выживший окажется при смерти, если его не подлатают, пока не истекло время. I уровень | II уровень | III уровень 60 сек. | 70 сек. | 80 сек.",
+      "rang": 0,
+      "DLS": "Zarina"
+  },
+  {
+      "number": 149,
+      "photo_main": "Obman_vo_blago.png",
+      "name_en": "Red Herring",
+      "description_en": "You have noticed that people pay attention to whatever makes the loudest noise. After repairing a Generator for at least 3 seconds, its Aura is highlighted to you in yellow. The Generator stays highlighted until it is either fully repaired, you start repairing another Generator, or enter a Locker. Entering a Locker will trigger a Loud Noise Notification for the Killer at the highlighted Generator's location. Red Herring has a cool-down of 60/50/40 seconds. \"The news edit out what is burdensome and complex. which is the truth.\" — Zarina Kassir",
+      "name_ru": "Обман во благо",
+      "description_ru": "Вы заметили, что шумиха особенно привлекает людей. Если вы чинили генератор не менее 3 сек ., он будет подсвечиваться для вас желтым. Аура пропадет при завершении ремонта подсвеченного генератора, либо если вы полностью почините другой генератор или войдете в шкафчик. Когда вы войдете в шкафчик, убийца получит уведомление о шуме у подсвеченного генератора. \" Обман во благо \" может сработать только раз в {секунд}. I уровень | II уровень | III уровень 60 сек. | 50 сек. | 40 сек.",
+      "rang": 0,
+      "DLS": "Zarina"
+  },{
         "number": 100000,
         "name_ru": "Пусто1",
         "name_en": "Empty",
