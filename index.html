@@ -441,8 +441,9 @@
                     perks.splice(-4);
                 }
                 const shuffledAddons = [...perks].sort(() => 0.5 - Math.random());
-                perkText = shuffledAddons[0].name_ru +" / " + shuffledAddons[1].name_ru;
+                perkText = shuffledAddons[0].name_ru +" / " + shuffledAddons[1].name_ru+" / " + shuffledAddons[2].name_ru+" / " + shuffledAddons[3].name_ru;
                 console.log(perkText);
+                textDownPerks.textContent = perkText;
                 return [shuffledAddons[0], shuffledAddons[1],shuffledAddons[2],shuffledAddons[3]];
             }
 
@@ -455,8 +456,12 @@
                 }
                 const shuffledAddons = [...perks].sort(() => 0.5 - Math.random());
                 itenAddonText = shuffledAddons[0].name_ru +" / " + shuffledAddons[1].name_ru;
+                itenText += itenAddonText;
+                killerText += itenText;
                 //textDown.textContent += killerText;
                 console.log(itenAddonText);
+                
+                textDown.textContent = killerText;
                 return [shuffledAddons[0], shuffledAddons[1]];
             }
 
