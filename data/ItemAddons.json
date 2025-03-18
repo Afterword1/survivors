@@ -93,32 +93,298 @@
         "tipe":0
       },{
         "number": 13,
-        "name_ru": "Самоклеющиеся бинты",
-        "name_en": "Self Adherent Wrap",
-        "photo_main":"iconAddon_selfAdherentWrap.png",
-        "rang":3,
+        "name_ru": "Гелевые повязки",
+        "name_en": "Gel Dressings",
+        "photo_main":"iconAddon_gelDressings.png",
+        "rang":0,
         "tipe":1
       },{
         "number": 14,
+        "name_ru": "Кровоостанавливающий шприц",
+        "name_en": "Anti-Haemorrhagic Syringe",
+        "photo_main":"iconAddon_syringe.png",
+        "rang":0,
+        "tipe":1
+      },{
+        "number": 15,
+        "name_ru": "Кровоостанавливающий препарат",
+        "name_en": "Styptic Agent",
+        "photo_main":"iconAddon_stypticAgent.png",
+        "rang":1,
+        "tipe":1
+      },{
+        "number": 16,
+        "name_ru": "Брюшные повязки",
+        "name_en": "Abdominal Dressing",
+        "photo_main":"iconAddon_abdominalDressing.png",
+        "rang":1,
+        "tipe":1
+      },{
+        "number": 17,
+        "name_ru": "Хирургическая игла",
+        "name_en": "Surgical Suture",
+        "photo_main":"iconAddon_surgicalSuture.png",
+        "rang":2,
+        "tipe":1
+      },{
+        "number": 18,
         "name_ru": "Бинты",
         "name_en": "Gauze Roll",
         "photo_main":"iconAddon_gauseRoll.png",
         "rang":2,
         "tipe":1
       },{
-        "number": 15,
+        "number": 19,
+        "name_ru": "Губка",
+        "name_en": "Sponge",
+        "photo_main":"iconAddon_sponge.png",
+        "rang":3,
+        "tipe":1
+      },{
+        "number": 20,
+        "name_ru": "Самоклеющиеся бинты",
+        "name_en": "Self Adherent Wrap",
+        "photo_main":"iconAddon_syringe.png",
+        "rang":3,
+        "tipe":1
+      },{
+        "number": 21,
+        "name_ru": "Иголка и нитка",
+        "name_en": "Needle & Thread",
+        "photo_main":"iconAddon_needAndThread.png",
+        "rang":3,
+        "tipe":1
+      },{
+        "number": 22,
+        "name_ru": "Медицинские ножницы",
+        "name_en": "Medical Scissors",
+        "photo_main":"iconAddon_scissors.png",
+        "rang":3,
+        "tipe":1
+      },{
+        "number": 23,
+        "name_ru": "Резиновые перчатки",
+        "name_en": "Rubber Gloves",
+        "photo_main":"iconAddon_gloves.png",
+        "rang":4,
+        "tipe":1
+      },{
+        "number": 24,
+        "name_ru": "Пластырь-бабочка",
+        "name_en": "Butterfly Tape",
+        "photo_main":"iiconAddon_butterflyTape.png",
+        "rang":0,
+        "tipe":1
+      },{
+        "number": 25,
         "name_ru": "Повязки",
         "name_en": "Bandages",
         "photo_main":"iconAddon_bandages.png",
         "rang":4,
         "tipe":1
       },{
-        "number": 16,
-        "name_ru": "Гелевые повязки",
-        "name_en": "Gel Dressings",
-        "photo_main":"iconAddon_gelDressings.png",
+        "number": 26,
+        "name_ru": "Новая деталь",
+        "name_en": "Brand New Part",
+        "photo_main":"iconAddon_brandNewPart.png",
         "rang":0,
-        "tipe":1
+        "tipe":2
+      },{
+        "number": 27,
+        "name_ru": "Ножовка",
+        "name_en": "Hacksaw",
+        "photo_main":"iconAddon_metalSaw.png",
+        "rang":2,
+        "tipe":2
+      },{
+        "number": 28,
+        "name_ru": "Разводной ключ",
+        "name_en": "Grip Wrench",
+        "photo_main":"iconAddon_gripWrench.png",
+        "rang":2,
+        "tipe":2
+      },{
+        "number": 29,
+        "name_ru": "Катушка проволоки",
+        "name_en": "Wire Spool",
+        "photo_main":"iconAddon_spoolOfWire.png",
+        "rang":3,
+        "tipe":2
+      },{
+        "number": 30,
+        "name_ru": "Пружинный зажим",
+        "name_en": "Spring Clamp",
+        "photo_main":"iconAddon_springClamp.png",
+        "rang":3,
+        "tipe":2
+      },{
+        "number": 31,
+        "name_ru": "Шарнирный ключ",
+        "name_en": "Socket Swivels",
+        "photo_main":"iconAddon_socketSwivels.png",
+        "rang":3,
+        "tipe":2
+      },{
+        "number": 32,
+        "name_ru": "Защитные перчатки",
+        "name_en": "Protective Gloves",
+        "photo_main":"iconAddon_protectiveGloves.png",
+        "rang":3,
+        "tipe":2
+      },{
+        "number": 33,
+        "name_ru": "Режущая проволока",
+        "name_en": "Cutting Wire",
+        "photo_main":"iconAddon_cuttingWire.png",
+        "rang":3,
+        "tipe":2
+      },{
+        "number": 34,
+        "name_ru": "Старые запчасти",
+        "name_en": "Scraps",
+        "photo_main":"iconAddon_scraps.png",
+        "rang":4,
+        "tipe":2
+      },{
+        "number": 35,
+        "name_ru": "Руководство",
+        "name_en": "Instructions",
+        "photo_main":"iconAddon_instructions.png",
+        "rang":4,
+        "tipe":2
+      },{
+        "number": 36,
+        "name_ru": "Чистая тряпка",
+        "name_en": "Clean Rag",
+        "photo_main":"iconAddon_cleanRag.png",
+        "rang":4,
+        "tipe":2
+      },{
+        "number": 37,
+        "name_ru": "Кристальный прицел",
+        "name_en": "Crystal Bead",
+        "photo_main":"iconAddon_beadCrystal.png",
+        "rang":1,
+        "tipe":3
+      },{
+        "number": 38,
+        "name_ru": "Странная печать",
+        "name_en": "Odd Stamp",
+        "photo_main":"iconAddon_stampOdd.png",
+        "rang":2,
+        "tipe":3
+      },{
+        "number": 39,
+        "name_ru": "Черный шелковый шнур",
+        "name_en": "Black Silk Cord",
+        "photo_main":"iconAddon_ropeBlack.png",
+        "rang":2,
+        "tipe":3
+      },{
+        "number": 40,
+        "name_ru": "Желтый провод",
+        "name_en": "Yellow Wire",
+        "photo_main":"iconAddon_ropeYellow.png",
+        "rang":3,
+        "tipe":3
+      },{
+        "number": 41,
+        "name_ru": "Необычная печать",
+        "name_en": "Unusual Stamp",
+        "photo_main":"iconAddon_stampUnusual.png",
+        "rang":3,
+        "tipe":3
+      },{
+        "number": 42,
+        "name_ru": "Огнезащитное желе",
+        "name_en": "Retardant Jelly",
+        "photo_main":"iconAddon_retardantJelly.png",
+        "rang":3,
+        "tipe":3
+      },{
+        "number": 43,
+        "name_ru": "Красная бечевка",
+        "name_en": "Red Twine",
+        "photo_main":"iconAddon_ropeRed.png",
+        "rang":3,
+        "tipe":3
+      },{
+        "number": 44,
+        "name_ru": "Стеклянный прицел",
+        "name_en": "Glass Bead",
+        "photo_main":"iconAddon_beadGlass.png",
+        "rang":3,
+        "tipe":3
+      },{
+        "number": 45,
+        "name_ru": "Кусок карты",
+        "name_en": "Map Addendum",
+        "photo_main":"iconAddon_mapAddendum.png",
+        "rang":4,
+        "tipe":3
+      },{
+        "number": 46,
+        "name_ru": "Сплетенное кольцо",
+        "name_en": "Weaved Ring",
+        "photo_main":"iconAddon_weavedRing.png",
+        "rang":1,
+        "tipe":4
+      },{
+        "number": 47,
+        "name_ru": "Уникальное обручальное кольцо",
+        "name_en": "Unique Wedding Ring",
+        "photo_main":"iconAddon_uniqueRing.png",
+        "rang":1,
+        "tipe":4
+      },{
+        "number": 48,
+        "name_ru": "Матовое стекло",
+        "name_en": "Milky Glass",
+        "photo_main":"iconAddon_milkyGlass.png",
+        "rang":1,
+        "tipe":4
+      },{
+        "number": 49,
+        "name_ru": "Кровавый янтарь",
+        "name_en": "Blood Amber",
+        "photo_main":"iconAddon_bloodAmber.png",
+        "rang":1,
+        "tipe":4
+      },{
+        "number": 50,
+        "name_ru": "Золотой жетон",
+        "name_en": "Gold Token",
+        "photo_main":"iconAddon_tokenGold.png",
+        "rang":2,
+        "tipe":4
+      },{
+        "number": 51,
+        "name_ru": "Поцарапанный жемчуг",
+        "name_en": "Scratched Pearl",
+        "photo_main":"iconAddon_scratchedPearl.png",
+        "rang":3,
+        "tipe":4
+      },{
+        "number": 52,
+        "name_ru": "Молитвенные четки",
+        "name_en": "Prayer Beads",
+        "photo_main":"iconAddon_prayerBeads.png",
+        "rang":3,
+        "tipe":4
+      },{
+        "number": 53,
+        "name_ru": "Треснувший жетон",
+        "name_en": "Eroded Token",
+        "photo_main":"iconAddon_tokenErroded.png",
+        "rang":3,
+        "tipe":4
+      },{
+        "number": 54,
+        "name_ru": "Молитвенная веревка",
+        "name_en": "Prayer Rope",
+        "photo_main":"iconAddon_prayerRope.png",
+        "rang":4,
+        "tipe":4
       },{
         "number": 100000,
         "name_ru": "Пусто",
