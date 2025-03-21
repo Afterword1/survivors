@@ -264,45 +264,6 @@
         }
         
 
-        /* Стили для модального окна */
-        .modal {
-            display: none; /* Скрыто по умолчанию */
-            position: fixed;
-            z-index: 1000;
-            padding-top: 60px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.9); /* Черный фон с прозрачностью */
-        }
-
-        .modal-content {
-            margin: auto;
-            display: block;
-            max-width: 80%;
-            max-height: 80%;
-        }
-
-        .close {
-            position: absolute;
-            top: 20px;
-            right: 35px;
-            color: #fff;
-            font-size: 40px;
-            font-weight: bold;
-            transition: 0.3s;
-            cursor: pointer;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: #bbb;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
     </style>
 </head>
 <body>
@@ -400,52 +361,6 @@
     </div>
 
     <script>
-
-        // Получаем модальное окно и его элементы
-        const modal = document.getElementById('modal');
-        const modalImg = document.getElementById('modal-img');
-        const closeBtn = document.querySelector('.close');
-
-        // Функция для открытия модального окна с изображением
-        function openModal(imgSrc) {
-            modal.style.display = 'block';
-            modalImg.src = imgSrc;
-        }
-
-        // Функция для закрытия модального окна
-        function closeModal() {
-            modal.style.display = 'none';
-        }
-
-        // Закрытие модального окна при клике на крестик
-        closeBtn.addEventListener('click', closeModal);
-
-        // Закрытие модального окна при клике вне изображения
-        window.addEventListener('click', function(event) {
-            if (event.target === modal) {
-                closeModal();
-            }
-        });
-
-        // Добавляем обработчики событий для всех нужных изображений
-        const imagesToClick = [
-            photoPlaceholderImg,
-            photoAddonPlaceholderImg1,
-            photoAddonPlaceholderImg2,
-            photoPerks0,
-            photoPerks1,
-            photoPerks2,
-            photoPerks3,
-            photoPodnosheniePlaceholder
-        ];
-
-        imagesToClick.forEach(img => {
-            img.addEventListener('click', function() {
-                openModal(this.src);
-            });
-        });
-
-
         // Словарь с переводами
         const translations = {
             ru: {
@@ -623,47 +538,44 @@
                 killerText += itemText;
                 // Обновляем текстовое поле
                 //textDown.textContent += killerText;
-                //console.log(killerText);
+                console.log(killerText);
                 return items[randomIndex];
             }
-
-            // Функция для получения двух случайных разных аддонов
-            function getTwoRandomAddons(addons, emptyAddonsChecked) {
-                // Если галочка "empty-addons" НЕ установлена
-                if (!emptyAddonsChecked) {
-                    // Удаляем последние два аддона
-                    addons.splice(-2);
-                }
-                const shuffledAddons = [...addons].sort(() => 0.5 - Math.random());
-                let itemText = '';
-
-                if (lang === 'ru') {
-                    itemText += shuffledAddons[0].name_addon_ru +" / " + shuffledAddons[1].name_addon_ru + " )";
-                } else if (lang === 'en') {
-                    itemText += shuffledAddons[0].name_addon_en +" / " + shuffledAddons[1].name_addon_en + " )";
-                } else if (lang === 'es') {
-                    itemText += shuffledAddons[0].name_addon_es +" / " + shuffledAddons[1].name_addon_es + " )";
-                } else {
-                    itemText += shuffledAddons[0].name_addon_ru +" / " + shuffledAddons[1].name_addon_ru + " )";
-                }
-                killerText += itemText;
-                // Обновляем текстовое поле
-                textDown.textContent += killerText;
-                console.log(killerText);
-
-                return [shuffledAddons[0], shuffledAddons[1]];
-            }
-
             
-            // Функция для получения четырех случайных разных перков
+            // Функция для получения четырех случайных перков
             function getForRandomPerks(perks, emptyChecked) {
-                // Если галочка "empty-addons" НЕ установлена
                 if (!emptyChecked) {
-                    // Удаляем последние 4 перка
                     perks.splice(-4);
                 }
-                const shuffledAddons = [...perks].sort(() => 0.5 - Math.random());
-                return [shuffledAddons[0], shuffledAddons[1],shuffledAddons[2],shuffledAddons[3]];
+                const shuffledPerks = [...perks].sort(() => 0.5 - Math.random());
+                let perkText = '';
+
+                if (lang === 'ru') {
+                    perkText = shuffledPerks[0].name_ru + " / " +
+                            shuffledPerks[1].name_ru + " / " +
+                            shuffledPerks[2].name_ru + " / " +
+                            shuffledPerks[3].name_ru;
+                } else if (lang === 'en') {
+                    perkText = shuffledPerks[0].name_en + " / " +
+                            shuffledPerks[1].name_en + " / " +
+                            shuffledPerks[2].name_en + " / " +
+                            shuffledPerks[3].name_en;
+                } else if (lang === 'es') {
+                    perkText = shuffledPerks[0].name_es + " / " +
+                            shuffledPerks[1].name_es + " / " +
+                            shuffledPerks[2].name_es + " / " +
+                            shuffledPerks[3].name_es;
+                } else {
+                    perkText = shuffledPerks[0].name_ru + " / " +
+                            shuffledPerks[1].name_ru + " / " +
+                            shuffledPerks[2].name_ru + " / " +
+                            shuffledPerks[3].name_ru;
+                }
+
+                // Обновляем текстовое поле
+                textDownPerks.textContent = perkText;
+
+                return [shuffledPerks[0], shuffledPerks[1], shuffledPerks[2], shuffledPerks[3]];
             }
 
             // Функция для получения четырех случайных разных перков
@@ -674,6 +586,23 @@
                     perks.splice(-2);
                 }
                 const shuffledAddons = [...perks].sort(() => 0.5 - Math.random());
+
+                let itemText = '';
+
+                if (lang === 'ru') {
+                    itemText += shuffledAddons[0].name_ru +" / " + shuffledAddons[1].name_ru + " )";
+                } else if (lang === 'en') {
+                    itemText += shuffledAddons[0].name_en +" / " + shuffledAddons[1].name_en + " )";
+                } else if (lang === 'es') {
+                    itemText += shuffledAddons[0].name_es +" / " + shuffledAddons[1].name_es + " )";
+                } else {
+                    itemText += shuffledAddons[0].name_ru +" / " + shuffledAddons[1].name_ru + " )";
+                }
+                killerText += itemText;
+                // Обновляем текстовое поле
+                textDown.textContent += killerText;
+                console.log(killerText);
+
                 return [shuffledAddons[0], shuffledAddons[1]];
             }
 
@@ -699,15 +628,28 @@
                 return result;
             }
 
-            // Функция для получения четырех случайных разных перков
-            function getForRandomOfferings(Offerings, emptyChecked) {
-                // Если галочка "empty-addons" НЕ установлена
+            // Функция для получения случайного подношения
+            function getForRandomOfferings(offerings, emptyChecked) {
                 if (!emptyChecked) {
-                    // Удаляем последние 4 перка
-                    Offerings.splice(-1);
+                    offerings.splice(-1);
                 }
-                const shuffledAddons = [...Offerings].sort(() => 0.5 - Math.random());
-                return [shuffledAddons[0]];
+                const shuffledOfferings = [...offerings].sort(() => 0.5 - Math.random());
+                let offeringText = '';
+
+                if (lang === 'ru') {
+                    offeringText = shuffledOfferings[0].name_ru;
+                } else if (lang === 'en') {
+                    offeringText = shuffledOfferings[0].name_en;
+                } else if (lang === 'es') {
+                    offeringText = shuffledOfferings[0].name_es;
+                } else {
+                    offeringText = shuffledOfferings[0].name_ru;
+                }
+
+                // Обновляем текстовое поле
+                textDownOffering.textContent = offeringText;
+
+                return [shuffledOfferings[0]];
             }
                 
             // Обработчик события для клика по centered-photo
@@ -987,12 +929,5 @@
         });
     </script>
     
-
-    <!-- Модальное окно -->
-    <div id="modal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modal-img">
-    </div>
-
 </body>
 </html>
