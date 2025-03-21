@@ -541,34 +541,6 @@
                 console.log(killerText);
                 return items[randomIndex];
             }
-
-            // Функция для получения двух случайных разных аддонов
-            function getTwoRandomAddons(addons, emptyAddonsChecked) {
-                // Если галочка "empty-addons" НЕ установлена
-                if (!emptyAddonsChecked) {
-                    // Удаляем последние два аддона
-                    addons.splice(-2);
-                }
-                const shuffledAddons = [...addons].sort(() => 0.5 - Math.random());
-                let itemText = '';
-
-                if (lang === 'ru') {
-                    itemText += shuffledAddons[0].name_ru +" / " + shuffledAddons[1].name_ru + " )";
-                } else if (lang === 'en') {
-                    itemText += shuffledAddons[0].name_en +" / " + shuffledAddons[1].name_en + " )";
-                } else if (lang === 'es') {
-                    itemText += shuffledAddons[0].name_es +" / " + shuffledAddons[1].name_es + " )";
-                } else {
-                    itemText += shuffledAddons[0].name_ru +" / " + shuffledAddons[1].name_ru + " )";
-                }
-                killerText += itemText;
-                // Обновляем текстовое поле
-                textDown.textContent += killerText;
-                console.log(killerText);
-
-                return [shuffledAddons[0], shuffledAddons[1]];
-            }
-
             
             // Функция для получения четырех случайных разных перков
             function getForRandomPerks(perks, emptyChecked) {
@@ -589,6 +561,23 @@
                     perks.splice(-2);
                 }
                 const shuffledAddons = [...perks].sort(() => 0.5 - Math.random());
+
+                let itemText = '';
+
+                if (lang === 'ru') {
+                    itemText += shuffledAddons[0].name_ru +" / " + shuffledAddons[1].name_ru + " )";
+                } else if (lang === 'en') {
+                    itemText += shuffledAddons[0].name_en +" / " + shuffledAddons[1].name_en + " )";
+                } else if (lang === 'es') {
+                    itemText += shuffledAddons[0].name_es +" / " + shuffledAddons[1].name_es + " )";
+                } else {
+                    itemText += shuffledAddons[0].name_ru +" / " + shuffledAddons[1].name_ru + " )";
+                }
+                killerText += itemText;
+                // Обновляем текстовое поле
+                textDown.textContent += killerText;
+                console.log(killerText);
+
                 return [shuffledAddons[0], shuffledAddons[1]];
             }
 
