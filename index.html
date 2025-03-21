@@ -628,15 +628,28 @@
                 return result;
             }
 
-            // Функция для получения четырех случайных разных перков
-            function getForRandomOfferings(Offerings, emptyChecked) {
-                // Если галочка "empty-addons" НЕ установлена
+            // Функция для получения случайного подношения
+            function getForRandomOfferings(offerings, emptyChecked) {
                 if (!emptyChecked) {
-                    // Удаляем последние 4 перка
-                    Offerings.splice(-1);
+                    offerings.splice(-1);
                 }
-                const shuffledAddons = [...Offerings].sort(() => 0.5 - Math.random());
-                return [shuffledAddons[0]];
+                const shuffledOfferings = [...offerings].sort(() => 0.5 - Math.random());
+                let offeringText = '';
+
+                if (lang === 'ru') {
+                    offeringText = shuffledOfferings[0].name_ru;
+                } else if (lang === 'en') {
+                    offeringText = shuffledOfferings[0].name_en;
+                } else if (lang === 'es') {
+                    offeringText = shuffledOfferings[0].name_es;
+                } else {
+                    offeringText = shuffledOfferings[0].name_ru;
+                }
+
+                // Обновляем текстовое поле
+                textDownOffering.textContent = offeringText;
+
+                return [shuffledOfferings[0]];
             }
                 
             // Обработчик события для клика по centered-photo
