@@ -502,13 +502,13 @@
                 let survText = '';
 
                 if (lang === 'ru') {
-                    survText += survs[randomIndex].name_ru + " / ";
+                    survText += survs[randomIndex].name_ru + " | ";
                 } else if (lang === 'en') {
-                    survText += survs[randomIndex].name_en + " / ";
+                    survText += survs[randomIndex].name_en + " | ";
                 } else if (lang === 'es') {
-                    survText += survs[randomIndex].name_es + " / ";
+                    survText += survs[randomIndex].name_es + " | ";
                 } else {
-                    survText += survs[randomIndex].name_ru + " / ";
+                    survText += survs[randomIndex].name_ru + " | ";
                 }
 
                 // Обновляем текстовое поле
@@ -527,18 +527,18 @@
                 let itemText = '';
 
                 if (lang === 'ru') {
-                    itemText += items[randomIndex].name_ru + " / ";
+                    itemText += items[randomIndex].name_ru + " ( ";
                 } else if (lang === 'en') {
-                    itemText += items[randomIndex].name_en + " / ";
+                    itemText += items[randomIndex].name_en + " ( ";
                 } else if (lang === 'es') {
-                    itemText += items[randomIndex].name_es + " / ";
+                    itemText += items[randomIndex].name_es + " ( ";
                 } else {
-                    itemText += items[randomIndex].name_ru + " / ";
+                    itemText += items[randomIndex].name_ru + " ( ";
                 }
                 killerText += itemText;
                 // Обновляем текстовое поле
-                textDown.textContent += killerText;
-                console.log(killerText);
+                //textDown.textContent += killerText;
+                //console.log(killerText);
                 return items[randomIndex];
             }
 
@@ -550,9 +550,22 @@
                     addons.splice(-2);
                 }
                 const shuffledAddons = [...addons].sort(() => 0.5 - Math.random());
-                killerText += shuffledAddons[0].name_addon_ru +" / " + shuffledAddons[1].name_addon_ru;
+                let itemText = '';
+
+                if (lang === 'ru') {
+                    itemText += shuffledAddons[0].name_addon_ru +" / " + shuffledAddons[1].name_addon_ru + " )";
+                } else if (lang === 'en') {
+                    itemText += shuffledAddons[0].name_addon_en +" / " + shuffledAddons[1].name_addon_en + " )";
+                } else if (lang === 'es') {
+                    itemText += shuffledAddons[0].name_addon_es +" / " + shuffledAddons[1].name_addon_es + " )";
+                } else {
+                    itemText += shuffledAddons[0].name_addon_ru +" / " + shuffledAddons[1].name_addon_ru + " )";
+                }
+                killerText += itemText;
+                // Обновляем текстовое поле
                 textDown.textContent += killerText;
                 console.log(killerText);
+
                 return [shuffledAddons[0], shuffledAddons[1]];
             }
 
