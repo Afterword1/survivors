@@ -542,15 +542,40 @@
                 return items[randomIndex];
             }
             
-            // Функция для получения четырех случайных разных перков
+            // Функция для получения четырех случайных перков
             function getForRandomPerks(perks, emptyChecked) {
-                // Если галочка "empty-addons" НЕ установлена
                 if (!emptyChecked) {
-                    // Удаляем последние 4 перка
                     perks.splice(-4);
                 }
-                const shuffledAddons = [...perks].sort(() => 0.5 - Math.random());
-                return [shuffledAddons[0], shuffledAddons[1],shuffledAddons[2],shuffledAddons[3]];
+                const shuffledPerks = [...perks].sort(() => 0.5 - Math.random());
+                let perkText = '';
+
+                if (lang === 'ru') {
+                    perkText = shuffledPerks[0].name_ru + " / " +
+                            shuffledPerks[1].name_ru + " / " +
+                            shuffledPerks[2].name_ru + " / " +
+                            shuffledPerks[3].name_ru;
+                } else if (lang === 'en') {
+                    perkText = shuffledPerks[0].name_en + " / " +
+                            shuffledPerks[1].name_en + " / " +
+                            shuffledPerks[2].name_en + " / " +
+                            shuffledPerks[3].name_en;
+                } else if (lang === 'es') {
+                    perkText = shuffledPerks[0].name_es + " / " +
+                            shuffledPerks[1].name_es + " / " +
+                            shuffledPerks[2].name_es + " / " +
+                            shuffledPerks[3].name_es;
+                } else {
+                    perkText = shuffledPerks[0].name_ru + " / " +
+                            shuffledPerks[1].name_ru + " / " +
+                            shuffledPerks[2].name_ru + " / " +
+                            shuffledPerks[3].name_ru;
+                }
+
+                // Обновляем текстовое поле
+                textDownPerks.textContent = perkText;
+
+                return [shuffledPerks[0], shuffledPerks[1], shuffledPerks[2], shuffledPerks[3]];
             }
 
             // Функция для получения четырех случайных разных перков
