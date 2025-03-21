@@ -411,6 +411,34 @@
         let killerText = '';
         let perkText = '';
         let PodnoshenieText = '';
+
+
+        
+        // Обновляем текст чекбоксов и выпадающего списка
+        if (translations[lang]) {
+
+            if (emptyAddonsLabel) {
+                // Находим текстовый узел внутри <label> и обновляем его
+                const textNode = Array.from(emptyAddonsLabel.childNodes).find(node => node.nodeType === Node.TEXT_NODE);
+                if (textNode) {
+                    textNode.textContent = translations[lang].emptyAddons;
+                }
+            }
+            if (emptyPerksLabel) {
+                const textNode = Array.from(emptyPerksLabel.childNodes).find(node => node.nodeType === Node.TEXT_NODE);
+                if (textNode) {
+                    textNode.textContent = translations[lang].emptyPerks;
+                }
+            }
+            if (emptyOfferingsLabel) {
+                const textNode = Array.from(emptyOfferingsLabel.childNodes).find(node => node.nodeType === Node.TEXT_NODE);
+                if (textNode) {
+                    textNode.textContent = translations[lang].emptyOfferings;
+                }
+            }
+
+        }
+
         
         window.addEventListener('load', function() {
             const container = document.getElementById('main-container');
