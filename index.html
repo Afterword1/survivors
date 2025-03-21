@@ -364,18 +364,21 @@
         // Словарь с переводами
         const translations = {
             ru: {
+                emptyItems: "Включить пустые предметы",
                 emptyAddons: "Включить пустые аддоны",
                 emptyPerks: "Включить пустые перки",
                 emptyOfferings: "Включить пустые подношения",
                 allKillers: "Все убийцы",
             },
             en: {
+                emptyItems: "Enable empty items",
                 emptyAddons: "Enable empty addons",
                 emptyPerks: "Enable empty perks",
                 emptyOfferings: "Enable empty offerings",
                 allKillers: "All killers",
             },
             es: {
+                emptyItems: "Habilitar Complementos vacíos",
                 emptyAddons: "Habilitar addons vacíos",
                 emptyPerks: "Habilitar perks vacíos",
                 emptyOfferings: "Habilitar ofrendas vacías",
@@ -422,7 +425,7 @@
         // Получаем язык из URL
         const lang = getParameterFromUrl('lang') || 'ru'; // По умолчанию 'ru', если параметр не указан
 
-        
+        const emptyItemsLabel = document.querySelector('label:has(input#empty-items)');
         const emptyAddonsLabel = document.querySelector('label:has(input#empty-addons)');
         const emptyPerksLabel = document.querySelector('label:has(input#empty-perks)');
         const emptyOfferingsLabel = document.querySelector('label:has(input#empty-offerings)');
@@ -430,6 +433,14 @@
         
         // Обновляем текст чекбоксов и выпадающего списка
         if (translations[lang]) {
+
+            if (emptyItemsLabel) {
+                // Находим текстовый узел внутри <label> и обновляем его
+                const textNode = Array.from(emptyItemsLabel.childNodes).find(node => node.nodeType === Node.TEXT_NODE);
+                if (textNode) {
+                    textNode.textContent = translations[lang].emptyItems;
+                }
+            }
 
             if (emptyAddonsLabel) {
                 // Находим текстовый узел внутри <label> и обновляем его
