@@ -512,8 +512,9 @@
                 }
 
                 // Обновляем текстовое поле
-                textDown.textContent = survText;
-                console.log(survText);
+                //textDown.textContent = survText;
+                killerText = survText;
+                console.log(killerText);
                 return survs[randomIndex];
             }
 
@@ -534,10 +535,10 @@
                 } else {
                     itemText += items[randomIndex].name_ru + " / ";
                 }
-
+                killerText += itemText;
                 // Обновляем текстовое поле
-                textDown.textContent += itemText;
-
+                textDown.textContent += killerText;
+                console.log(killerText);
                 return items[randomIndex];
             }
 
