@@ -39,7 +39,7 @@
         "number": 5,
         "name_ru": "Аптечка",
         "name_en": "First Aid Kit",
-        "photo_main":"iconItems_firstAidKit.png.png",
+        "photo_main":"iconItems_firstAidKit.png",
         "rang":3,
         "tipe":1
       },{
