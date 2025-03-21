@@ -253,6 +253,15 @@
             font-size: 16px;
             background-color: #000000; /* Цвет фона для текста */
         }
+
+        .text-down-offering {
+            width: 100%; /* Для выравнивания по ширине */
+            text-align: center; /* Выравнивание текста по центру */
+            padding: 10px;
+            color: #ffffff;
+            font-size: 16px;
+            background-color: #000000; /* Цвет фона для текста */
+        }
         
 
     </style>
@@ -339,11 +348,6 @@
             <label><input type="checkbox" id="empty-addons"> Включить пустые улучшения</label>
             <label><input type="checkbox" id="empty-perks"> Включить пустые перки</label>
             <label><input type="checkbox" id="empty-offerings"> Включить пустые подношения</label>
-
-                <!-- Выпадающий список с киллерами -->
-            <select id="killer-select" class="killer-dropdown">
-                <option value="all">Все убийцы</option>
-            </select>
         </div>
         <div class="text-container">
             <div class="text-down"> </div>
@@ -351,9 +355,63 @@
         <div class="text-container">
             <div class="text-down-perks"> </div>
         </div>
+        <div class="text-container">
+            <div class="text-down-offering"> </div>
+        </div>
     </div>
 
     <script>
+        // Словарь с переводами
+        const translations = {
+            ru: {
+                emptyAddons: "Включить пустые аддоны",
+                emptyPerks: "Включить пустые перки",
+                emptyOfferings: "Включить пустые подношения",
+                allKillers: "Все убийцы",
+            },
+            en: {
+                emptyAddons: "Enable empty addons",
+                emptyPerks: "Enable empty perks",
+                emptyOfferings: "Enable empty offerings",
+                allKillers: "All killers",
+            },
+            es: {
+                emptyAddons: "Habilitar addons vacíos",
+                emptyPerks: "Habilitar perks vacíos",
+                emptyOfferings: "Habilitar ofrendas vacías",
+                allKillers: "Todos los asesinos",
+            }
+        };
+
+        const centeredPhoto = document.querySelector('.centered-photo');
+        const textOverlay = document.querySelector('.text-overlay');
+        const nonSquarePhotoImg = document.getElementById('non-square-photo-img');
+        const photoPlaceholderImg = document.getElementById('photo-placeholder-img');
+        const photoPlaceholderImg0 = document.getElementById('photo-addonplaceholder00-img');
+
+        const photoAddonPlaceholderImg1 = document.getElementById('photo-addonplaceholder1-img');
+        const photoAddonPlaceholderImg2 = document.getElementById('photo-addonplaceholder2-img');
+        const photoAddonPlaceholderImg11 = document.getElementById('photo-addonplaceholder11-img');
+        const photoAddonPlaceholderImg22 = document.getElementById('photo-addonplaceholder22-img');
+        const photoPerks0 = document.getElementById('perks-photo-img0');
+        const photoPerks1 = document.getElementById('perks-photo-img1');
+        const photoPerks2 = document.getElementById('perks-photo-img2');
+        const photoPerks3 = document.getElementById('perks-photo-img3');
+        const photoPerks00 = document.getElementById('perks-photo-img00');
+        const photoPerks11 = document.getElementById('perks-photo-img11');
+        const photoPerks22 = document.getElementById('perks-photo-img22');
+        const photoPerks33 = document.getElementById('perks-photo-img33');
+        const photoPodnosheniePlaceholder = document.getElementById('photo-podnoshenie-placeholder');
+        const photoPodnosheniePlaceholder22 = document.getElementById('photo-podnoshenie-placeholder22');
+        const textDown = document.querySelector('.text-down');
+        const textDownPerks = document.querySelector('.text-down-perks');
+        const textDownOffering = document.querySelector('.text-down-offering');
+
+        
+        let killerText = '';
+        let perkText = '';
+        let PodnoshenieText = '';
+        
         window.addEventListener('load', function() {
             const container = document.getElementById('main-container');
             const images = document.querySelectorAll('img');
@@ -383,41 +441,12 @@
                     console.error("Ошибка загрузки изображения:", error);
                 });
             
-            const centeredPhoto = document.querySelector('.centered-photo');
-            const textOverlay = document.querySelector('.text-overlay');
-            const nonSquarePhotoImg = document.getElementById('non-square-photo-img');
-            const photoPlaceholderImg = document.getElementById('photo-placeholder-img');
-            const photoPlaceholderImg0 = document.getElementById('photo-addonplaceholder00-img');
-
-            const photoAddonPlaceholderImg1 = document.getElementById('photo-addonplaceholder1-img');
-            const photoAddonPlaceholderImg2 = document.getElementById('photo-addonplaceholder2-img');
-            const photoAddonPlaceholderImg11 = document.getElementById('photo-addonplaceholder11-img');
-            const photoAddonPlaceholderImg22 = document.getElementById('photo-addonplaceholder22-img');
-            const photoPerks0 = document.getElementById('perks-photo-img0');
-            const photoPerks1 = document.getElementById('perks-photo-img1');
-            const photoPerks2 = document.getElementById('perks-photo-img2');
-            const photoPerks3 = document.getElementById('perks-photo-img3');
-            const photoPerks00 = document.getElementById('perks-photo-img00');
-            const photoPerks11 = document.getElementById('perks-photo-img11');
-            const photoPerks22 = document.getElementById('perks-photo-img22');
-            const photoPerks33 = document.getElementById('perks-photo-img33');
-            const photoPodnosheniePlaceholder = document.getElementById('photo-podnoshenie-placeholder');
-            const photoPodnosheniePlaceholder22 = document.getElementById('photo-podnoshenie-placeholder22');
-            const textDown = document.querySelector('.text-down');
-            const textDownPerks = document.querySelector('.text-down-perks');
-
             
-            let killerText = '';
-            let itenText = '';
-            let itenAddonText = '';
-            let perkText = '';
-            let PodnoshenieText = '';
 
             // Функция для получения случайного элемента
             function getRandomSurv(killers) {
                 const randomIndex = Math.floor(Math.random() * killers.length);
-                killerText = killers[randomIndex].name_ru +" / ";
-                console.log(killerText);
+                killerText += killers[randomIndex].name_ru +" / ";
                 return killers[randomIndex];
             }
 
@@ -428,10 +457,24 @@
                     killers.splice(-1);
                 }
                 const randomIndex = Math.floor(Math.random() * killers.length);
-                itenText = killers[randomIndex].name_ru +" / ";
-                console.log(itenText);
+                killerText += killers[randomIndex].name_ru +" / ";
                 return killers[randomIndex];
             }
+
+            // Функция для получения двух случайных разных аддонов
+            function getTwoRandomAddons(addons, emptyAddonsChecked) {
+                // Если галочка "empty-addons" НЕ установлена
+                if (!emptyAddonsChecked) {
+                    // Удаляем последние два аддона
+                    addons.splice(-2);
+                }
+                const shuffledAddons = [...addons].sort(() => 0.5 - Math.random());
+                killerText += shuffledAddons[0].name_addon_ru +" / " + shuffledAddons[1].name_addon_ru;
+                textDown.textContent += killerText;
+                console.log(killerText);
+                return [shuffledAddons[0], shuffledAddons[1]];
+            }
+
             
             // Функция для получения четырех случайных разных перков
             function getForRandomPerks(perks, emptyChecked) {
@@ -441,9 +484,6 @@
                     perks.splice(-4);
                 }
                 const shuffledAddons = [...perks].sort(() => 0.5 - Math.random());
-                perkText = shuffledAddons[0].name_ru +" / " + shuffledAddons[1].name_ru+" / " + shuffledAddons[2].name_ru+" / " + shuffledAddons[3].name_ru;
-                console.log(perkText);
-                textDownPerks.textContent = perkText;
                 return [shuffledAddons[0], shuffledAddons[1],shuffledAddons[2],shuffledAddons[3]];
             }
 
@@ -455,13 +495,6 @@
                     perks.splice(-2);
                 }
                 const shuffledAddons = [...perks].sort(() => 0.5 - Math.random());
-                itenAddonText = shuffledAddons[0].name_ru +" / " + shuffledAddons[1].name_ru;
-                itenText += itenAddonText;
-                killerText += itenText;
-                //textDown.textContent += killerText;
-                console.log(itenAddonText);
-                
-                textDown.textContent = killerText;
                 return [shuffledAddons[0], shuffledAddons[1]];
             }
 
@@ -495,23 +528,14 @@
                     Offerings.splice(-1);
                 }
                 const shuffledAddons = [...Offerings].sort(() => 0.5 - Math.random());
-                PodnoshenieText = shuffledAddons[0].name_ru +" / " + shuffledAddons[1].name_ru;
-                //textDown.textContent += killerText;
-                console.log(PodnoshenieText);
                 return [shuffledAddons[0]];
             }
                 
             // Обработчик события для клика по centered-photo
             centeredPhoto.addEventListener('click', function() {
-                    // Очистка всех изображений перед загрузкой новых
-                const killerSelect = document.getElementById('killer-select');
-                const selectedKiller = killerSelect.value; // Получаем выбранного киллера
+
                 textDown.textContent = '';
                 killerText = '';
-                litenText = '';
-                itenAddonText = '';
-                perkText = '';
-                PodnoshenieText = '';
 
                 fetch('data/survs.json')  // Замените на фактический путь к вашему JSON
                     .then(response => response.json())
