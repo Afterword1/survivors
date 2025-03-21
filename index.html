@@ -496,14 +496,28 @@
             
             
 
-            // Функция для получения случайного элемента
-            function getRandomSurv(killers) {
-                const randomIndex = Math.floor(Math.random() * killers.length);
-                killerText += killers[randomIndex].name_ru +" / ";
-                return killers[randomIndex];
+            // Функция для получения случайного выжившего
+            function getRandomSurv(survs) {
+                const randomIndex = Math.floor(Math.random() * survs.length);
+                let survText = '';
+
+                if (lang === 'ru') {
+                    survText += survs[randomIndex].name_ru + " / ";
+                } else if (lang === 'en') {
+                    survText += survs[randomIndex].name_en + " / ";
+                } else if (lang === 'es') {
+                    survText += survs[randomIndex].name_es + " / ";
+                } else {
+                    survText += survs[randomIndex].name_ru + " / ";
+                }
+
+                // Обновляем текстовое поле
+                textDown.textContent = survText;
+                console.log(survText);
+                return survs[randomIndex];
             }
 
-                        // Функция для получения случайного элемента
+            // Функция для получения случайного элемента
             function getRandomItems(killers,emptyChecked) {
                 if (!emptyChecked) {
                     // Удаляем последние 4 перка
