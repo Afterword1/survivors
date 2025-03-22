@@ -510,9 +510,11 @@
                         text1 = `Perks/perk1.png`;
                     }
                 }else if (currentWindow===8) {
-                    randomItems = randomPerks[3];
-                }else if (currentWindow===8) {
-                    randomItems = randomOfferings;
+
+                    // Обновляем изображения для перков
+                    text2 = `Favors/${randomOfferings[0].photo_main}`;
+                    text1 = `Favors/${randomOfferings[0].rang}.png`;
+
                 }
 
                 document.getElementById('popup-img1').src = text1;
