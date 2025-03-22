@@ -263,7 +263,30 @@
             background-color: #000000; /* Цвет фона для текста */
         }
         
+        /* Стили для всплывающего окна */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 25%;
+            left: 5%;
+            width: 90%;
+            height: 25%;
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 10px;
+            z-index: 1000;
+        }
 
+        .popup-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+        }
     </style>
 </head>
 <body>
@@ -358,9 +381,35 @@
         <div class="text-container">
             <div class="text-down-offering"> </div>
         </div>
+
+        <!-- Всплывающее окно -->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                Это всплывающее сообщение.
+            </div>
+        </div>  
     </div>
 
     <script>
+
+        // Переменная для отслеживания состояния рандомизации
+        let isRandomized = false;
+
+        // Получаем элементы для всплывающего окна
+        const popup = document.getElementById('popup');
+
+        // Функция для показа всплывающего окна
+        function showPopup() {
+            if (isRandomized) {
+                popup.style.display = 'block';
+            }
+        }
+
+        // Функция для скрытия всплывающего окна
+        function hidePopup() {
+            popup.style.display = 'none';
+        }
+
         // Словарь с переводами
         const translations = {
             ru: {
@@ -410,6 +459,23 @@
         const textDownPerks = document.querySelector('.text-down-perks');
         const textDownOffering = document.querySelector('.text-down-offering');
 
+        // Обработчики событий для кликов по изображениям
+        photoPlaceholderImg.addEventListener('click', showPopup);
+        photoAddonPlaceholderImg1.addEventListener('click', showPopup);
+        photoAddonPlaceholderImg2.addEventListener('click', showPopup);
+        photoPerks0.addEventListener('click', showPopup);
+        photoPerks1.addEventListener('click', showPopup);
+        photoPerks2.addEventListener('click', showPopup);
+        photoPerks3.addEventListener('click', showPopup);
+        photoPodnosheniePlaceholder.addEventListener('click', showPopup);
+
+        // Обработчик события для клика по centered-photo
+        centeredPhoto.addEventListener('click', function() {
+            // Устанавливаем флаг, что рандомизация произошла
+            isRandomized = true;
+
+            // ... (остальной код для рандомизации остается без изменений) ...
+        });
         
         let killerText = '';
         let perkText = '';
@@ -919,7 +985,12 @@
 
         });
 
-        
+        // Обработчик для закрытия всплывающего окна при клике вне его
+        window.addEventListener('click', function(event) {
+            if (event.target === popup) {
+                hidePopup();
+            }
+        });
 
         // Обновление высоты при изменении размера окна
         window.addEventListener('resize', function() {
