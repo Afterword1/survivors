@@ -394,6 +394,20 @@
 
         // Переменная для отслеживания состояния рандомизации
         let isRandomized = false;
+        let currentPhotoPlaceholder = null;
+        
+        let currentWindow = 0;
+
+        let currentAddon1 = null;
+        let currentAddon2 = null;
+        let currentPerk1 = null;
+        let currentPerk2 = null;
+        let currentPerk3 = null;
+        let currentPerk4 = null;
+        let currentOffering = null;
+
+
+        let randomItems = null;
 
         // Получаем элементы для всплывающего окна
         const popup = document.getElementById('popup');
@@ -401,8 +415,10 @@
         function showPopup() {
             console.log("Popup shown");
             if (isRandomized) {
+                // Обновляем содержимое всплывающего окна
+                document.querySelector('.popup-content').textContent = `Текущее окно: ${currentWindow}`;
                 popup.style.display = 'block';
-            }
+            }   
         }
         
         function hidePopup() {
@@ -462,41 +478,49 @@
         // Обработчики событий для кликов по изображениям
         photoPlaceholderImg.addEventListener('click', function(event) {
             event.stopPropagation(); // Останавливаем всплывание события
+            currentWindow = 1;
             showPopup();
         });
         
         photoAddonPlaceholderImg1.addEventListener('click', function(event) {
             event.stopPropagation();
+            currentWindow = 2;
             showPopup();
         });
         
         photoAddonPlaceholderImg2.addEventListener('click', function(event) {
             event.stopPropagation();
+            currentWindow = 3;
             showPopup();
         });
         
         photoPerks0.addEventListener('click', function(event) {
             event.stopPropagation();
+            currentWindow = 4;
             showPopup();
         });
         
         photoPerks1.addEventListener('click', function(event) {
             event.stopPropagation();
+            currentWindow = 5;
             showPopup();
         });
         
         photoPerks2.addEventListener('click', function(event) {
             event.stopPropagation();
+            currentWindow = 6;
             showPopup();
         });
         
         photoPerks3.addEventListener('click', function(event) {
             event.stopPropagation();
+            currentWindow = 7;
             showPopup();
         });
         
         photoPodnosheniePlaceholder.addEventListener('click', function(event) {
             event.stopPropagation();
+            currentWindow = 8;
             showPopup();
         });
 
@@ -788,7 +812,7 @@
                         let itensList = data.items;
                                 
                         if (itensList.length > 0) {
-                            const randomItems = getRandomItems(itensList, document.getElementById('empty-items').checked);
+                            randomItems = getRandomItems(itensList, document.getElementById('empty-items').checked);
                             // Обновляем текстовое описание
                             //textDown.textContent += "Киллер:" + randomKiller.name_ru;
                             //console.log("0");
