@@ -279,13 +279,29 @@
             border-radius: 10px;
             z-index: 1000;
         }
-
+        
         .popup-content {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 20px;
+        }
+        
+        .popup-images {
+            position: absolute;
+            top: 10%; /* Отступ сверху */
+            left: 10%; /* Отступ слева */
+            height: 80%; /* Высота контейнера с картинками */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .popup-images img {
+            width: auto; /* Ширина картинок будет автоматически подстраиваться */
+            height: 45%; /* Высота каждой картинки (45%, чтобы оставить небольшой отступ между ними) */
+            object-fit: contain; /* Сохраняет пропорции картинок */
         }
     </style>
 </head>
@@ -387,7 +403,11 @@
             <div class="popup-content">
                 Это всплывающее сообщение.
             </div>
-        </div>  
+            <div class="popup-images">
+                <img src="ItemAddons/empty2.png" alt="Popup Image 1" id="popup-img1">
+                <img src="ItemAddons/empty2.png" alt="Popup Image 2" id="popup-img2">
+            </div>
+        </div> 
     </div>
 
     <script>
@@ -416,6 +436,26 @@
             console.log("Popup shown");
             if (isRandomized) {
                 // Обновляем содержимое всплывающего окна
+
+                if(currentWindow===1){
+                   if (randomItems.photo_main) {
+                        document.getElementById('popup-img1').src = `Items/${randomItems.photo_main}`;
+
+                        document.getElementById('popup-img2').src = `ItemAddons/addon${randomItems.rang}.png`;
+
+                    } else {
+                        photoPlaceholderImg.src = 'default/image/path.png';
+                    } 
+                    console.log(randomItems.tipe);
+
+                    if(randomItems.number === 100000){
+                        ItemAddonsCheck = false;
+                    }else{
+                        ItemAddonsCheck = true;
+                    } 
+                }
+
+
                 document.querySelector('.popup-content').textContent = `Текущее окно: ${currentWindow}`;
                 popup.style.display = 'block';
             }   
