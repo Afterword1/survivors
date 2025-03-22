@@ -469,13 +469,6 @@
         photoPerks3.addEventListener('click', showPopup);
         photoPodnosheniePlaceholder.addEventListener('click', showPopup);
 
-        // Обработчик события для клика по centered-photo
-        centeredPhoto.addEventListener('click', function() {
-            // Устанавливаем флаг, что рандомизация произошла
-            isRandomized = true;
-
-            // ... (остальной код для рандомизации остается без изменений) ...
-        });
         
         let killerText = '';
         let perkText = '';
@@ -720,6 +713,7 @@
                 
             // Обработчик события для клика по centered-photo
             centeredPhoto.addEventListener('click', function() {
+                isRandomized = true;
 
                 textDown.textContent = '';
                 killerText = '';
@@ -982,22 +976,18 @@
                     
                     
             });
-
-        });
-
-        // Обработчик для закрытия всплывающего окна при клике вне его
-        window.addEventListener('click', function(event) {
-            if (event.target === popup) {
-                hidePopup();
-            }
-        });
-
-        // Обновление высоты при изменении размера окна
-        window.addEventListener('resize', function() {
+            // Обновление высоты при изменении размера окна
+            window.addEventListener('resize', function() {
             const bgImage = document.getElementById('bg-image');
             const content = document.querySelector('.content');
             content.style.height = `${bgImage.clientHeight}px`;
         });
+
+    });
+
+        
+
+        
     </script>
     
 </body>
