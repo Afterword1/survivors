@@ -273,36 +273,50 @@
             height: 25%;
             background-color: rgba(0, 0, 0, 0.9);
             color: white;
-            text-align: center;
             padding: 20px;
             box-sizing: border-box;
             border-radius: 10px;
             z-index: 1000;
-        }
-        
-        .popup-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 20px;
+            display: flex; /* Используем flex для размещения картинок и текста */
+            align-items: center; /* Выравниваем содержимое по вертикали */
         }
         
         .popup-images {
-            position: absolute;
-            top: 10%; /* Отступ сверху */
-            left: 10%; /* Отступ слева */
-            height: 80%; /* Высота контейнера с картинками */
-            width: auto; /* Ширина будет подстраиваться под картинки */
+            position: relative;
+            width: 40%; /* Ширина контейнера с картинками */
+            height: 100%; /* Высота контейнера с картинками */
+            margin-left: -10%; /* Подвинем картинки влево */
         }
         
         .popup-images img {
             position: absolute;
             top: 0;
             left: 0;
-            width: auto; /* Ширина картинок будет автоматически подстраиваться */
-            height: 100%; /* Картинки занимают всю высоту контейнера */
-            object-fit: contain; /* Сохраняет пропорции картинок */
+            width: auto;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .popup-text {
+            width: 60%; /* Ширина контейнера с текстом */
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 20px; /* Отступ от картинок */
+        }
+        
+        .popup-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 10px; /* Отступ между заголовком и описанием */
+        }
+        
+        .popup-description {
+            font-size: 18px;
+            color: white;
+            align-self: center; /* Выравниваем описание по центру по высоте */
         }
 
     </style>
@@ -402,14 +416,15 @@
 
         <!-- Всплывающее окно -->
         <div class="popup" id="popup">
-            <div class="popup-content">
-                Это всплывающее сообщение.
-            </div>
             <div class="popup-images">
                 <img src="ItemAddons/empty2.png" alt="Popup Image 1" id="popup-img1">
                 <img src="ItemAddons/empty2.png" alt="Popup Image 2" id="popup-img2">
             </div>
-        </div> 
+            <div class="popup-text">
+                <div class="popup-title">Заголовок</div>
+                <div class="popup-description">Описание</div>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -446,6 +461,8 @@
                 // Обновляем содержимое всплывающего окна
                 let text1 = '';
                 let text2 = '';
+                let text3 = '';
+                let text4 = '';
 
                 if(currentWindow===1){
                     if (randomItems.photo_main) {
@@ -455,6 +472,8 @@
                     } else {
                         photoPlaceholderImg.src = 'default/image/path.png';
                     } 
+                    text3 = randomItems.name_ru;
+                    text4 = randomItems.name_ru;
                 }else if (currentWindow===2) {
                     if(randomItemsAddon[0].number === 100000){
                         text2 = `Items/empty.png`;
@@ -463,6 +482,8 @@
                         text2 = `ItemAddons/${randomItemsAddon[0].photo_main}`;
                         text1 = `ItemAddons/addon${randomItemsAddon[0].rang}.png`;
                     }
+                    text3 = randomItemsAddon[0].name_ru;
+                    text4 = randomItemsAddon[0].name_ru;
                 }else if (currentWindow===3) {
                     if(randomItemsAddon[1].number === 100000){
                         text2 = `Items/empty.png`;
@@ -514,6 +535,9 @@
                     // Обновляем изображения для перков
                     text2 = `Favors/${randomOfferings[0].photo_main}`;
                     text1 = `Favors/${randomOfferings[0].rang}.png`;
+
+                    document.querySelector('.popup-title').textContent = 'Новый заголовок';
+                    document.querySelector('.popup-description').textContent = 'Новое описание';
 
                 }
 
