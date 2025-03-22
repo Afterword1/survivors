@@ -305,22 +305,7 @@
             margin-top: 5%; /* Отступ сверху 5% от заголовка */
 
         }
-        
-        .popup-images {
-            position: absolute;
-            height: 80%; /* Высота контейнера с картинками */
-            width: 40%; /* Ширина контейнера — 50% от ширины основного блока */
 
-        }
-        
-        .popup-images img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%; /* Картинки занимают всю ширину контейнера */
-            height: 100%; /* Картинки занимают всю высоту контейнера */
-            object-fit: contain; /* Сохраняет пропорции картинок */
-        }
 
     </style>
 </head>
@@ -419,16 +404,14 @@
 
         <!-- Всплывающее окно -->
         <div class="popup" id="popup">
-            <div class="popup-images">
-                <img src="ItemAddons/empty2.png" alt="Popup Image 1" id="popup-img1">
-                <img src="ItemAddons/empty2.png" alt="Popup Image 2" id="popup-img2">
-            </div>
             <div class="popup-text">
                 <div class="popup-title">Пример заголовка</div>
                 <div class="popup-description">Это пример описания, которое находится по центру по высоте.</div>
             </div>
         </div>
     </div>
+
+
 
     <script>
 
@@ -657,8 +640,8 @@
 
                 }
 
-                document.getElementById('popup-img1').src = text1;
-                document.getElementById('popup-img2').src = text2;
+                //document.getElementById('popup-img1').src = text1;
+                //document.getElementById('popup-img2').src = text2;
                 
                 document.querySelector('.popup-title').textContent = text3;
                 document.querySelector('.popup-description').textContent = text4;
