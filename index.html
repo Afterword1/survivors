@@ -474,8 +474,21 @@
                     } else {
                         photoPlaceholderImg.src = 'default/image/path.png';
                     } 
-                    text3 = randomItems.name_ru;
-                    text4 = randomItems.name_ru;
+
+                    if (lang === 'ru') {
+                        text3 = randomItems.name_ru;
+                        text4 = randomItems.description_ru;
+                    } else if (lang === 'en') {
+                        text3 = randomItems.name_en;
+                        text4 = randomItems.description_en;
+                    } else if (lang === 'es') {
+                        text3 = randomItems.name_es;
+                        text4 = randomItems.description_es;
+                    } else {
+                        text3 = randomItems.name_ru;
+                        text4 = randomItems.description_ru;
+                    }
+
 
                 }else if (currentWindow===2) {
                     if(randomItemsAddon[0].number === 100000){
@@ -485,8 +498,22 @@
                         text2 = `ItemAddons/${randomItemsAddon[0].photo_main}`;
                         text1 = `ItemAddons/addon${randomItemsAddon[0].rang}.png`;
                     }
-                    text3 = randomItemsAddon[0].name_ru;
-                    text4 = randomItemsAddon[0].name_ru;
+                    
+
+                    if (lang === 'ru') {
+                        text3 = randomItemsAddon[0].name_ru;
+                        text4 = randomItemsAddon[0].description_ru;
+                    } else if (lang === 'en') {
+                        text3 = randomItemsAddon[0].name_en;
+                        text4 = randomItemsAddon[0].description_en;
+                    } else if (lang === 'es') {
+                        text3 = randomItemsAddon[0].name_es;
+                        text4 = randomItemsAddon[0].description_es;
+                    } else {
+                        text3 = randomItemsAddon[0].name_ru;
+                        text4 = randomItemsAddon[0].description_ru;
+                    }
+
                 }else if (currentWindow===3) {
                     if(randomItemsAddon[1].number === 100000){
                         text2 = `Items/empty.png`;
@@ -494,6 +521,21 @@
                     }else{
                         text2 = `ItemAddons/${randomItemsAddon[1].photo_main}`;
                         text1 = `ItemAddons/addon${randomItemsAddon[1].rang}.png`;
+                    }
+
+                    
+                    if (lang === 'ru') {
+                        text3 = randomItemsAddon[1].name_ru;
+                        text4 = randomItemsAddon[1].description_ru;
+                    } else if (lang === 'en') {
+                        text3 = randomItemsAddon[1].name_en;
+                        text4 = randomItemsAddon[1].description_en;
+                    } else if (lang === 'es') {
+                        text3 = randomItemsAddon[1].name_es;
+                        text4 = randomItemsAddon[1].description_es;
+                    } else {
+                        text3 = randomItemsAddon[1].name_ru;
+                        text4 = randomItemsAddon[1].description_ru;
                     }
 
                 }else if (currentWindow===4) {
@@ -505,7 +547,21 @@
                     }else{
                         text1 = `Perks/perk1.png`;
                     }
-                    
+                                        
+                    if (lang === 'ru') {
+                        text3 = randomPerks[0].name_ru;
+                        text4 = randomPerks[0].description_ru;
+                    } else if (lang === 'en') {
+                        text3 = randomPerks[0].name_en;
+                        text4 = randomPerks[0].description_en;
+                    } else if (lang === 'es') {
+                        text3 = randomPerks[0].name_es;
+                        text4 = randomPerks[0].description_es;
+                    } else {
+                        text3 = randomPerks[0].name_ru;
+                        text4 = randomPerks[0].description_ru;
+                    }
+
                 }else if (currentWindow===5) {
                     
                     text2 =  `Perks/${randomPerks[1].photo_main}`;
@@ -514,6 +570,20 @@
                         text1 = `Perks/1.png`;
                     }else{
                         text1 = `Perks/perk1.png`;
+                    }
+
+                    if (lang === 'ru') {
+                        text3 = randomPerks[1].name_ru;
+                        text4 = randomPerks[1].description_ru;
+                    } else if (lang === 'en') {
+                        text3 = randomPerks[1].name_en;
+                        text4 = randomPerks[1].description_en;
+                    } else if (lang === 'es') {
+                        text3 = randomPerks[1].name_es;
+                        text4 = randomPerks[1].description_es;
+                    } else {
+                        text3 = randomPerks[1].name_ru;
+                        text4 = randomPerks[1].description_ru;
                     }
                 }else if (currentWindow===6) {
                     
@@ -524,6 +594,21 @@
                     }else{
                         text1 = `Perks/perk1.png`;
                     }
+
+                    if (lang === 'ru') {
+                        text3 = randomPerks[2].name_ru;
+                        text4 = randomPerks[2].description_ru;
+                    } else if (lang === 'en') {
+                        text3 = randomPerks[2].name_en;
+                        text4 = randomPerks[2].description_en;
+                    } else if (lang === 'es') {
+                        text3 = randomPerks[2].name_es;
+                        text4 = randomPerks[2].description_es;
+                    } else {
+                        text3 = randomPerks[2].name_ru;
+                        text4 = randomPerks[2].description_ru;
+                    }
+
                 }else if (currentWindow===7) {
                     
                     text2 =  `Perks/${randomPerks[3].photo_main}`;
@@ -533,11 +618,41 @@
                     }else{
                         text1 = `Perks/perk1.png`;
                     }
+
+                    if (lang === 'ru') {
+                        text3 = randomPerks[3].name_ru;
+                        text4 = randomPerks[3].description_ru;
+                    } else if (lang === 'en') {
+                        text3 = randomPerks[3].name_en;
+                        text4 = randomPerks[3].description_en;
+                    } else if (lang === 'es') {
+                        text3 = randomPerks[3].name_es;
+                        text4 = randomPerks[3].description_es;
+                    } else {
+                        text3 = randomPerks[3].name_ru;
+                        text4 = randomPerks[3].description_ru;
+                    }
+
                 }else if (currentWindow===8) {
 
                     // Обновляем изображения для перков
                     text2 = `Favors/${randomOfferings[0].photo_main}`;
                     text1 = `Favors/${randomOfferings[0].rang}.png`;
+
+                    
+                    if (lang === 'ru') {
+                        text3 = randomOfferings[0].name_ru;
+                        text4 = randomOfferings[0].description_ru;
+                    } else if (lang === 'en') {
+                        text3 = randomOfferings[0].name_en;
+                        text4 = randomOfferings[0].description_en;
+                    } else if (lang === 'es') {
+                        text3 = randomOfferings[0].name_es;
+                        text4 = randomOfferings[0].description_es;
+                    } else {
+                        text3 = randomOfferings[0].name_ru;
+                        text4 = randomOfferings[0].description_ru;
+                    }
 
                 }
 
