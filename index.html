@@ -976,18 +976,25 @@
                     
                     
             });
-            // Обновление высоты при изменении размера окна
-            window.addEventListener('resize', function() {
+
+            // Обработчик для закрытия всплывающего окна при клике вне его
+            window.addEventListener('click', function(event) {
+                // Проверяем, был ли клик вне всплывающего окна
+                if (!popup.contains(event.target)) {
+                    hidePopup();
+                }
+            });
+
+        });
+
+        
+
+        // Обновление высоты при изменении размера окна
+        window.addEventListener('resize', function() {
             const bgImage = document.getElementById('bg-image');
             const content = document.querySelector('.content');
             content.style.height = `${bgImage.clientHeight}px`;
         });
-
-    });
-
-        
-
-        
     </script>
     
 </body>
