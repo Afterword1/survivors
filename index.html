@@ -398,15 +398,15 @@
         // Получаем элементы для всплывающего окна
         const popup = document.getElementById('popup');
 
-        // Функция для показа всплывающего окна
         function showPopup() {
+            console.log("Popup shown");
             if (isRandomized) {
                 popup.style.display = 'block';
             }
         }
-
-        // Функция для скрытия всплывающего окна
+        
         function hidePopup() {
+            console.log("Popup hidden");
             popup.style.display = 'none';
         }
 
