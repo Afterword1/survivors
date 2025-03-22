@@ -443,15 +443,38 @@
             console.log("Popup shown");
             if (isRandomized) {
                 // Обновляем содержимое всплывающего окна
+                let text1 = '';
+                let text2 = '';
 
                 if(currentWindow===1){
                     
                 }else if (currentWindow===2) {
-                    windowItem = randomItems;
+                    if (randomItems.photo_main) {
+                        text1 = `ItemAddons/addon${randomItems.rang}.png`;
+                        text2 = `Items/${randomItems.photo_main}`;
+    
+                    } else {
+                        photoPlaceholderImg.src = 'default/image/path.png';
+                    } 
                 }else if (currentWindow===3) {
-                    randomItems = randomItemsAddon[0];
+                    
+                    if(randomItemsAddon[0].number === 100000){
+                        text2 = `Items/empty.png`;
+                        text1 `ItemAddons/addon${randomItemsAddon[0].rang}.png`;
+                    }else{
+                        text2 = `ItemAddons/${randomItemsAddon[0].photo_main}`;
+                        text1 = `ItemAddons/addon${randomItemsAddon[0].rang}.png`;
+                    }
+                    
                 }else if (currentWindow===4) {
-                    randomItems = randomItemsAddon[1];
+                                        
+                    if(randomItemsAddon[1].number === 100000){
+                        text2 = `Items/empty.png`;
+                        text1 `ItemAddons/addon${randomItemsAddon[1].rang}.png`;
+                    }else{
+                        text2 = `ItemAddons/${randomItemsAddon[1].photo_main}`;
+                        text1 = `ItemAddons/addon${randomItemsAddon[1].rang}.png`;
+                    }
                 }else if (currentWindow===5) {
                     randomItems = randomPerks[0];
                 }else if (currentWindow===6) {
@@ -463,15 +486,10 @@
                 }else if (currentWindow===8) {
                     randomItems = randomOfferings;
                 }
+
+                document.getElementById('popup-img1').src = text1;
+                document.getElementById('popup-img2').src = text2;
                 
-                if (randomItems.photo_main) {
-                    document.getElementById('popup-img1').src = `ItemAddons/addon${randomItems.rang}.png`;
-
-                    document.getElementById('popup-img2').src = `Items/${randomItems.photo_main}`;
-
-                } else {
-                    photoPlaceholderImg.src = 'default/image/path.png';
-                } 
                 console.log(randomItems.tipe);
 
                 document.querySelector('.popup-content').textContent = `Текущее окно: ${currentWindow}`;
