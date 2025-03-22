@@ -4,6 +4,8 @@
         "number": 0,
         "name_ru": "Тяжелый фонарь",
         "name_en": "Utility Flashlight",
+        "description_ru": "Прочный, но тяжелый фонарик с мощным зарядом.  Дает 12 сек. использования Увеличивает яркость луча фонарика на 30% Увеличивает продолжительность ослепления на 15%. Понижает точность луча фонарика на 20%.",
+        "description_en":"A sturdy but heavy Flashlight that packs a lot of power. Press the Use Item button to light the Flashlight for up to 12 seconds. Has an increased Beam brightness of +30 %. Has an increased Blindness duration of +15 %. Has a reduced Aim accuracy of -20 %.",
         "photo_main":"iconItems_flashlightUtility.png",
         "rang":1,
         "tipe":0
@@ -11,6 +13,8 @@
         "number": 1,
         "name_ru": "Спортивный фонарик",
         "name_en": "Sport Flashlight",
+        "description_ru": "Очень удобный фонарик с хорошей рукояткой. Его эффективность заключается в выработке мощного светового луча при меньшем потреблении энергии.  Дает 8 сек. использования Уменьшает расход батареи фонарика на 11%. Повышает точность луча фонарика на 20%.",
+        "description_en":"A very portable Flashlight with a good grip. Its efficient technology produces a powerful light while consuming less power. Press the Use Item button to light the Flashlight for up to 8 seconds. Has an increased Aim accuracy of +20 %. Has a reduced Depletion rate of -11 %.",
         "photo_main":"iconItems_flashlightSport.png",
         "rang":2,
         "tipe":0
@@ -18,6 +22,8 @@
         "number": 2,
         "name_ru": "Фонарик",
         "name_en": "Flashlight",
+        "description_ru": "Стандартный фонарик. Освещает путь в темноте.  Время работы - 8 сек.",
+        "description_en":"A standard Flashlight. Can be used to light your way in the darkness. Press the Use Item button to light the Flashlight for up to 8 seconds.",
         "photo_main":"iconItems_flashlight.png",
         "rang":3,
         "tipe":0
@@ -25,6 +31,8 @@
         "number": 3,
         "name_ru": "Аптечка лесничего",
         "name_en": "Ranger Med-Kit",
+        "description_ru": "Большая металлическая коробка с медикаментами, предназначенная для спасательных операций в труднодоступных, изолированных местах.  24 заряда. Увеличивает скорость лечения других выживших на 50%. Позволяет лечить себя. Уменьшает скорость и эффективность лечения себя на 33%. Полное лечение требует 16 зарядов.",
+        "description_en":"A large metal box containing medical supplies aimed at emergency rescues in hard to reach, often isolated locations. Can be used to heal other Survivors: Increased Altruistic Healing speed of +50 %. Unlocks the Self-Heal action:  Reduced Personal Healing speed of -33 %. Reduced Item efficiency of -33 %. The Ranger Med-Kit has a Capacity of 24 Charges.",
         "photo_main":"iconItems_rangersAidKit.png",
         "rang":1,
         "tipe":1
@@ -32,6 +40,8 @@
         "number": 4,
         "name_ru": "Аптечка первой помощи",
         "name_en": "Emergency Med-Kit",
+        "description_ru": "Большая и хорошо собранная аптечка. Все предметы для первой помощи в отличном состоянии.  24 заряда. Увеличивает скорость лечения других выживших на 45%. Позволяет лечить себя. Уменьшает скорость и эффективность лечения себя на 33%. Полное лечение требует 16 зарядов.",
+        "description_en":"A sturdy and well organised Med-Kit equipped with top condition emergency supplies. Can be used to heal other Survivors: Increased Altruistic Healing speed of +45 %. Unlocks the Self-Heal action:  Reduced Personal Healing speed of -33 %. Reduced Item efficiency of -33 %. The Emergency Med-Kit has a Capacity of 24 Charges.",
         "photo_main":"iconItems_medkit.png",
         "rang":2,
         "tipe":1
@@ -39,6 +49,8 @@
         "number": 5,
         "name_ru": "Аптечка",
         "name_en": "First Aid Kit",
+        "description_ru": "Стандартная аптечка со всем необходимым оборудованием для лечения как небольших, так и более серьезных травм.  24 заряда. Увеличивает скорость лечения других выживших на 40%. Позволяет лечить себя. Уменьшает скорость и эффективность лечения себя на 33%. Полное лечение требует 16 зарядов.",
+        "description_en":"A standard First Aid Kit with all the necessary equipment for treating common to more serious injuries. Can be used to heal other Survivors: Increased Altruistic Healing speed of +40 %. Unlocks the Self-Heal action:  Reduced Personal Healing speed of -33 %. Reduced Item efficiency of -33 %. The First Aid Kit has a Capacity of 24 Charges.",
         "photo_main":"iconItems_firstAidKit.png",
         "rang":3,
         "tipe":1
@@ -46,6 +58,8 @@
         "number": 6,
         "name_ru": "Походная аптечка",
         "name_en": "Camping Aid",
+        "description_ru": "Примитивная аптечка, которая может спасти жизнь в чрезвычайных ситуациях, хоть в ней и не хватает некоторых предметов.  24 заряда. Увеличивает скорость лечения других выживших на 35%. Позволяет лечить себя. Уменьшает скорость и эффективность лечения себя на 33%. Полное лечение требует 16 зарядов.",
+        "description_en":"A rudimentary First Aid Kit which can save lives in emergencies, even if it's lacking some of its supplies. Can be used to heal other Survivors: Increased Altruistic Healing speed of +35 %. Unlocks the Self-Heal action:  Reduced Personal Healing speed of -33 %. Reduced Item efficiency of -33 %. The Camping Aid Kit has a Capacity of 24 Charges.",
         "photo_main":"iconItems_rundownAidKit.png",
         "rang":4,
         "tipe":1
@@ -53,6 +67,8 @@
         "number": 7,
         "name_ru": "Инструменты Алекса",
         "name_en": "Alex's Toolbox",
+        "description_ru": "Металлический ящик, содержащий в основном пилы и плоскогубцы различных размеров, а также другие инструменты. Несмотря на то, что содержимое этого ящика явно предназначено для разрушения, его также можно использовать для починки различных механических устройств.  18 зарядов Увеличивает скорость починки на 10% Позволяет ломать некоторые предметы Увеличивает скорость поломки на 100% Починка генератора требует 90 зарядов.  Поломка крюка требует 6 зарядов.",
+        "description_en":"A metal box containing mainly saws and vice grips of varying sizes but also other tools. Even though the content of this Toolbox is clearly aimed at destructive deeds, it can be used to repair various mechanical components as well. 18 Charges. Increases the Repair speed by +10 %. Unlocks the Sabotage action. Increases the Sabotage speed by +100 %.",
         "photo_main":"iconItems_toolboxAlexs.png",
         "rang":1,
         "tipe":2
@@ -60,6 +76,8 @@
         "number": 8,
         "name_ru": "Инструменты инженера",
         "name_en": "Engineer's Toolbox",
+        "description_ru": "Металлическая коробка с профильными инженерными инструментами. Большинство из них могут быть использованы даже новичками для быстрой починки или поломки различных механических устройств.  16 зарядов. Увеличивает скорость починки на 100%. Позволяет ломать некоторые предметы. Увеличивает скорость поломки на 10%. Починка генератора требует 90 зарядов.  Поломка крюка требует 6 зарядов.",
+        "description_en":"A metal box with highly specialised tools meant for engineering. Most of the tools can be used by neophytes to make quick repairs or break various mechanical components. 16 Charges. Increases the Repair speed by +100 %. Unlocks the Sabotage action. Increases the Sabotage speed by +10 %.",
         "photo_main":"iconItems_toolboxEngineers.png",
         "rang":1,
         "tipe":2
@@ -67,6 +85,8 @@
         "number": 9,
         "name_ru": "Вместительный ящик с инструментами",
         "name_en": "Commodious Toolbox",
+        "description_ru": "Большая металлическая коробка с основными инструментами и запасными механическими деталями. Даже без подготовки их можно использовать для починки или поломки различных механических устройств.  32 заряда. Увеличивает скорость починки на 50%. Позволяет ломать некоторые предметы. Увеличивает скорость поломки предметов на 50% Починка генератора требует 90 зарядов.  Поломка крюка требует 6 зарядов.",
+        "description_en":"A large metal box containing basic tool and extra mechanical parts. Even without training, can be used to repair or break various mechanical components. 32 Charges. Increases the Repair speed by +50 %. Unlocks the Sabotage action. Increases the Sabotage speed by +50 %.",
         "photo_main":"iconItems_toolboxCommodious.png",
         "rang":2,
         "tipe":2
@@ -74,6 +94,8 @@
         "number": 10,
         "name_ru": "Инструменты механика",
         "name_en": "Mechanic's Toolbox",
+        "description_ru": "Металлическая коробка с инструментами механика. Даже без подготовки их можно использовать для починки или поломки различных механических устройств.  16 зарядов. Увеличивает скорость починки на 75%. Позволяет ломать некоторые предметы. Увеличивает скорость поломки на 25%. Починка генератора требует 90 зарядов.  Поломка крюка требует 6 зарядов.",
+        "description_en":"A metal box with specialised mechanics tools. Even without training, can be used to repair or break various mechanical components. 16 Charges. Increases the Repair speed by +75 %. Unlocks the Sabotage action. Increases the Sabotage speed by +25 %. ",
         "photo_main":"iconItems_toolboxMechanics.png",
         "rang":2,
         "tipe":2
@@ -81,6 +103,8 @@
         "number": 11,
         "name_ru": "Ящик с инструментами",
         "name_en": "Toolbox",
+        "description_ru": "Металлическая коробка с основными инструментами. Даже без подготовки их можно использовать для починки или поломки различных механических устройств.  20 зарядов. Увеличивает скорость починки на 50%. Позволяет ломать некоторые предметы. Увеличивает скорость поломки на 15%. Починка генератора требует 90 зарядов.  Поломка крюка требует 6 зарядов.  ",
+        "description_en":"Metal box containing a set of basic tools. Even without training, can be used to repair or break various mechanical components. 20 Charges. Increases the Repair speed by +50 %. Unlocks the Sabotage action. Increases the Sabotage speed by +15 %.",
         "photo_main":"iconItems_toolbox.png",
         "rang":3,
         "tipe":2
@@ -88,6 +112,8 @@
         "number": 12,
         "name_ru": "Изношенные инструменты",
         "name_en": "Worn-out tools",
+        "description_ru": "Большая металлическая коробка со старыми инструментами, которые могут сломаться в любой момент. Даже без подготовки их можно использовать для починки или поломки различных механических устройств.  16 зарядов. Увеличивает скорость починки на 50%. Уменьшает размер зон успеха при проверках реакции на 10%. Позволяет ломать некоторые предметы. Починка генератора требует 90 зарядов.  Поломка крюка требует 6 зарядов.",
+        "description_en":"A metal box containing out of condition tools that could break at any moment. Even without training, can be used to repair or break various mechanical components. 16 Charges. Increases the Repair speed by +50 %. Reduces the Success zone of Good Skill Checks by -10 %. Unlocks the Sabotage action.",
         "photo_main":"iconItems_toolboxWornOut.png",
         "rang":4,
         "tipe":2
@@ -95,6 +121,8 @@
         "number": 13,
         "name_ru": "Радужная карта",
         "name_en": "Rainbow Map",
+        "description_ru": "Кусок пергамента, сделанный из кожи, причем до странного свежей. Даже кровь на его краях еще не высохла. Свернут и скреплен множеством цветных шнурков и веревок. При изучении карты у вас открывается способность к чтению ауры, что, в свою очередь, медленно сжигает карту. Ауры целей, которые вы обнаружили, видны вам до тех пор, пока у карты есть заряды.  20 сек. использования В начале матча карта автоматически отслеживает 3 объекта Открывает способность отслеживать в радиусе 8 метров от вас: объекты люк вещи убийцы ворота",
+        "description_en":"An piece of parchment made out of oddly fresh skin with blood on its edge that has yet to dry, and that is rolled and sealed with multiple coloured ropes and cords. Holding and channelling the Rainbow Map unlocks great potential in your Aura-reading abilities, revealing the Auras   of all tracked objects at the cost of slowly burning it.  Automatically tracks 3 random objects at the start of the Trial. Tracks the following objects when coming within 8 metres: Exit Gate Switches  Generators  Hatch  Hooks  Tracks Chests  , Generators   and Totems   that were revealed by Detective's Hunch  . The Rainbow Map has 20 Charges.",
         "photo_main":"iconItems_rainbowMap.png",
         "rang":0,
         "tipe":3
@@ -102,6 +130,8 @@
         "number": 14,
         "name_ru": "Карта",
         "name_en": "Map",
+        "description_ru": "Старый кусок пергамента из кожи. Свернут и скреплен бесцветным кожаным шнурком. При использовании карты открывается способность чтения ауры, что, в свою очередь, медленно сжигает карту. Ауры Целей, которые вы обнаружили, открыты для вас до тех пор, пока не израсходуются все заряды карты.  20 сек. использования Матч начинается с 1-им отслеживаемым генератором. Открывает способность отслеживать генераторы в радиусе 8-и метров от вас.",
+        "description_en":"An old piece of parchment made out of a skin-like material that is rolled and sealed with an uncoloured leather string. Holding and channelling the Map unlocks great potential in your Aura-reading abilities, revealing the Auras   of all tracked objects at the cost of slowly burning it.  Automatically tracks 1 Generator at the start of the Trial. Tracks any other Generator when coming within 8 metres. Tracks Chests  , Generators   and Totems   that were revealed by Detective's Hunch  . The Map has 20 Charges.",
         "photo_main":"iconItems_map.png",
         "rang":2,
         "tipe":3
@@ -109,6 +139,8 @@
         "number": 15,
         "name_ru": "Ключ скелета",
         "name_en": "Skeleton Key",
+        "description_ru": "Потертый изогнутый ключ, источающий зловещую силу. Сила ключа не может быть активирована сама по себе. Разные предметы могут быть прицеплены на колечко Мастер-Ключа для получения различных эффектов.  Срок действия 30 секунд. Можно использовать для открытия люка.",
+        "description_en":"A tarnished and crooked Key, vibrating with ominous power. The Skeleton Key's power cannot be triggered by itself. Various objects can be attached to its jump ring, which channels the Key's power into various effects. Press the Use Item button to trigger the Mind Channel ability for up to 30 seconds. Mind Channel reveals various Auras  , depending on the Add-ons   the Key is equipped with. Press the Use Item button while standing over the closed Hatch   to open it. This action will consume the Key and is only available if it is not depleted.",
         "photo_main":"iconItems_key.png",
         "rang":0,
         "tipe":4
@@ -116,6 +148,8 @@
         "number": 16,
         "name_ru": "Потертый ключ",
         "name_en": "Dull Key",
+        "description_ru": "Потертый изогнутый ключ, когда-то державший в себе великую силу. Сила ключа не может быть активирована сама по себе. Разные предметы могут быть прицеплены на колечко, для придания различных эффектов потертому ключу.  Срок действия — 5 сек. Можно использовать для открытия черных замков.",
+        "description_en":"A bent and dull Key that once held great power. The Dull Key's power cannot be triggered by itself. Various objects can be attached to its jump ring, which channels the Key's power into various effects. Press the Use Item button to trigger the Mind Channel ability for up to 5 seconds. Mind Channel reveals various Auras  , depending on the Add-ons   the Key is equipped with. Press the Use Item button while standing over the closed Hatch   to open it. This action will consume the Key and is only available if it is not depleted.",
         "photo_main":"iconItems_dullKey.png",
         "rang":1,
         "tipe":4
@@ -123,6 +157,8 @@
         "number": 17,
         "name_ru": "Сломанный ключ",
         "name_en": "Broken Key",
+        "description_ru": "Верхняя часть ключа, излучающая силу. Сила сломанного ключа не может быть активирована сама по себе. Разные предметы могут быть прицеплены на колечко, для придания различных эффектов сломанному ключу.  Срок службы - 10 сек.",
+        "description_en":"The bow and shank of a key, vibrating with remnant power. The Broken Key's power cannot be triggered by itself. Various objects can be attached to its jump ring, which channels the Key's power into various effects. Press the Use Item button to trigger the Mind Channel ability for up to 10 seconds. Mind Channel reveals various Auras  , depending on the Add-ons   the Key is equipped with.",
         "photo_main":"iconItems_brokenKey.png",
         "rang":2,
         "tipe":4
@@ -130,6 +166,8 @@
         "number": 100000,
         "name_ru": "Пусто",
         "name_en": "Empty",
+        "description_ru": "Пусто",
+        "description_en":"Empty",
         "photo_main":"empty.png",
         "rang":5,
         "tipe":1
