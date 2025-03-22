@@ -273,28 +273,11 @@
             height: 25%;
             background-color: rgba(0, 0, 0, 0.9);
             color: white;
+            text-align: center;
             padding: 20px;
             box-sizing: border-box;
             border-radius: 10px;
             z-index: 1000;
-            display: flex; /* Используем flex для размещения картинок и текста */
-            align-items: center; /* Выравниваем содержимое по вертикали */
-        }
-        
-        .popup-images {
-            position: relative;
-            width: 40%; /* Ширина контейнера с картинками */
-            height: 100%; /* Высота контейнера с картинками */
-            /* Убрали margin-left: -10% */
-        }
-        
-        .popup-images img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: auto;
-            height: 100%;
-            object-fit: contain;
         }
         
         .popup-text {
@@ -317,6 +300,23 @@
             font-size: 18px;
             color: white;
             align-self: center; /* Выравниваем описание по центру по высоте */
+        }
+        
+        .popup-images {
+            position: absolute;
+            top: 10%; /* Отступ сверху */
+            left: 10%; /* Отступ слева */
+            height: 80%; /* Высота контейнера с картинками */
+            width: auto; /* Ширина будет подстраиваться под картинки */
+        }
+        
+        .popup-images img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: auto; /* Ширина картинок будет автоматически подстраиваться */
+            height: 100%; /* Картинки занимают всю высоту контейнера */
+            object-fit: contain; /* Сохраняет пропорции картинок */
         }
 
     </style>
