@@ -430,6 +430,11 @@
 
 
         let randomItems = null;
+        let randomItemsAddon = null;
+        let randomPerks 
+        let randomOfferings = null;
+
+        let windowItem = null;
 
         // Получаем элементы для всплывающего окна
         const popup = document.getElementById('popup');
@@ -440,23 +445,34 @@
                 // Обновляем содержимое всплывающего окна
 
                 if(currentWindow===1){
-                   if (randomItems.photo_main) {
-                        document.getElementById('popup-img1').src = `ItemAddons/addon${randomItems.rang}.png`;
-
-                        document.getElementById('popup-img2').src = `Items/${randomItems.photo_main}`;
-
-                    } else {
-                        photoPlaceholderImg.src = 'default/image/path.png';
-                    } 
-                    console.log(randomItems.tipe);
-
-                    if(randomItems.number === 100000){
-                        ItemAddonsCheck = false;
-                    }else{
-                        ItemAddonsCheck = true;
-                    } 
+                    
+                }else if (currentWindow===2) {
+                    windowItem = randomItems;
+                }else if (currentWindow===3) {
+                    randomItems = randomItemsAddon[0];
+                }else if (currentWindow===4) {
+                    randomItems = randomItemsAddon[1];
+                }else if (currentWindow===5) {
+                    randomItems = randomPerks[0];
+                }else if (currentWindow===6) {
+                    randomItems = randomPerks[1];
+                }else if (currentWindow===7) {
+                    randomItems = randomPerks[2];
+                }else if (currentWindow===8) {
+                    randomItems = randomPerks[3];
+                }else if (currentWindow===8) {
+                    randomItems = randomOfferings;
                 }
+                
+                if (randomItems.photo_main) {
+                    document.getElementById('popup-img1').src = `ItemAddons/addon${randomItems.rang}.png`;
 
+                    document.getElementById('popup-img2').src = `Items/${randomItems.photo_main}`;
+
+                } else {
+                    photoPlaceholderImg.src = 'default/image/path.png';
+                } 
+                console.log(randomItems.tipe);
 
                 document.querySelector('.popup-content').textContent = `Текущее окно: ${currentWindow}`;
                 popup.style.display = 'block';
@@ -900,7 +916,7 @@
                             
                                 const randomItems2 = getItemsAddonsTipe(ItemAddonsList,tipeItem);
                                 //console.log("randomItems2 = - " + randomItems2[randomItems2.length-1].name_ru);
-                                const randomItemsAddon = getRandomItemsAddons(randomItems2, document.getElementById('empty-addons').checked);
+                                randomItemsAddon = getRandomItemsAddons(randomItems2, document.getElementById('empty-addons').checked);
                                 // Обновляем текстовое описание
                                 //console.log("randomItemsAddon = - " + randomItemsAddon[randomItemsAddon.length-1].name_ru);
 
@@ -971,7 +987,7 @@
                     .then(response => response.json())
                     .then(data => {
                         if (data.Killers_perks && data.Killers_perks.length > 0) {
-                            const randomPerks = getForRandomPerks(data.Killers_perks, document.getElementById('empty-perks').checked);
+                             randomPerks = getForRandomPerks(data.Killers_perks, document.getElementById('empty-perks').checked);
 
                             // Обновляем изображения для перков
                             if (randomPerks[0].photo_main) {
@@ -1048,7 +1064,7 @@
                     .then(response => response.json())
                     .then(data => {
                         if (data.offerings && data.offerings.length > 0) {
-                            const randomOfferings = getForRandomOfferings(data.offerings, document.getElementById('empty-offerings').checked);
+                            randomOfferings = getForRandomOfferings(data.offerings, document.getElementById('empty-offerings').checked);
 
                             // Обновляем изображения для перков
                             if (randomOfferings[0].photo_main) {
