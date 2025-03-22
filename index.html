@@ -304,6 +304,7 @@
             height: 100%; /* Картинки занимают всю высоту контейнера */
             object-fit: contain; /* Сохраняет пропорции картинок */
         }
+
     </style>
 </head>
 <body>
@@ -440,9 +441,9 @@
 
                 if(currentWindow===1){
                    if (randomItems.photo_main) {
-                        document.getElementById('popup-img1').src = `Items/${randomItems.photo_main}`;
+                        document.getElementById('popup-img1').src = `ItemAddons/addon${randomItems.rang}.png`;
 
-                        document.getElementById('popup-img2').src = `ItemAddons/addon${randomItems.rang}.png`;
+                        document.getElementById('popup-img2').src = `Items/${randomItems.photo_main}`;
 
                     } else {
                         photoPlaceholderImg.src = 'default/image/path.png';
