@@ -460,14 +460,45 @@
         const textDownOffering = document.querySelector('.text-down-offering');
 
         // Обработчики событий для кликов по изображениям
-        photoPlaceholderImg.addEventListener('click', showPopup);
-        photoAddonPlaceholderImg1.addEventListener('click', showPopup);
-        photoAddonPlaceholderImg2.addEventListener('click', showPopup);
-        photoPerks0.addEventListener('click', showPopup);
-        photoPerks1.addEventListener('click', showPopup);
-        photoPerks2.addEventListener('click', showPopup);
-        photoPerks3.addEventListener('click', showPopup);
-        photoPodnosheniePlaceholder.addEventListener('click', showPopup);
+        photoPlaceholderImg.addEventListener('click', function(event) {
+            event.stopPropagation(); // Останавливаем всплывание события
+            showPopup();
+        });
+        
+        photoAddonPlaceholderImg1.addEventListener('click', function(event) {
+            event.stopPropagation();
+            showPopup();
+        });
+        
+        photoAddonPlaceholderImg2.addEventListener('click', function(event) {
+            event.stopPropagation();
+            showPopup();
+        });
+        
+        photoPerks0.addEventListener('click', function(event) {
+            event.stopPropagation();
+            showPopup();
+        });
+        
+        photoPerks1.addEventListener('click', function(event) {
+            event.stopPropagation();
+            showPopup();
+        });
+        
+        photoPerks2.addEventListener('click', function(event) {
+            event.stopPropagation();
+            showPopup();
+        });
+        
+        photoPerks3.addEventListener('click', function(event) {
+            event.stopPropagation();
+            showPopup();
+        });
+        
+        photoPodnosheniePlaceholder.addEventListener('click', function(event) {
+            event.stopPropagation();
+            showPopup();
+        });
 
         
         let killerText = '';
