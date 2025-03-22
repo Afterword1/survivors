@@ -300,6 +300,8 @@
             font-size: 18px;
             color: white;
             align-self: center; /* Выравниваем описание по центру по высоте */
+            margin-top: 5%; /* Отступ сверху 5% от заголовка */
+
         }
         
         .popup-images {
@@ -461,15 +463,20 @@
                 // Обновляем содержимое всплывающего окна
                 let text1 = '';
                 let text2 = '';
+                let text3 = '';
+                let text4 = '';
 
                 if(currentWindow===1){
                     if (randomItems.photo_main) {
                         text1 = `ItemAddons/addon${randomItems.rang}.png`;
                         text2 = `Items/${randomItems.photo_main}`;
-    
+                        
                     } else {
                         photoPlaceholderImg.src = 'default/image/path.png';
                     } 
+                    text3 = randomItems.name_ru;
+                    text4 = randomItems.name_ru;
+
                 }else if (currentWindow===2) {
                     if(randomItemsAddon[0].number === 100000){
                         text2 = `Items/empty.png`;
@@ -478,6 +485,8 @@
                         text2 = `ItemAddons/${randomItemsAddon[0].photo_main}`;
                         text1 = `ItemAddons/addon${randomItemsAddon[0].rang}.png`;
                     }
+                    text3 = randomItemsAddon[0].name_ru;
+                    text4 = randomItemsAddon[0].name_ru;
                 }else if (currentWindow===3) {
                     if(randomItemsAddon[1].number === 100000){
                         text2 = `Items/empty.png`;
@@ -535,6 +544,9 @@
                 document.getElementById('popup-img1').src = text1;
                 document.getElementById('popup-img2').src = text2;
                 
+                document.querySelector('.popup-title').textContent = 'Новый заголовок';
+                document.querySelector('.popup-description').textContent = 'Новое описание';
+
                 console.log(randomItems.tipe);
 
                 //document.querySelector('.popup-content').textContent = `Текущее окно: ${currentWindow}`;
